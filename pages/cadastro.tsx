@@ -1,32 +1,28 @@
-import Head from 'next/head'
-import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import Link from 'next/link';
 import React, {useState} from "react";
-import Planos from './planos';
-import Pagamento from './checkout';
-
 function Cadastro(){
+   
+    const [formValues, setFormValues] = useState({});
+
+    const handleInputChange = (e:any) => {
+        const {name, value} = e.target;
+        setFormValues({...formValues, [name]: value})
+    };
+
+    console.log('*** formValues', formValues);
     return(
         <div>
+            <form>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <div style={{height:40}} />
-                  
-                    <TextField id="outlined-basic" label="Nome" variant="outlined"/>
-
+                    <TextField type="text" id="nome" label="Nome" name="name" variant="outlined" placeholder="nome" onChange={handleInputChange} value={formValues.name || ''}/>
                     <div style={{height:40}} />
-
-                    <TextField id="outlined-basic" label="E-mail" variant="outlined"  />
-
+                    <TextField type="email" id="email" label="E-mail" variant="outlined" name="email" onChange={handleInputChange} value={formValues.email || ''}/>
                     <div style={{height:40}} />
-
-                    <TextField id="outlined-basic" label="Senha" variant="outlined" />    
+                    <TextField type="password" id="senha" label="Senha" variant="outlined" name="senha" onChange={handleInputChange} value={formValues.senha || ''}/>    
                 </div>
+            </form>
       </div>
     )
 }

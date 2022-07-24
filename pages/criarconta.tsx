@@ -16,9 +16,6 @@ const steps = [
     'Pagamento',
   ];
 
-export default function HorizontalLabelPositionBelowStepper()
-
-
 function IndexPage() {
 const [page, setPage] = useState(0);
 const [step, setStep] = useState(0);
@@ -36,39 +33,37 @@ const FormTitles = [<Cadastro/>, <Planos/>, <Pagamento/>];
 
         <Grid container style={{ minHeight: '100vh'}}>
             
-            <Grid item xs xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
+            <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
                 <h1 style={{ maxWidth: '650px', fontSize: '2.5rem', color: 'white', position: 'absolute', padding: '64px', }} >Lorem ipsum class sodales vivamus aptent, quis sagittis euismod dictumst nulla.</h1>
                 <img src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
 
-            <Grid container item xs xs={12} sm={6} alignItems="center" direction="column" justify="space-between" style={{ justifyContent: 'center', padding: 16,}}>
-                
-                <div />
+            <Grid container item xs={12} sm={6} alignItems="center" direction="column" justify="space-between" style={{ justifyContent: 'center', padding: 16,}}>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
+                <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
 
-                        <Grid container justify="center" style={{ justifyContent: 'center'}}>
+                    <Grid container justify="center" style={{ justifyContent: 'center'}}>
                             <img src="../imgs/logo-brand.svg" width={200} alt="logo" />
-                        </Grid>
+                     </Grid>
 
-                        <div style={{height:40}} />
+                    <div style={{height:40}} />
 
-                        <div style={{ justifyContent: 'center'}}>
-                            <Stepper activeStep={step} alternativeLabel>
-                                {steps.map((label) => (
-                                <Step key={label}>
-                                    <StepLabel>{label}</StepLabel>
-                                </Step>
-                                ))}
-                            </Stepper>
-                        </div>
+                     <div style={{ justifyContent: 'center'}}>
+                        <Stepper activeStep={step} alternativeLabel>
+                            {steps.map((label) => (
+                            <Step key={label}>
+                                <StepLabel>{label}</StepLabel>
+                           </Step>
+                           ))}
+                      </Stepper>
+                     </div>
                         
-                        <div style={{height:40}} />
+                    <div style={{height:40}} />
 
-                        <div>{FormTitles[page]}</div>
+                    <div>{FormTitles[page]}</div>
 
-                        <div style={{height:40}} />
-                        <Button variant="contained" 
+                    <div style={{height:40}} />
+                        <Button variant="contained" type="submit"
                         onClick={() => {
                             setPage((currPage) => currPage + 1)
                             setStep((activeStep) => activeStep + 1)
@@ -79,9 +74,7 @@ const FormTitles = [<Cadastro/>, <Planos/>, <Pagamento/>];
                         <Link href="/teste" passHref>
                         <Button>Já possui uma conta?</Button>
                         </Link>
-
                     </div>
-                <div />
             </Grid>
 
         </Grid>
