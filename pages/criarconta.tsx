@@ -6,7 +6,10 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Link from 'next/link';
-
+import React, {useState} from "react";
+import Planos from './planos';
+import Pagamento from './checkout';
+import Cadastro from './cadastro';
 const steps = [
     'Conta',
     'Planos',
@@ -17,7 +20,10 @@ export default function HorizontalLabelPositionBelowStepper()
 
 
 function IndexPage() {
+const [page, setPage] = useState(0);
+const [step, setStep] = useState(0);
 
+const FormTitles = [<Cadastro/>, <Planos/>, <Pagamento/>];
 
   return (
 
@@ -39,50 +45,42 @@ function IndexPage() {
                 
                 <div />
 
-                <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
 
-                    <Grid container justify="center" style={{ justifyContent: 'center'}}>
-                        <img src="../imgs/logo-brand.svg" width={200} alt="logo" />
-                    </Grid>
+                        <Grid container justify="center" style={{ justifyContent: 'center'}}>
+                            <img src="../imgs/logo-brand.svg" width={200} alt="logo" />
+                        </Grid>
 
-                    <div style={{height:40}} />
+                        <div style={{height:40}} />
 
-                    <div style={{ justifyContent: 'center'}}>
-                        <Stepper activeStep={0} alternativeLabel>
-                            {steps.map((label) => (
-                            <Step key={label}>
-                                <StepLabel>{label}</StepLabel>
-                            </Step>
-                            ))}
-                        </Stepper>
+                        <div style={{ justifyContent: 'center'}}>
+                            <Stepper activeStep={step} alternativeLabel>
+                                {steps.map((label) => (
+                                <Step key={label}>
+                                    <StepLabel>{label}</StepLabel>
+                                </Step>
+                                ))}
+                            </Stepper>
+                        </div>
+                        
+                        <div style={{height:40}} />
+
+                        <div>{FormTitles[page]}</div>
+
+                        <div style={{height:40}} />
+                        <Button variant="contained" 
+                        onClick={() => {
+                            setPage((currPage) => currPage + 1)
+                            setStep((activeStep) => activeStep + 1)
+                        }}>Continuar</Button>
+
+                        <div style={{height:40}} />
+
+                        <Link href="/teste" passHref>
+                        <Button>Já possui uma conta?</Button>
+                        </Link>
+
                     </div>
-
-                    <div style={{height:40}} />
-
-                    <TextField id="outlined-basic" label="Nome" variant="outlined"/>
-
-                    <div style={{height:40}} />
-
-                    <TextField id="outlined-basic" label="E-mail" variant="outlined"  />
-
-                    <div style={{height:40}} />
-                    
-                    <TextField id="outlined-basic" label="Senha" variant="outlined" />
-
-                    <div style={{height:40}} />
-
-                    <Link href="/planos" passHref>
-                    <Button variant="contained" onClick={() => chamaLogin()}>Continuar</Button>
-                    </Link>
-
-                    <div style={{height:40}} />
-
-                    <Link href="/teste" passHref>
-                    <Button>Já possui uma conta?</Button>
-                    </Link>
-
-                </div>
-
                 <div />
             </Grid>
 
