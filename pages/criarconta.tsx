@@ -71,7 +71,7 @@ const FormTitles = [<Cadastro/>, <Planos/>, <Pagamento/>];
 
                         <div style={{height:40}} />
 
-                        <Link href="/teste" passHref>
+                        <Link href="/login" passHref>
                         <Button>Já possui uma conta?</Button>
                         </Link>
                     </div>

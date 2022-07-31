@@ -102,7 +102,7 @@ const [values, setValues] = React.useState<State>({
       </div>   
                 </div>
                     </form>
-                    <Link href="/teste" passHref>
+                    <Link href="/redefinirsenha" passHref>
                         <Button>Esqueceu a senha?<b>Clique aqui</b></Button>
                         </Link>
                     <div style={{height:40}} />
