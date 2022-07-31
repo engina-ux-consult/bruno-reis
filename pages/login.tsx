@@ -75,8 +75,8 @@ const [values, setValues] = React.useState<State>({
                     <div>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
       <div>
-        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+        <FormControl sx={{ m: 0, width: '45ch' }} variant="outlined">
+          <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
             type={values.showPassword ? 'text' : 'password'}
