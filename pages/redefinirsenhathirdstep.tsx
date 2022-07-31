@@ -12,6 +12,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import { FormLabel } from '@mui/material';
 
 interface State {
     amount: string;
@@ -50,7 +51,7 @@ function Redefinirsenhathirdstep(){
             <Grid container style={{ minHeight: '100vh'}}>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
             <h1>Crie uma senha nova.</h1>
-            <p>Crie uma senha nova com pelo menos 8 caracteres.</p>
+            <FormLabel>Crie uma senha nova com pelo menos 8 caracteres.</FormLabel>
             <div style={{height:40}} />
             <FormControl sx={{ m: 0, width: '45ch' }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-passwor">Senha</InputLabel>

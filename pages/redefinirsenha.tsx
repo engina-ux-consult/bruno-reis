@@ -8,6 +8,9 @@ import StepLabel from '@mui/material/StepLabel';
 import Link from 'next/link';
 import React, {useState} from "react";
 import { display } from '@mui/system';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 function Redefinir(){
     return(
@@ -15,7 +18,7 @@ function Redefinir(){
             <Grid container style={{ minHeight: '100vh'}}>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
                 <h1>Esqueceu a senha?</h1>
-            <p>Redefina a senha nas etapas seguintes</p>
+            <FormLabel>Redefina a senha nas etapas seguintes</FormLabel>
             <div style={{height:40}} />
             <TextField type="email" id="email" label="E-mail" variant="outlined" name="email"/>
                 <div style={{height:40}} />

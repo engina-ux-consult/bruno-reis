@@ -17,10 +17,6 @@ const steps = [
     'Pagamento',
   ];
 
-export default function HorizontalLabelPositionBelowStepper()
-
-export default function RadioButtonsGroup()
-
 
 function Planos() {
 

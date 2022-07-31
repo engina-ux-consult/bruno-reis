@@ -12,6 +12,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import FormLabel from '@mui/material/FormLabel';
 
 interface State {
     amount: string;
@@ -72,8 +73,7 @@ const [values, setValues] = React.useState<State>({
                     <div style={{height:40}} />
                     <TextField type="email" id="email" label="E-mail" variant="outlined" name="email" />
                     <div style={{height:40}} />
-                    <div>
-                    <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                    <div>               
       <div>
         <FormControl sx={{ m: 0, width: '45ch' }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
@@ -98,13 +98,13 @@ const [values, setValues] = React.useState<State>({
           />
         </FormControl>
       </div>
-    </Box>
       </div>   
                 </div>
                     </form>
-                    <Link href="/redefinirsenha" passHref>
-                        <Button>Esqueceu a senha?<b>Clique aqui</b></Button>
-                        </Link>
+                    <FormLabel>
+                      Esqueceu a senha?<Link href="/redefinirsenha" passHref> Clique aqui</Link>
+                    </FormLabel>
+                    
                     <div style={{height:40}} />
                         <Button variant="contained" type="submit"
                         onClick={() => {
