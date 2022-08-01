@@ -13,6 +13,20 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
 function Redefinir(){
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+  
+    const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
+  
+    const handleOnChange = (e: any) => {
+      setEmail(e.target.value);
+      if (e.target.value.match(regEx)) {
+        setMessage("");
+        return
+      } else {
+        setMessage("Email não é valido");
+      }
+    };
     return(
         <div>
             <Grid container style={{ minHeight: '100vh'}}>
@@ -20,7 +34,8 @@ function Redefinir(){
                 <h1>Esqueceu a senha?</h1>
             <FormLabel>Redefina a senha nas etapas seguintes</FormLabel>
             <div style={{height:40}} />
-            <TextField type="email" id="email" label="E-mail" variant="outlined" name="email"/>
+            <TextField type="email" id="email" label="E-mail" variant="outlined" name="email"
+            value={email} error={message} helperText={message} onChange={handleOnChange}/>
                 <div style={{height:40}} />
                 <Link href="/redefinirsenhasecondstep" passHref>
                     <Button variant="contained">Redefinir senha</Button>

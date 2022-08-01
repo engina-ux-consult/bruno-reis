@@ -51,6 +51,21 @@ const [values, setValues] = React.useState<State>({
     event.preventDefault();
   };
 
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
+
+  const handleOnChange = (e: any) => {
+    setEmail(e.target.value);
+    if (e.target.value.match(regEx)) {
+      setMessage("");
+      return
+    } else {
+      setMessage("Email não é valido");
+    }
+  };
+
   return (
 
       <div>
@@ -71,7 +86,8 @@ const [values, setValues] = React.useState<State>({
                     <form>
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     <div style={{height:40}} />
-                    <TextField type="email" id="email" label="E-mail" variant="outlined" name="email" />
+                    <TextField type="email" id="email" label="E-mail" variant="outlined" name="email" 
+                    value={email} error={message} helperText={message} onChange={handleOnChange} />
                     <div style={{height:40}} />
                     <div>               
       <div>
@@ -107,10 +123,7 @@ const [values, setValues] = React.useState<State>({
                     
                     <div style={{height:40}} />
                         <Button variant="contained" type="submit"
-                        onClick={() => {
-                            setPage((currPage) => currPage + 1)
-                            setStep((activeStep) => activeStep + 1)
-                        }}>Continuar</Button>
+                        >Continuar</Button>
 
                     </div>
             </Grid>

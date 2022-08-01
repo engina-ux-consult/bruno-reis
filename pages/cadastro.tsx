@@ -55,6 +55,21 @@ function Cadastro(){
       };
 
     console.log('*** formValues', formValues);
+
+    const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
+
+  const handleOnChange = (e: any) => {
+    setEmail(e.target.value);
+    if (e.target.value.match(regEx)) {
+      setMessage("");
+      return
+    } else {
+      setMessage("Email não é valido");
+    }
+  };
     return(
         <div>
             <form>
@@ -63,7 +78,8 @@ function Cadastro(){
                     <div style={{height:40}} />
                     <TextField type="text" id="nome" label="Nome" name="name" variant="outlined" placeholder="nome" onChange={handleInputChange} value={formValues.name || ''}/>
                     <div style={{height:40}} />
-                    <TextField type="email" id="email" label="E-mail" variant="outlined" name="email" onChange={handleInputChange} value={formValues.email || ''}/>
+                    <TextField type="email" id="email" label="E-mail" variant="outlined" name="email" 
+                    onChange={handleOnChange} value={email || ''} error={message} helperText={message}/>
                     <div style={{height:40}} />
                     <FormControl sx={{ m: 0, width: '45ch' }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
