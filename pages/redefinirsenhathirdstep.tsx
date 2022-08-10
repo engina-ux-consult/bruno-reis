@@ -81,8 +81,7 @@ function Redefinirsenhathirdstep(){
           <OutlinedInput
             id="repetirsenha"
             type={values.showPassword ? 'text' : 'password'}
-            value={values.password}
-            onChange={handleChange('password')}
+            
             endAdornment={
               <InputAdornment position="end">
                 <IconButton
