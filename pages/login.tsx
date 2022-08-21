@@ -76,22 +76,26 @@ const [values, setValues] = React.useState<State>({
         <Grid container style={{ minHeight: '100vh'}}>
             
             <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
-                <h1 style={{ maxWidth: '650px', fontSize: '2.5rem', color: 'white', position: 'absolute', padding: '64px', }} >Lorem ipsum class sodales vivamus aptent, quis sagittis euismod dictumst nulla.</h1>
-                <img src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
 
             <Grid item xs={12} sm={6} style={{ alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
 
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
+                <Grid container justify="center" style={{ justifyContent: 'center'}}>
+                                <img src="../imgs/logo-brandd.svg" width={200} alt="logo" />
+                </Grid>
+                    
+                        <div style={{height:40}} />
                     <form>
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     <div style={{height:40}} />
-                    <TextField type="email" id="email" label="E-mail" variant="outlined" name="email" 
+                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     value={email} error={message} helperText={message} onChange={handleOnChange} />
                     <div style={{height:40}} />
                     <div>               
       <div>
-        <FormControl sx={{ m: 0, width: '45ch' }} variant="outlined">
+        <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
@@ -117,13 +121,19 @@ const [values, setValues] = React.useState<State>({
       </div>   
                 </div>
                     </form>
+                    <div style={{height:20}} />
                     <FormLabel>
                       Esqueceu a senha?<Link href="/redefinirsenha" passHref> Clique aqui</Link>
                     </FormLabel>
                     
                     <div style={{height:40}} />
                         <Button variant="contained" type="submit"
-                        >Continuar</Button>
+                        sx={{backgroundColor: '#382B57',borderRadius: 3}}>Continuar</Button>
+
+                          <div style={{height:40}} />
+
+                                                        
+                          <Button>Já possui uma conta?<Link href="/criarconta" passHref>Acesse aqui</Link> </Button>
 
                     </div>
             </Grid>

@@ -30,20 +30,23 @@ function Redefinir(){
     return(
         <div>
             <Grid container style={{ minHeight: '100vh'}}>
+            <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
+                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+            </Grid>
+            <Grid item xs={12} sm={6} style={{ alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
+                    
                 <h1>Esqueceu a senha?</h1>
-            <FormLabel>Redefina a senha nas etapas seguintes</FormLabel>
+            <FormLabel>Digite seu e-mail cadastrado para enviarmos um código de alteração de senha.</FormLabel>
             <div style={{height:40}} />
-            <TextField type="email" id="email" label="E-mail" variant="outlined" name="email"
+            <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email"
             value={email} error={message} helperText={message} onChange={handleOnChange}/>
                 <div style={{height:40}} />
                 <Link href="/redefinirsenhasecondstep" passHref>
-                    <Button variant="contained">Redefinir senha</Button>
+                    <Button variant="contained" sx={{backgroundColor: '#382B57',borderRadius: 3}}>Enviar código</Button>
                 </Link>
-                <Link href="/login" passHref>
-                <Button>Voltar</Button>
-            </Link>
                 </div>
+                </Grid>
             </Grid>
         </div>
         
