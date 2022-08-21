@@ -14,17 +14,20 @@ function Redefinirsenhasecondstep(){
     return(
         <div>   
             <Grid container style={{ minHeight: '100vh'}}>
+            <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
+                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+            </Grid>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
-                    <h1>Acabamos de enviar um código para seu e-mail</h1>
-                    <FormLabel>Insira o código de verificação de 6 dígitos enviando para t*****@gmail.com. <Link href="/redefinirsenha" passHref>Alterar</Link></FormLabel>
+                    <h1>Enviamos o código para seu e-mail</h1>
+                    <FormLabel>Insira o código de verificação de 6 dígitos enviando para *****@gmail.com. <Link href="/redefinirsenha" passHref>Alterar</Link></FormLabel>
                     <div style={{height:40}} />
-                    <TextField type="text" id="codigo" label="Código" variant="outlined" name="codigo"/>
+                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="codigo" label="Código" variant="outlined" name="codigo"/>
                     <FormLabel>
-                       <Button>Reenviar código</Button> 
+                       <Button sx={{color: '#382B57'}}>Reenviar código</Button> 
                     </FormLabel> 
                     <div style={{height:40}} />
                     <Link href="/redefinirsenhathirdstep" passHref>
-                        <Button variant="contained" >Continuar</Button>
+                        <Button variant="contained" sx={{backgroundColor: '#382B57',borderRadius: 3}}>Continuar</Button>
                     </Link>
                     <FormLabel>Se não encontrar o e-mail na sua caixa de entrada, verifique a pasta de spam.</FormLabel>
                  </div>

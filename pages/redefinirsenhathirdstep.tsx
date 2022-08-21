@@ -49,11 +49,14 @@ function Redefinirsenhathirdstep(){
     return(
         <div>    
             <Grid container style={{ minHeight: '100vh'}}>
+            <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
+                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+            </Grid>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
             <h1>Crie uma senha nova.</h1>
             <FormLabel>Crie uma senha nova com pelo menos 8 caracteres.</FormLabel>
             <div style={{height:40}} />
-            <FormControl sx={{ m: 0, width: '45ch' }} variant="outlined">
+            <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3}}} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-passwor">Senha</InputLabel>
           <OutlinedInput
             id="senha"
@@ -76,7 +79,7 @@ function Redefinirsenhathirdstep(){
           />
         </FormControl>   
             <div style={{height:40}} />
-            <FormControl sx={{ m: 0, width: '45ch' }} variant="outlined">
+            <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3}}} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Repetir senha</InputLabel>
           <OutlinedInput
             id="repetirsenha"
@@ -99,7 +102,7 @@ function Redefinirsenhathirdstep(){
         </FormControl>   
             <div style={{height:40}} />
             <Link href="/login" passHref>
-                <Button variant="contained">Finalizar</Button>
+                <Button variant="contained" sx={{backgroundColor: '#382B57',borderRadius: 3}}>Finalizar</Button>
             </Link>
         </div>
             </Grid>

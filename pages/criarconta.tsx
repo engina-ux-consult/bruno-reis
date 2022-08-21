@@ -99,12 +99,12 @@ function IndexPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <div style={{height:40}} />
-                    <TextField sx={{['& fieldset']:{borderRadius:4}}} type="text" id="nome" label="Nome" name="name" variant="outlined" borderRadius='16' placeholder="nome" onChange={handleInputChange} value={formValues.name || ''} />
+                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="nome" label="Nome" name="name" variant="outlined" borderRadius='16' placeholder="nome" onChange={handleInputChange} value={formValues.name || ''} />
                     <div style={{height:40}} />
-                    <TextField sx={{['& fieldset']:{borderRadius:4}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
+                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     onChange={handleOnChange} value={email || ''} error={message} helperText={message}/>
                     <div style={{height:40}} />
-                    <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:4} }} variant="outlined">
+                    <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
@@ -132,7 +132,7 @@ function IndexPage() {
                             <Button variant="contained" type="submit"
                             sx={{
                                 backgroundColor: '#382B57',
-                                borderRadius: 8
+                                borderRadius: 3
                               }}>Continuar</Button>
 
                             <div style={{height:40}} />
