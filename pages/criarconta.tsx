@@ -129,12 +129,13 @@ function IndexPage() {
                 </div>
             </form>
                         <div style={{height:40}} />
+                        <Link href="/dashboard" passHref>
                             <Button variant="contained" type="submit"
                             sx={{
                                 backgroundColor: '#382B57',
                                 borderRadius: 3
                               }}>Continuar</Button>
-
+                        </Link>
                             <div style={{height:40}} />
 
                             
