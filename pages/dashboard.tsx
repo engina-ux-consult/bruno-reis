@@ -15,6 +15,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Link from 'next/link';
 
  function Dashboard() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -48,7 +49,7 @@ import CardMedia from '@mui/material/CardMedia';
       {
         loading ? (
           <Grid style={{ width: '100%', height: '100vh', textAlign: 'center', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <img src="../imgs/logo-brandd.svg"/>
+            <img src="../imgs/logo-sembg.svg"/>
           </Grid>
         ) : (
           <Box sx={{ display: 'flex'}} >
@@ -124,15 +125,15 @@ import CardMedia from '@mui/material/CardMedia';
           flexShrink: 0,
           '& .MuiDrawer-paper': {
             width: '88px',
-            
             boxSizing: 'border-box',
-            background: '#382B57'
+            background: '#382B57',
+            alignItems: 'center'
           },
         }}
         variant="permanent"
         anchor="left"
       >
-        <Button>B</Button>
+        <img src="../imgs/Vector.svg" style={{ width: '40px', height: '64px', marginBottom:'40px', marginTop:'16px'}}/>
         <IconButton
               size="small"
               aria-label="show more"
@@ -140,11 +141,13 @@ import CardMedia from '@mui/material/CardMedia';
               aria-haspopup="true"
               onClick={handleMobileMenuOpen}
               color="inherit"
-            >
-            <Button variant="contained" style={{ color: "#FFFFFF", background: "#584389",borderRadius: 3 }} startIcon={<Home />}/>
+            ><Link href="/dashboard" passHref>
+              <Button variant="contained" style={{ color: "#FFFFFF", background: "#584389",borderRadius: 3 }} startIcon={<Home />}/>
+            </Link>
         </IconButton>
-      
+        <Link href="/" passHref>
           <Button style={{ color: "#FFFFFF", position: 'relative'}} startIcon={<Output />}/>
+        </Link>
        
       </Drawer>
       <Box
