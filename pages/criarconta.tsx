@@ -30,6 +30,7 @@ function IndexPage() {
   
 
     const insertUser = () => {
+      console.log(name);
       Axios.post("http://localhost:3001/create", {
         name: name,
         email: email, 
@@ -116,7 +117,7 @@ function IndexPage() {
           <OutlinedInput
             id="outlined-adornment-password"
             type={values.showPassword ? 'text' : 'password'}
-            value={values.password}
+            value={password}
             onChange={(event) =>{setPassword(event.target.value);}}
             endAdornment={
               <InputAdornment position="end">
