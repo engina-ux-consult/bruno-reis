@@ -34,8 +34,24 @@ import CardMedia from '@mui/material/CardMedia';
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   
+  const  [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <Box sx={{ display: 'flex'}} >
+    <>
+      {
+        loading ? (
+          <Grid style={{ width: '100%', height: '100vh', textAlign: 'center', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <img src="../imgs/logo-brandd.svg"/>
+          </Grid>
+        ) : (
+          <Box sx={{ display: 'flex'}} >
       <CssBaseline />
       {/*Toolbar Horizontal*/}
       <AppBar
@@ -172,6 +188,8 @@ import CardMedia from '@mui/material/CardMedia';
     </Card>
       </Box>
     </Box>
+        )}
+    </>
   );
 }
 export default Dashboard
