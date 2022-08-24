@@ -11,7 +11,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { ClassNames } from '@emotion/react';
+import Axios from 'axios';
 
 interface State {
     amount: string;
@@ -24,11 +24,19 @@ interface State {
 
   
 function IndexPage() {
-    const [formValues, setFormValues] = useState({});
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+  
 
-    const handleInputChange = (e:any) => {
-        const {name, value} = e.target;
-        setFormValues({...formValues, [name]: value})
+    const insertUser = () => {
+      Axios.post("http://localhost:3001/create", {
+        name: name,
+        email: email, 
+        password: password,
+      }).then(() => {
+      console.log("Sucesso!");
+      });
     };
 
     const [values, setValues] = React.useState<State>({
@@ -55,9 +63,8 @@ function IndexPage() {
         event.preventDefault();
       };
 
-    console.log('*** formValues', formValues);
 
-    const [email, setEmail] = useState("");
+    
   const [message, setMessage] = useState("");
 
   const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
@@ -99,10 +106,10 @@ function IndexPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <div style={{height:40}} />
-                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="nome" label="Nome" name="name" variant="outlined" borderRadius='16' placeholder="nome" onChange={handleInputChange} value={formValues.name || ''} />
+                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome" name="name" variant="outlined" placeholder="nome" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
                     <div style={{height:40}} />
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
-                    onChange={handleOnChange} value={email || ''} error={message} helperText={message}/>
+                    onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} error={message} helperText={message}/>
                     <div style={{height:40}} />
                     <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
@@ -110,7 +117,7 @@ function IndexPage() {
             id="outlined-adornment-password"
             type={values.showPassword ? 'text' : 'password'}
             value={values.password}
-            onChange={handleChange('password')}
+            onChange={(event) =>{setPassword(event.target.value);}}
             endAdornment={
               <InputAdornment position="end">
                 <IconButton
@@ -134,7 +141,7 @@ function IndexPage() {
                             sx={{
                                 backgroundColor: '#382B57',
                                 borderRadius: 3
-                              }}>Continuar</Button>
+                              }} onClick={insertUser}>Continuar</Button>
                         </Link>
                             <div style={{height:40}} />
 
