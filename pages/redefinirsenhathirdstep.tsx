@@ -13,6 +13,7 @@ import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { FormLabel } from '@mui/material';
+import {ArrowBack} from '@mui/icons-material';
 
 interface State {
     amount: string;
@@ -53,6 +54,14 @@ function Redefinirsenhathirdstep(){
                 <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
+                <Grid style={{  flexDirection: 'row', }}>
+                        <Link href="/redefinirsenhasecondstep" passHref>
+                            <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
+                        </Link>
+                        <Grid  style={{ float: "right"}}>
+                            Não possui uma conta? <Link href="/" passHref>Acesse aqui</Link> 
+                        </Grid>
+                </Grid>   
             <h1>Crie uma senha nova.</h1>
             <FormLabel>Crie uma senha nova com pelo menos 8 caracteres.</FormLabel>
             <div style={{height:40}} />
