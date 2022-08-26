@@ -146,7 +146,7 @@ import Link from 'next/link';
             </Link>
         </IconButton>
         <Link href="/" passHref>
-          <Button style={{ color: "#FFFFFF", position: 'relative'}} startIcon={<Output />}/>
+          <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0'}} startIcon={<Output />}/>
         </Link>
        
       </Drawer>
