@@ -57,7 +57,7 @@ import Link from 'next/link';
       {/*Toolbar Horizontal*/}
       <AppBar
         position="fixed"
-        sx={{ width: `calc(100% - ${'110'}px)`, ml: `${'110'}px` ,background: 'transparent', boxShadow: 'none'}}
+        sx={{ width: `calc(100% - ${'110'}px)`, ml: `${'110'}px` ,background: '#FFFFFF', boxShadow: 'none'}}
       >
         <Toolbar>
           <Typography
