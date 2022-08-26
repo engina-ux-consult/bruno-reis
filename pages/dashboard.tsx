@@ -160,11 +160,11 @@ import Link from 'next/link';
             <Typography  style={{width: '365px',height: '120px',fontStyle: 'normal',fontWeight: '600',fontSize: '32px',lineHeight: '40px'}}>
               Plataforma exclusiva para compartilhamento de conteúdos
             </Typography> 
-            <Typography style={{width: '365px',height: '48px',fontStyle: 'normal',fontWeight: '400',fontSize: '16px',lineHeight: '24px'}} paragraph>
+            <Typography style={{width: '365px',height: '48px',fontStyle: 'normal',fontWeight: '400',fontSize: '16px',lineHeight: '30px'}} paragraph>
               Aqui você encontra os melhores conteúdos e conhecimentos do mundo da odontologia.
             </Typography>  
-              <img src="../imgs/logo-trans.png"  style={{position: "fixed",width: "319px",height: "288px",left: "969px",top: "96px" }} alt="brand" />
-          </Grid>
+            </Grid>
+              <img src="../imgs/logo-trans.png"  style={{float: "right" ,width: "319px",height: "288px",left: "969px",top: "96px", margin: '6px 120px'}} alt="brand" /> 
         </Grid>
         <Typography variant='subtitle1' style={{fontWeight: '600', fontSize: '24px'}} marginTop={'32px'} marginBottom={'32px'}>
           Conteúdos
