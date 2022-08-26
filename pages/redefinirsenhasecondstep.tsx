@@ -9,6 +9,7 @@ import Link from 'next/link';
 import React, {useState} from "react";
 import { display } from '@mui/system';
 import FormLabel from '@mui/material/FormLabel';
+import {ArrowBack} from '@mui/icons-material';
 
 function Redefinirsenhasecondstep(){
     return(
@@ -18,6 +19,14 @@ function Redefinirsenhasecondstep(){
                 <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
+                <Grid style={{  flexDirection: 'row', }}>
+                        <Link href="/redefinirsenha" passHref>
+                            <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
+                        </Link>
+                        <Grid  style={{ float: "right"}}>
+                            Não possui uma conta? <Link href="/" passHref>Acesse aqui</Link> 
+                        </Grid>
+                </Grid>   
                     <h1>Enviamos o código para seu e-mail</h1>
                     <FormLabel>Insira o código de verificação de 6 dígitos enviando para *****@gmail.com. <Link href="/redefinirsenha" passHref>Alterar</Link></FormLabel>
                     <div style={{height:40}} />
