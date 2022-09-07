@@ -1,3 +1,4 @@
+{/* IMPORT */}
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -17,6 +18,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Link from 'next/link';
+
  function guiaResinas() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
@@ -684,6 +686,222 @@ const padrao = {
                     <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
                     Tubete com 4g: R$134,40 <br/>
                     Preço por grama: R$33,60
+                  </p>
+            </>
+          { /* BEAUTIFILL SHOFU */ }
+            <>
+              <img src="../imgs/guia-resinas/beautifill.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nanohíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    <h3>Matriz orgânica:</h3>
+                    <h3>Matriz inorgânica:</h3>
+                  </p>
+                  <h2>Indicação:</h2>
+                  <ul>
+                    <li>Restaurações diretas que requerem níveis ótimos de estética e biocompatibilidade;</li>
+                    <li>Ajustes estéticos diretos;</li>
+                    <li>Restaurações em Cavidades Classes I a V;</li>
+                    <li>Restaurações de cáries radiculares e lesões cervicais por erosão; - Reparo de bordas incisais fraturadas;</li>
+                    <li>Facetas laminadas e reconstruções de núcleos.</li>
+                  </ul>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/beautifillapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/beautifillapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$243 <br/>
+                    Preço por grama: R$54
+                  </p>
+            </>
+          { /* ATOS SMARTDENT */ }
+            <>
+              <img src="../imgs/guia-resinas/atos.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nano-híbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    <h3>Matriz orgânica:</h3> BisGMA, UDMA, TEGDMA, DDDMA e BisEMA<br/>
+                    <h3>Matriz inorgânica:</h3> Bário-Alumino e nanopartículas de Sílica principalmente Nano Silicato de Zircônio
+                  </p>
+                  <h2>Indicação:</h2>
+                  <ul>
+                    <li>Restaurações de dentes permanentes e deciduos, anteriores e<br/>
+                        posteriores de classes I, II, III, IV e V [todas as classes]</li>
+                    <li>Facetas diretas em resina composta</li>
+                    <li>Colagem de fragmentos de dentes</li>
+                    <li>Ancoragem de dentes (esplinta gem)</li>
+                    <li>Correção da forma de dentes [Ex: conoides]</li>
+                    <li>Redução ou fechamento de diastemas</li>
+                    <li>Confecção de núcleos de preenchimento</li>
+                    <li>Lesões cervicais não cariosas</li>
+                    <li>Reparos em porcelana e/ou compósito</li>
+                    <li>Restaurações indiretas, como inlays, onlays e facetas</li>
+                    <li>Cimentação de peças protéticas (conforme técnica da resina termo-modificada)</li>
+                  </ul>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/atosapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/atosapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$82,00 <br/>
+                    Preço por grama: R$20,50
+                  </p>
+            </>
+          { /* ESTELITE OMEGA TOKUYAMA */ }
+            <>
+              <img src="../imgs/guia-resinas/estelite.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Supra- nanométrica</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: 2-hydroxy propoxy, Bis-GMA, TEGDMA<br/>
+                    Matriz inorgânica: silica-zirconia 82% peso, sendo 71% de volume<br/>
+                    Tamanho médio das partículas de 200nm
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>
+                    Restaurações diretas anteriores e posteriores incluindo superfícies oclusais.<br/>
+                    Fechamento de diastemas.<br/>
+                    Reparo de porcelanas/resinas.
+                  </p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/esteliteapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/esteliteapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$ 536,33 <br/>
+                    Preço por grama: R$134,08
+                  </p>
+            </>
+          { /* PALFIQUE LX5 TOKUYAMA */ }
+            <>
+              <img src="../imgs/guia-resinas/palfique.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Supra Nano-híbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    <h3>Matriz orgânica:</h3> Bis-GMA e TEGDMA
+                    <h3>Matriz inorgânica:</h3> Silica-zirconia
+                    <h3>Tamanho médio:</h3> 0,2 micrometros.
+                    <h3>Concentração em peso:</h3> 82%.
+                    <h3>Concentração em volume:</h3> 72%.
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Indicado para restauração de dentes anteriores e posteriores, todas as classes.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/palfiqueapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/palfiqueapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$302,21 <br/>
+                    Preço por grama: 79,52
+                  </p>
+            </>
+          { /* OMNICHROMA TOKUYAMA */ }
+            <>
+              <img src="../imgs/guia-resinas/omnichroma.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Supra Nano-híbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    <h3>Matriz inorgânica:</h3> SiO2-ZrO2 esférico 260nm
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>
+                    Restaurações diretas anteriores e posteriores incluindo superfícies oclusais.<br/>
+                    Fechamento de diastemas.<br/>
+                    Reparo de porcelanas/resinas.
+                  </p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/omnichromaapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/omnichromaapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$295,00 <br/>
+                    Preço por grama: 73,75
+                  </p>
+            </>
+          { /* FORMA ULTRADENT */ }
+            <>
+              <img src="../imgs/guia-resinas/forma.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nano-híbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    <h3>Carga orgânica:</h3> bisfenol-A Diglicidil Dimetacrilato (Bis-GMA), Trietileno Glicol Dimetacrilato (TEGDMA), Bisfenol-A Diglicidil Dimetacrilato Etoxilado (Bis-EMA) e Uretano Dimetacrilato (UDMA).<br/>
+                    <h3>Carga inorgânica:</h3> Sílica/zircônia e vidro de Bário.<br/>
+                    67% de peso e 54% de volume
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>
+                    Indicada para quaisquer tipos de restaurações, sejam elas realizadas tanto em dentes anteriores quanto posteriores. Apresenta também indicação para realização de restaurações indiretas de facetas, inlays e onlays.
+                  </p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/formaapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/formaapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$111,06 <br/>
+                    Preço por grama: R$27,76
+                  </p>
+            </>
+          { /* VITALESCENCE ULTRADENT */ }
+            <>
+              <img src="../imgs/guia-resinas/vitalescence.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Micro-híbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Resina à base de Bis-GMA. Apresenta 75% do peso de carga e 52% do volume de carga, com tamanho médio de partícula de 0.7μm.
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restaurações anteriores artísticas em resina composta, incluindo facetas diretas. Sua resistência mecânica também permite que seja indicada para o uso em dentes posteriores.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/vitalescenceapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/vitalescenceapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 2,5g: R$236 <br/>
+                    Preço por grama: R$94,40
+                  </p>
+            </>
+          { /* AMARIS VOCO */ }
+            <>
+              <img src="../imgs/guia-resinas/amaris.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nano-híbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    <h3>Matriz orgânica:</h3> matriz de metacrilato (Bis-GMA, UDMA, TEGDMA)<br/>
+                    <h3>Matriz inorgânica:</h3> contem 80% de carga na radiopaca e 64% nas cores HT e HO
+                  </p>
+                  <h2>Indicação:</h2>
+                  <ul>
+                    <li>Restaurações estéticas de cavidades de classes III, IV e V em dentes anteriores</li>
+                    <li>Restaurações estéticas de cavidades de classes I, II e V em dentes posteriores</li>
+                    <li>Reconstrução de dentes anteriores fraturados</li>
+                    <li>Construção de facetas diretas e indiretas em compósito e revestimento de dentes anteriores com alteração de cor</li>
+                    <li>Correcção de forma e cor para melhorar a estética</li>
+                    <li>Reparação de restaurações em cerâmica de alta estética e facetas</li>
+                    <li>Ferulização de dentes anteriores</li>
+                  </ul>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/amarisapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/amarisapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$265,68 <br/>
+                    Preço por grama: R$66,42
                   </p>
             </>
         </Grid>
