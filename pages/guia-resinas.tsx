@@ -514,6 +514,178 @@ const padrao = {
                     Preço por grama: R$39,14      
                   </p>
             </>
+          { /* HARMONIZE KERR */ }
+            <>
+              <img src="../imgs/guia-resinas/harmonize.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nanohíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: <br/>
+                    Matriz inorgânica: Sílica e zircônia (81% de carga e 64,5% de volume) associadas a componentes orgânicos, iniciadores e agentes de união.<br/>
+                    Carga em peso: 81%<br/>
+                    Carga em volume: 64,5%<br/>
+                    Tamanho das partículas: 5nm - 400nm)
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Dentes anteriores e posteriores.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/harmonizeapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/harmonizeapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$247,00 <br/>
+                    Preço por grama: R$82,30
+                  </p>
+            </>
+          { /* HERCULITE CLASSIC KERR */ }
+            <>
+              <img src="../imgs/guia-resinas/hercc.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Microhíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: BIS-GMA, tri-etilenoglicol-dimetacrilato (resina diluente-solvente)<br/>
+                    Canforoquinona (fotoiniciador), amina (ativador), pigmentos de óxido de ferro<br/>
+                    Matriz inorgânica: vidro de borossilicato de alumínio, sílica Coloidal (SiO2).<br/>
+                    Carga em peso: 79%.<br/>
+                    Carga em volume: 59%<br/>
+                    Tamanho médio das partículas: 0,6µm
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restauração de dentes anteriores e posteriores. Uso direto e indireto.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/herccapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/herccapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$57,90 <br/>
+                    Preço por grama: R$11,58
+                  </p>
+            </>
+          { /* HERCULITE PRÉCIS KERR */ }
+            <>
+              <img src="../imgs/guia-resinas/hercp.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nanohíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Indicada para todas as classes de cavidade em dentes anteriores e posteriores.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/hercpapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/hercpapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$115,90 <br/>
+                    Preço por grama: R$28,97
+                  </p>
+            </>
+          { /* point 4 KERR */ }
+            <>
+              <img src="../imgs/guia-resinas/point.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Microhíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: BIS-GMA, tri-etilenoglicol-dimetacrilato e EBADM<br/>
+                    Carga inorgânica: dióxido de sílico, alumínio borosilicato de bário e outros.<br/>
+                    Carga em peso: 77%<br/>
+                    Carga em volume: 57%<br/>
+                    Tamanho médio das partículas: 0,4μm
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restauração de dentes anteriores e de uso direto e indireto.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/pointapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/pointapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$48,23 <br/>
+                    Preço por grama: R$12,08
+                  </p>
+            </>
+          { /* CHARISMA CLASSIC KULZER */ }
+            <>
+              <img src="../imgs/guia-resinas/charismac.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Microhíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: Bis-GMA<br/>
+                    Carga inorgânica: vidro de bário alumínio fluoretado e partículas pré-polimerizadas.<br/>
+                    Tamanhos que variam de 0,005µm a 10µm. Porcentagem de carga em volume: 61%.
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restaurações anteriores e posteriores.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/charismacapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/charismacapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$62,90 <br/>
+                    Preço por grama: R$15,72
+                  </p>
+            </>
+          { /* CHARISMA DIAMOND KULZER */ }
+            <>
+              <img src="../imgs/guia-resinas/charismad.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nano-híbrida universal</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Fórmula baseada no monômero TCD-DI-HEA, desenvolvido e patenteado pela Kulzer, Charisma® Diamond apresenta um sistema de carga otimizado que inclui nanopartículas especiais de sílica.
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Dentes anteriores e posteriores utilizando as técnicas de camada única ou de estratificação e contar com um sistema de cores que abrange todos os casos.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/charismadapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/charismadapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$149,90 <br/>
+                    Preço por grama: R$37,47
+                  </p>
+            </>
+          { /* AURA SDI */ }
+            <>
+              <img src="../imgs/guia-resinas/aura.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Microparticulada</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    <h3>Resinas de dentina: </h3>
+                    Matriz orgânica: UDMA ; BisGMA ; BisEMA.<br/>
+                    Matriz inorgânica: aluminossilicato de bário pré-polimerizado, dióxido de silício amorfo. <br/>
+                    81% em peso, 65% em volume<br/>
+                    Tamanho das partículas: 0,02 - 0,4 mícron<br/>
+                    <br/>
+                    <h3>Resinas de esmalte:</h3>
+                    Matriz orgânica: UDMA; TEGDMA<br/>
+                    Matriz inorgânica: Silica<br/>
+                    51% em peso<br/>
+                    Tamanho das partículas: 0,02 - 0,4 mícron
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restaurações anteriores; Restaurações posteriores; Restaurações indiretas inlays, onlays e facetas; Construção de núcleo; Ferulização; Técnica sanduíche com ionômero de vidro;</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/auraapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/auraapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$134,40 <br/>
+                    Preço por grama: R$33,60
+                  </p>
+            </>
         </Grid>
 
       </Box>
