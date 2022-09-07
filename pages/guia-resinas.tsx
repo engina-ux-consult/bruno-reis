@@ -50,7 +50,7 @@ const purple = {
   color: "white",
   backgroundColor: "#382B57",
   padding: "1rem",
-  borderRadius: "0.5rem"
+  borderRadius: "0.5rem",
 };
 const gray = {
   backgroundColor: "#F1F1F1",
@@ -86,24 +86,9 @@ const padrao = {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' }}
           >
-            Guia completo de resinas compostas
+            Guia completo de resinas compostas [Conteúdo exclusivo]
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' }}
-          >
-           Conteúdo exclusivo
-          </Typography>
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge>
-                <Bolt style={{ color: "#382B57" }}/>
-              </Badge>
-            </IconButton>
-          </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -903,6 +888,72 @@ const padrao = {
                     Tubete com 4g: R$265,68 <br/>
                     Preço por grama: R$66,42
                   </p>
+            </>
+          { /* REFERÊNCIAS */ }
+            <>
+              <h1>Referências:</h1>
+              <p>
+                ANUSAVICE, Kenneth J. Phillips materiais dentários. Elsevier Brasil, 2013.
+                <br/><br/>
+                ikj
+                <br/><br/>
+                Livro Método One
+                <br/><br/>
+                Manuais dos fabricantes: exemplo: AMERICAN PSYCHOLOGICAL ASSOCIATION. Manual de publicação da American Psychological Association. Tradução de Daniel Bueno. Porto Alegre: ARTMED, 2002. 329 p.
+                <br/><br/>
+                Perfil técnico do produto Filtek - Z350 XT Resina Composta Universal - 3M ESPE
+                <br/><br/>
+                EPIC Resina composta nano-híbrida fotopolimerizável. Manual da Biodinâmica. M 003582 Rev. 02 19/10/2020
+                <br/><br/>
+                Efficient esthetics with Neo Spectra™ ST composites
+                <br/><br/>
+                Perfil Técnico Opallis FGM
+                <br/><br/>
+                Perfil técnico Vittra FGM
+                <br/><br/>
+                A arte do tratamento de restauração - Soluções inteligentes da GC para todos os seus desafios clínicos -
+                <br/><br/>
+                A solução ENAMEL PLUS HRI - O mesmo índice de refração do que o esmalte natural
+                <br/><br/>
+                IPS Empress Direct - Ivoclar Vivadent
+                <br/><br/>
+                Bula - Tetric N-Line - Composites for anterior and posterior restorations - Ivoclar Vivadent
+                <br/><br/>
+                Manual - Tetric N-Line Composites for anterior and posterior restorations - The efficient solution for all cavities
+                <br/><br/>
+                Harmonize Resina Composta Nanohíbrida Universal - Kerr Restoratives - 2020
+                <br/><br/>
+                Catálogo Herculite Classic Resina composto microhíbrida - Kerr restoratives
+                <br/><br/>
+                Catálogo Point 4 Resina composta microhíbrida - Kerr Restoratives
+                <br/><br/>
+                Charisma Informação do produto - Charisma agora é Charisma Classic - Saúde bucal nas melhores mãos - Kulzer Mitsu Chemicals Group
+                <br/><br/>
+                Charisma Informação do produto - Charisma Diamond - Descubra um novo conceito em beleza natural - Saúde nas melhores mãos - Kulzer Mitsu Chemicals Group
+                <br/><br/>
+                aura MATERIAL RESTAURADOR ULTRA UNIVERSAL INSTRUÇÕES DE USO
+                <br/><br/>
+                The aura of aesthetics - ultra universal restorative system
+                <br/><br/>
+                Tecnologia Giomer - Contribuindo em todas as áreas da odontologia - Giomer tree s-prg filler - surface pre-reacted glassionomer - Catálogo Shofu 2020
+                <br/><br/>
+                Atos ???
+                <br/><br/>
+                Estelite Omega Material Restorative Dental based-R
+                <br/><br/>
+                Omni ???
+                <br/><br/>
+                Palfique ???
+                <br/><br/>
+                Catálogo Ultradent - 2017 COVER PORTUGUESE.indd 1 - página 16 e 40 a 44 -
+                <br/><br/>
+                Manual - Ultradent Products Forma -
+                <br/><br/>
+                Manual Ultradent Products - Vitalescence - Resina Composta Fotopolimerizável
+                <br/><br/>
+                Material de restauração foto-polimerizável e de alta estética de acordo com 24049/ISO 4049
+                <br/><br/>
+              </p>
             </>
         </Grid>
 
