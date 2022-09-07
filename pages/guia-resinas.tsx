@@ -369,6 +369,151 @@ const padrao = {
                     Preço por grama: R$ 57,96
                   </p>
             </>
+          { /* OPALLIS FGM */ }
+            <>
+              <img src="../imgs/guia-resinas/opallis.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nanohíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: Bis-GMA (Bis-Fenol A di-Glicidil Metacrilato), BisEMA (Bis-Fenol A di-Glicidil Metacrilato etoxilado), TEGDMA (Trietileno glicol dimetacrilato), UDMA (Uretano dimetacrilato), canforquinona, co-iniciador e silano. Matriz inorgânica: vidro de bário-alumino silicato silanizado, pigmentos e sílicas. <br/>
+                    O conteúdo total de carga em peso é de 78,5 a 79,8% e volume 57,0 a 58,0% de carga inorgânica.<br/>
+                    Tamanho médio de partículas: 0,5 microns.
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restauração direta de dentes anteriores e posteriores.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/opallisapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/opallisapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$72,32 <br/>
+                    Preço por grama: R$18,08
+                  </p>
+            </>
+          { /* VITTRA FGM */ }
+            <>
+              <img src="../imgs/guia-resinas/vittra.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Submicrométrica ????</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: UDMA (Uretano Dimetacrilato) e TEGDMA (Trietileno Glicol Dimetacrilato). Matriz inorgânica: carga de zircônia, sílica. <br/>
+                    Tamanho médio das partículas: 200nm <br/>
+                    Conteúdo total de carga inorgânica em peso de 72% a 82% (52% a 60% em volume).
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restaurações de todas as classes em dentes anteriores e posteriores</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/vittraapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/vittraapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$126,66 <br/>
+                    Preço por grama: R$31,66                   
+                  </p>
+            </>
+          { /* ESSENTIA GC */ }
+            <>
+              <img src="../imgs/guia-resinas/essentia.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Na</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz
+                  </p>
+                  <h2>Indicação:</h2>
+                  <ul>
+                    <li>Indicado para restaurações anteriores e posteriores, fechamento de diastemas;</li>
+                    <li>Extremamente estético;</li>
+                    <li>Indicado também para facetas diretas e lentes de contato.</li>
+                  </ul>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/essentiaapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/essentiaapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 2g: R$430 <br/>
+                    Preço por grama: R$215
+                  </p>
+            </>
+          { /* MICERIUM ENAMEL PLUS HRI ORALTECH*/ }
+            <>
+              <img src="../imgs/guia-resinas/micerium.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nanohíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Composição CARGA (80% DE PESO - 63% VOLUME) - Óxido de Zircónio Nano tratamento superfície com alto índice de refracção (12% de peso) - Novo tipo de vidro com carga com alto índice de refracção (68% de peso)
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Restauração de dentes anteriores e posteriores.</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/miceriumapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/miceriumapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$492 <br/>
+                    Preço por grama: R$123
+                  </p>
+            </>
+          { /* EMPRESS DIRECT IVOCLAR */ }
+            <>
+              <img src="../imgs/guia-resinas/empress.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nanohíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: composta de dimetacrilatos <br/>
+                    Matriz inorgânica: vidro de bário, trifluoreto de itérbio, óxido misto, dióxido de silício e copolímero.<br/>
+                    Sendo, 75-79% em peso ou 52-59% em volume (opalescente 60,5% em peso ou 45% em volume).<br/>
+                    O tamanho médio de partícula é de 550 nm.
+                  </p>
+                  <h2>Indicação:</h2>
+                  <ul>
+                    <li>Restaurações anteriores e posteriores</li>
+                    <li>Restaurações do colo do dente</li>
+                    <li>Correções das posições dos dentes e da forma dos dentes (por exemplo, fechamento de diastemas, fechamento de “triângulos pretos” interdentais, alongamento da borda incisal)</li>
+                    <li>Facetas diretas</li>
+                  </ul>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/empressapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/empressapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 3g: R$328,90 <br/>
+                    Preço por grama: R$109,63
+                  </p>
+            </>
+          { /* TETRIC IVOCLAR*/ }
+            <>
+              <img src="../imgs/guia-resinas/tetric.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Classificação da partícula:</h2>
+                  <p>Nanohíbrida</p>
+                  <h2>Composição:</h2>
+                  <p>
+                    Matriz orgânica: dimetacrilatos (19-20% em peso). <br/>
+                    Matriz inorgânica: vidro de bário, trifluoreto de itérbio, óxido misto e copolímeros (80-81% em peso).<br/>
+                    O conteúdo total de cargas inorgânicas é de 55–57 vol.%.<br/>
+                    O tamanho de partícula de cargas inorgânicas está entre 40 nm e 3000 nm
+                  </p>
+                  <h2>Indicação:</h2>
+                  <p>Todas as classes de restaurações;</p>
+                  <h2>Apresentação de cores e opacidades:</h2>
+                  <img src="../imgs/guia-resinas/tetricapre.jpg"  style={{width: "100%"}} alt="brand" />
+                  <h2>Aplicação clínica das opacidades:</h2>
+                  <img src="../imgs/guia-resinas/tetricapli.jpg"  style={{width: "100%"}} alt="brand" />
+                  <p style={purple}>
+                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    Tubete com 4g: R$136 <br/>
+                    Preço por grama: R$39,14      
+                  </p>
+            </>
         </Grid>
 
       </Box>
