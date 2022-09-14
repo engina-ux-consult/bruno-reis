@@ -13,6 +13,7 @@ import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import FormLabel from '@mui/material/FormLabel';
+import ST from './styles';
 
 interface State {
     amount: string;
@@ -69,9 +70,7 @@ const [values, setValues] = React.useState<State>({
   return (
 
       <div>
-            <Head>
-           
-            </Head>
+            <ST/>
 
         <Grid container style={{ minHeight: '100vh'}}>
             
@@ -129,7 +128,7 @@ const [values, setValues] = React.useState<State>({
                     <div style={{height:40}} />
                     <Link href="/dashboard" passHref>
                         <Button variant="contained" type="submit"
-                        sx={{backgroundColor: '#382B57',borderRadius: 3}}>Continuar</Button>
+                        className='Button'>Entrar</Button>
                     </Link>
                           <div style={{height:40}} />
 

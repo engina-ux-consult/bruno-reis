@@ -12,6 +12,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import {ArrowBack} from '@mui/icons-material';
+import ST from './styles';
 
 function Redefinir(){
     const [email, setEmail] = useState("");
@@ -30,6 +31,7 @@ function Redefinir(){
     };
     return(
         <div>
+            <ST/>
             <Grid container style={{ minHeight: '100vh'}}>
             <Grid item xs={12} sm={6} style={{   display: 'flex', flexDirection: 'row', flexWrap: 'wrap', }}>
                 <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
@@ -52,7 +54,7 @@ function Redefinir(){
             value={email} helperText={message} onChange={handleOnChange}/>
                 <div style={{height:40}} />
                 <Link href="/redefinirsenhasecondstep" passHref>
-                    <Button variant="contained" sx={{backgroundColor: '#382B57',borderRadius: 3}}>Enviar código</Button>
+                    <Button variant="contained" className='Button'>Enviar código</Button>
                 </Link>
                 </div>
                 </Grid>
