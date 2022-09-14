@@ -50,6 +50,7 @@ const purple = {
   backgroundColor: "#382B57",
   padding: "1rem",
   borderRadius: "0.5rem",
+  marginBottom: '4rem'
 };
 const gray = {
   backgroundColor: "#F1F1F1",
