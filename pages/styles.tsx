@@ -24,6 +24,18 @@ function ST(){
         background-color: #7C65B3;
   }
   
+  a{
+    color: #A09E9E;
+    text-decoration:none;
+  }
+  a:active{
+    color: #382B57;
+  }
+
+  .indice{
+    float: left;
+  }
+
   .subT{
     font-weight: 400;
     font-size: 24px;
