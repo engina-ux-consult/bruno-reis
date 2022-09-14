@@ -16,7 +16,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Link from 'next/link';
-
+import ST from './styles';
  function Dashboard() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
@@ -52,7 +52,9 @@ import Link from 'next/link';
             <img src="../imgs/logo-sembg.svg"/>
           </Grid>
         ) : (
-          <Box sx={{ display: 'flex'}} >
+          <div>
+            <ST/>
+            <Box sx={{ display: 'flex'}} >
       <CssBaseline />
       {/*Toolbar Horizontal*/}
       <AppBar
@@ -188,12 +190,14 @@ import Link from 'next/link';
       </CardContent>
       <CardActions>
       <Link href="/guia-resinas" passHref>
-        <Button variant="contained" sx={{backgroundColor: '#382B57',borderRadius: 3}} endIcon={<ArrowForward />}>Ler conteúdo</Button>
+        <Button variant="contained" className='Button' endIcon={<ArrowForward />}>Ler conteúdo</Button>
       </Link>
       </CardActions>
     </Card>
       </Box>
     </Box>
+          </div>
+          
         )}
     </>
   );

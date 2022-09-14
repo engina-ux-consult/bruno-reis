@@ -14,6 +14,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { FormLabel } from '@mui/material';
 import {ArrowBack} from '@mui/icons-material';
+import ST from './styles';
 
 interface State {
     amount: string;
@@ -49,6 +50,7 @@ function Redefinirsenhathirdstep(){
       };
     return(
         <div>    
+          <ST/>
             <Grid container style={{ minHeight: '100vh'}}>
             <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
                 <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
@@ -111,7 +113,7 @@ function Redefinirsenhathirdstep(){
         </FormControl>   
             <div style={{height:40}} />
             <Link href="/login" passHref>
-                <Button variant="contained" sx={{backgroundColor: '#382B57',borderRadius: 3}}>Finalizar</Button>
+                <Button variant="contained" className='Button'>Atualizar senha</Button>
             </Link>
         </div>
             </Grid>

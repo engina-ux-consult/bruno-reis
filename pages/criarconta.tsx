@@ -12,6 +12,7 @@ import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Axios from 'axios';
+import ST from './styles';
 
 interface State {
     amount: string;
@@ -82,6 +83,7 @@ function IndexPage() {
   return (
 
       <div>
+        <ST/>
             <Head>
             <title>Iknow - Crie sua conta</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -138,17 +140,13 @@ function IndexPage() {
             </form>
                         <div style={{height:40}} />
                         <Link href="/dashboard" passHref>
-                            <Button variant="contained" type="submit"
-                            sx={{
-                                backgroundColor: '#382B57',
-                                borderRadius: 3
-                              }} onClick={insertUser}>Continuar</Button>
+                            <Button variant="contained" type="submit" onClick={insertUser} 
+                             className='Button'>Criar conta</Button>
                         </Link>
                             <div style={{height:40}} />
 
                             
                             <Button>Já possui uma conta?<Link href="/login" passHref>Acesse aqui</Link> </Button>
-                          
                         </div>
                 </Grid>
 
