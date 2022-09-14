@@ -1,15 +1,8 @@
-import Head from 'next/head'
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import Link from 'next/link';
+import Link from '@mui/material/Link';
 import React, {useState} from "react";
-import { display } from '@mui/system';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import {ArrowBack} from '@mui/icons-material';
 import ST from './styles';
@@ -40,22 +33,20 @@ function Redefinir(){
             
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
                 <Grid style={{  flexDirection: 'row', }}>
-                        <Link href="/login" passHref>
+                        <Link className='Link' href="/login" underline="none">
                             <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
                         </Link>
                         <Grid  style={{ float: "right"}}>
-                            Não possui uma conta? <Link href="/" passHref>Acesse aqui</Link> 
+                            Não possui uma conta? <Link className='Link' href="/" underline="none" >Acesse aqui</Link> 
                         </Grid>
                 </Grid>   
-                <h1>Esqueceu a senha?</h1>
-            <FormLabel>Digite seu e-mail cadastrado para enviarmos um código de alteração de senha.</FormLabel>
-            <div style={{height:40}} />
+                <p className='subT'>Esqueceu a senha?</p>
+            <p className='text'>Digite seu e-mail cadastrado para enviarmos um código de alteração de senha.</p>
+           
             <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email"
             value={email} helperText={message} onChange={handleOnChange}/>
                 <div style={{height:40}} />
-                <Link href="/redefinirsenhasecondstep" passHref>
                     <Button variant="contained" className='Button'>Enviar código</Button>
-                </Link>
                 </div>
                 </Grid>
             </Grid>

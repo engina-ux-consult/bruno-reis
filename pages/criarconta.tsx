@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Link from 'next/link';
+import Link from '@mui/material/Link';
 import React, {useState} from "react";
 import IconButton from '@mui/material/IconButton';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -109,7 +109,7 @@ function IndexPage() {
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <div style={{height:40}} />
-                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome" name="name" variant="outlined" placeholder="nome" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
+                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
                     <div style={{height:40}} />
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} error={message} helperText={message}/>
@@ -136,17 +136,16 @@ function IndexPage() {
             label="Senha"
           />
         </FormControl>   
+        <p style={{color:'#535353'}}>Ao menos 8 caracteres</p>
                 </div>
             </form>
-                        <div style={{height:40}} />
-                        <Link href="/dashboard" passHref>
+                        <div style={{height:40}} />                
                             <Button variant="contained" type="submit" onClick={insertUser} 
                              className='Button'>Criar conta</Button>
-                        </Link>
-                            <div style={{height:40}} />
-
+                            <div style={{height:20}} />
                             
-                            <Button>Já possui uma conta?<Link href="/login" passHref>Acesse aqui</Link> </Button>
+                              <p style={{textAlign:'center'}}>Já possui uma conta?<Link className='Link' underline="none" style={{color: '#382B57'}} href="/login" >Acesse aqui</Link> </p>
+                         
                         </div>
                 </Grid>
 

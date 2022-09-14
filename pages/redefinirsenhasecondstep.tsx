@@ -1,13 +1,8 @@
-import Head from 'next/head'
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import Link from 'next/link';
+import Link from '@mui/material/Link';
 import React, {useState} from "react";
-import { display } from '@mui/system';
 import FormLabel from '@mui/material/FormLabel';
 import {ArrowBack} from '@mui/icons-material';
 import ST from './styles';
@@ -22,25 +17,23 @@ function Redefinirsenhasecondstep(){
             </Grid>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
                 <Grid style={{  flexDirection: 'row', }}>
-                        <Link href="/redefinirsenha" passHref>
+                        <Link href="/redefinirsenha" >
                             <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
                         </Link>
                         <Grid  style={{ float: "right"}}>
-                            Não possui uma conta? <Link href="/" passHref>Acesse aqui</Link> 
+                            Não possui uma conta? <Link className='Link' underline='none' href="/" >Acesse aqui</Link> 
                         </Grid>
                 </Grid>   
-                    <h1>Enviamos o código para seu e-mail</h1>
-                    <FormLabel>Insira o código de verificação de 6 dígitos enviando para *****@gmail.com. <Link href="/redefinirsenha" passHref>Alterar</Link></FormLabel>
+                    <p className='subT'>Enviamos o código para seu e-mail</p>
+                    <p className='text'>Insira o código de verificação de 6 dígitos enviando para *****@gmail.com. <Link className='Link' href="/redefinirsenha"underline='none' >Alterar</Link></p>
                     <div style={{height:40}} />
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="codigo" label="Código" variant="outlined" name="codigo"/>
                     <FormLabel>
-                       <Button sx={{color: '#382B57'}}>Reenviar código</Button> 
+                       <Button style={{color: '#382B57', textTransform: 'none', fontWeight: 'bold'}}>Reenviar código</Button> 
                     </FormLabel> 
                     <div style={{height:40}} />
-                    <Link href="/redefinirsenhathirdstep" passHref>
                         <Button variant="contained" className='Button'>Continuar</Button>
-                    </Link>
-                    <FormLabel>Se não encontrar o e-mail na sua caixa de entrada, verifique a pasta de spam.</FormLabel>
+                    <p className='text' style={{textAlign:'center'}}>Se não encontrar o e-mail na sua caixa de entrada, verifique a pasta de spam.</p>
                  </div>
             </Grid>
         </div>

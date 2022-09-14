@@ -1,9 +1,6 @@
-import Head from 'next/head'
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Link from 'next/link';
+import Link from '@mui/material/Link';
 import React, {useState} from "react";
 import IconButton from '@mui/material/IconButton';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -12,7 +9,6 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { FormLabel } from '@mui/material';
 import {ArrowBack} from '@mui/icons-material';
 import ST from './styles';
 
@@ -57,18 +53,18 @@ function Redefinirsenhathirdstep(){
             </Grid>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
                 <Grid style={{  flexDirection: 'row', }}>
-                        <Link href="/redefinirsenhasecondstep" passHref>
+                        <Link href="/redefinirsenhasecondstep" >
                             <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
                         </Link>
                         <Grid  style={{ float: "right"}}>
-                            Não possui uma conta? <Link href="/" passHref>Acesse aqui</Link> 
+                            Não possui uma conta? <Link className='Link' href="/" underline='none'>Acesse aqui</Link> 
                         </Grid>
                 </Grid>   
-            <h1>Crie uma senha nova.</h1>
-            <FormLabel>Crie uma senha nova com pelo menos 8 caracteres.</FormLabel>
+            <p className='subT'>Crie uma senha nova.</p>
+            <p className='text'>Crie uma senha nova com pelo menos 8 caracteres.</p>
             <div style={{height:40}} />
             <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3}}} variant="outlined">
-          <InputLabel htmlFor="outlined-adornment-passwor">Senha</InputLabel>
+          <InputLabel htmlFor="outlined-adornment-passwor">Nova senha</InputLabel>
           <OutlinedInput
             id="senha"
             type={values.showPassword ? 'text' : 'password'}
@@ -112,9 +108,7 @@ function Redefinirsenhathirdstep(){
           />
         </FormControl>   
             <div style={{height:40}} />
-            <Link href="/login" passHref>
                 <Button variant="contained" className='Button'>Atualizar senha</Button>
-            </Link>
         </div>
             </Grid>
         </div>

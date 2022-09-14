@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Link from 'next/link';
+import Link from '@mui/material/Link';
 import React, {useState} from "react";
 import IconButton from '@mui/material/IconButton';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -121,19 +121,17 @@ const [values, setValues] = React.useState<State>({
                 </div>
                     </form>
                     <div style={{height:20}} />
-                    <FormLabel>
-                      Esqueceu a senha?<Link href="/redefinirsenha" passHref> Clique aqui</Link>
-                    </FormLabel>
+                    <p>
+                      Esqueceu a senha?<Link className='Link' href="/redefinirsenha" underline="none"> Acesse aqui</Link>
+                    </p>
                     
                     <div style={{height:40}} />
-                    <Link href="/dashboard" passHref>
                         <Button variant="contained" type="submit"
                         className='Button'>Entrar</Button>
-                    </Link>
-                          <div style={{height:40}} />
+                          <div style={{height:20}} />
 
                                                         
-                          <Button>Já possui uma conta?<Link href="/criarconta" passHref>Acesse aqui</Link> </Button>
+                          <p style={{textAlign:'center'}}>Não possui uma conta? <Link className='Link' underline="none" style={{color: '#382B57'}} href="/" >Acesse aqui</Link> </p>
 
                     </div>
             </Grid>
