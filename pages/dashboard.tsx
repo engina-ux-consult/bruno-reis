@@ -9,6 +9,8 @@ import IconButton from '@mui/material/IconButton';
 import Badge from '@mui/material/Badge';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { ArrowForward, Home, Instagram, LinkedIn, Output, YouTube } from '@mui/icons-material';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import BoltIcon from '@mui/icons-material/Bolt';
 import { Button, Icon } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -46,12 +48,6 @@ import ST from './styles';
 
   return (
     <>
-      {
-        loading ? (
-          <Grid style={{ width: '100%', height: '100vh', textAlign: 'center', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <img src="../imgs/logo-sembg.svg"/>
-          </Grid>
-        ) : (
           <div>
             <ST/>
             <Box sx={{ display: 'flex'}} >
@@ -71,6 +67,7 @@ import ST from './styles';
             Olá, Fulano
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
+          {/*
           <Typography
             variant="h6"
             noWrap
@@ -105,7 +102,9 @@ import ST from './styles';
             >
               <LinkedIn style={{ color: "#382B57" }}/>
             </IconButton>
+  
           </Box>
+          */}
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -149,7 +148,7 @@ import ST from './styles';
           <Button style={{ color: "#FFFFFF"}} startIcon={<Home />}/>
         </Link> 
         <Link href="/" passHref>
-          <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0'}} startIcon={<Output />}/>
+          <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginBottom: '3rem'}} startIcon={<Output />}/>
         </Link>
        
       </Drawer>
@@ -161,11 +160,13 @@ import ST from './styles';
         <Grid item xs={12} sm={6} style={{borderRadius:'0.5rem', color:'white', backgroundColor: '#382B57',width: '100%', height: '18.50rem', objectFit: 'cover'}}>
           <Grid style={{position: "absolute",margin: '56px 32px'}}>
             <Typography  style={{width: '365px',height: '120px',fontStyle: 'normal',fontWeight: '600',fontSize: '32px',lineHeight: '40px'}}>
-              Plataforma exclusiva para compartilhamento de conteúdos
+            Plataforma de conteúdos exclusivos Bruno Reis
             </Typography> 
-            <Typography style={{width: '365px',height: '48px',fontStyle: 'normal',fontWeight: '400',fontSize: '16px',lineHeight: '30px'}} paragraph>
+            <p>
               Aqui você encontra os melhores conteúdos e conhecimentos do mundo da odontologia.
-            </Typography>  
+            </p>  
+            <Button style={{color: '#382B57', backgroundColor: '#FFFFFF', borderRadius: '0.25rem', textTransform: 'none'}}
+             variant="contained" className='Button' endIcon={<ArrowDownwardIcon />}>Conteúdos</Button>
             </Grid>
               <img src="../imgs/logo-trans.png"  style={{float: "right" ,width: "319px",height: "288px",left: "969px",top: "96px", margin: '6px 120px'}} alt="brand" /> 
         </Grid>
@@ -181,6 +182,9 @@ import ST from './styles';
         image="../imgs/guia-resinas.jpg"
       />
       <CardContent>
+      <Typography variant="body2" color="text.secondary">
+        Conteúdo exclusivo <BoltIcon style={{color:'#382B57'}}/>
+      </Typography>
         <Typography gutterBottom variant="h5" component="div">
           Guia completo de resinas compostas
         </Typography>
@@ -197,8 +201,6 @@ import ST from './styles';
       </Box>
     </Box>
           </div>
-          
-        )}
     </>
   );
 }

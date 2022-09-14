@@ -7,7 +7,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import Badge from '@mui/material/Badge';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { ArrowForward, Home, Instagram, LinkedIn, Output, YouTube, ArrowBack, Bolt, } from '@mui/icons-material';
@@ -15,10 +14,9 @@ import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlin
 import { Button, Icon } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Link from 'next/link';
+import Link from '@mui/material/Link';
+import ST from './styles';
 
  function guiaResinas() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -61,12 +59,7 @@ const gray = {
 const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','KERR','KULZER','SDI','SHOFU','SMARTDENT','TOKUYAMA','ULTRADENT','VOCO'];
   return (
     <>
-      {
-        loading ? (
-          <Grid style={{ width: '100%', height: '100vh', textAlign: 'center', display:'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <img src="../imgs/logo-sembg.svg"/>
-          </Grid>
-        ) : (
+    <ST/>
           <Box sx={{ display: 'flex'}} >
       <CssBaseline />
       {/*Toolbar Horizontal*/}
@@ -75,7 +68,7 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
         sx={{ width: `calc(100% - ${'110'}px)`, ml: `${'110'}px` ,background: '#FFFFFF', boxShadow: 'none'}}
       >
         <Toolbar>
-        <Link href="/dashboard" passHref>
+        <Link href="/dashboard" >
             <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
         </Link>
           <Typography
@@ -126,11 +119,11 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
               color="inherit"
             >
         </IconButton>
-        <Link href="/dashboard" passHref>
+        <Link href="/dashboard" >
           <Button style={{ color: "#FFFFFF"}} startIcon={<Home />}/>
         </Link> 
-        <Link href="/" passHref>
-          <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0'}} startIcon={<Output />}/>
+        <Link href="/" >
+          <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginBottom: '3rem'}} startIcon={<Output />}/>
         </Link>  
       </Drawer>
       <Box
@@ -143,10 +136,8 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
           <>
             <Card style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E'}}>
               <CardContent >
-                <Typography>
-                  ÍNDICE
-                </Typography>
-                <Typography>
+                <Typography className='indice'>
+                  ÍNDICE    
                   <ol>
                     <a href='#3M'><li>3M</li></a>
                     <a href='#BIODINÂMICA'><li>BIODINÂMICA</li></a>
@@ -172,7 +163,7 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
           <>
             <a href='#topo'>
               <ArrowUpwardIcon style={{color:'white', backgroundColor:'#382B57', borderRadius:'3.125rem', 
-              top:'50%', width: '2rem', height: '2rem', right:'2rem' ,position:'fixed', float:'right'}} />
+              bottom: '0', marginBottom: '3rem', right:'2rem' ,position:'fixed', float:'right'}} />
             </a>
           </>
 
@@ -998,7 +989,6 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
 
       </Box>
     </Box>
-        )}
     </>
   );
 }
