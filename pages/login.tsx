@@ -73,7 +73,7 @@ const [values, setValues] = React.useState<State>({
         <Grid container style={{ minHeight: '100vh'}}>
             
             <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
-                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+                <img src="../imgs/bd-broe.jpg" className='inv' style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
 
             <Grid item xs={12} sm={6} style={{ alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
@@ -83,13 +83,13 @@ const [values, setValues] = React.useState<State>({
                                 <img src="../imgs/logo-brandd.svg" width={200} alt="logo" />
                 </Grid>
                     
-                        <div style={{height:40}} />
+                        <div style={{height:'7.625rem'}} />
                     <form>
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
-                    <div style={{height:40}} />
+                    
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     value={email} error={message} helperText={message} onChange={handleOnChange} />
-                    <div style={{height:40}} />
+                    <div className='h' />
                     <div>               
       <div>
         <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
@@ -118,15 +118,15 @@ const [values, setValues] = React.useState<State>({
       </div>   
                 </div>
                     </form>
-                    <div style={{height:20}} />
+                    
                     <p>
                       Esqueceu a senha?<Link className='Link' href="/redefinirsenha" underline="none"> Acesse aqui</Link>
                     </p>
                     
-                    <div style={{height:40}} />
+                    <div className='h' />
                         <Button variant="contained" type="submit"
                         className='Button'>Entrar</Button>
-                          <div style={{height:20}} />
+                          <div className='h' />
 
                                                         
                           <p style={{textAlign:'center'}}>Não possui uma conta? <Link className='Link' underline="none" style={{color: '#382B57'}} href="/" >Acesse aqui</Link> </p>

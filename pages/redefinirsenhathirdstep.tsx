@@ -49,7 +49,7 @@ function Redefinirsenhathirdstep(){
           <ST/>
             <Grid container style={{ minHeight: '100vh'}}>
             <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
-                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+                <img src="../imgs/bd-broe.jpg" className='inv' style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, margin: 'auto' }}>
                 <Grid style={{  flexDirection: 'row', }}>
@@ -62,7 +62,7 @@ function Redefinirsenhathirdstep(){
                 </Grid>   
             <p className='subT'>Crie uma senha nova.</p>
             <p className='text'>Crie uma senha nova com pelo menos 8 caracteres.</p>
-            <div style={{height:40}} />
+            <div className='h' />
             <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3}}} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-passwor">Nova senha</InputLabel>
           <OutlinedInput
@@ -85,7 +85,7 @@ function Redefinirsenhathirdstep(){
             label="Senha"
           />
         </FormControl>   
-            <div style={{height:40}} />
+            <div className='h' />
             <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3}}} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Repetir senha</InputLabel>
           <OutlinedInput
@@ -107,7 +107,7 @@ function Redefinirsenhathirdstep(){
             label="Repetir senha"
           />
         </FormControl>   
-            <div style={{height:40}} />
+            <div className='h' />
                 <Button variant="contained" className='Button'>Atualizar senha</Button>
         </div>
             </Grid>

@@ -93,10 +93,10 @@ function IndexPage() {
         <Grid container style={{ minHeight: '100vh'}}>
             
             <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
-                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+                <img src="../imgs/bd-broe.jpg" className='inv' style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
 
-            <Grid container item xs={12} sm={6} alignItems="center" direction="column" justify="space-between" style={{ justifyContent: 'center', padding: 16,}}>
+            <Grid container item xs={12} sm={6}  alignItems="center" direction="column" justify="space-between" style={{ justifyContent: 'center', padding: 16,}}>
 
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
 
@@ -104,16 +104,15 @@ function IndexPage() {
                                 <img src="../imgs/logo-brandd.svg" width={200} alt="logo" />
                         </Grid>
                     
-                        <div style={{height:40}} />
+                        <div style={{height:'7.625rem'}} />
                         <form>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
-                    <div style={{height:40}} />
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
-                    <div style={{height:40}} />
+                    <div className='h' />
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} error={message} helperText={message}/>
-                    <div style={{height:40}} />
+                    <div className='h' />
                     <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
@@ -139,10 +138,10 @@ function IndexPage() {
         <p style={{color:'#535353'}}>Ao menos 8 caracteres</p>
                 </div>
             </form>
-                        <div style={{height:40}} />                
+                        <div className='h' />                
                             <Button variant="contained" type="submit" onClick={insertUser} 
                              className='Button'>Criar conta</Button>
-                            <div style={{height:20}} />
+                            <div className='h' />
                             
                               <p style={{textAlign:'center'}}>Já possui uma conta?<Link className='Link' underline="none" style={{color: '#382B57'}} href="/login" >Acesse aqui</Link> </p>
                          

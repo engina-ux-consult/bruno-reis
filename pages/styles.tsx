@@ -1,61 +1,109 @@
 function ST(){
-    const css = `
+  const css = `
+  @media only screen and (max-width: 600px) {
+    [class*="form"] {
+      min-width: 100%;
+      margin-bottom: 1.5rem;
+      border-radius: 0.25rem;
+    }
+    
+    .h{
+      height: 1.5rem;
+    }
 
+    .inv{
+      display: none;
+    }
+
+    html, body {
+      height: 100%;
+    }
+    
     body {
-        font-family: 'Open Sans';
+      
+      padding: 0;
+      margin: 0 auto !important;
+      
     }
-    .Link{
-       color: #382B57;
-       font-weight: bold;
-    }
-    .Link:visited {
-        color: #382B57;
-    }
-    .Button {
-        color: #FFFFFF;
-        background-color: #382B57;
-        border-radius: 0.25rem;
-        text-transform: none;
-    }
-    .Button:hover{
-        background-color: #584389;
   }
-  .Button:focus{
-        background-color: #7C65B3;
-  }
-  
-  a{
-    color: #A09E9E;
-    text-decoration:none;
-  }
-  a:active{
-    color: #382B57;
+ 
+//Desktop
+
+  .h{
+    height: 2.5rem;
   }
 
-  .indice{
-    float: left;
+  .col{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
   }
 
-  .subT{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+  .bg{
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    display: flex;
   }
 
-  .text{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #535353;
+  * {
+      font-family: 'Open Sans';
   }
-          `;
-          return(
-            <style>
-        {css}
-      </style>
-          );
-          
+  .Link{
+     color: #382B57;
+     font-weight: bold;
+  }
+  .Link:visited {
+      color: #382B57;
+  }
+  .Button {
+      color: #FFFFFF;
+      background-color: #382B57;
+      border-radius: 0.25rem;
+      text-transform: none;
+  }
+  .Button:hover{
+      background-color: #584389;
+}
+.Button:focus{
+      background-color: #7C65B3;
+}
+
+a{
+  color: #A09E9E;
+  text-decoration:none;
+}
+a:active{
+  color: #382B57;
+}
+
+.indice{
+  float: left;
+}
+
+.subT{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535353;
+}
+        `;
+        return(
+          <style>
+      {css}
+    </style>
+        );
+        
 };
 
 export default ST
