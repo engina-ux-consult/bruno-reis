@@ -66,7 +66,7 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
       {/*Toolbar Horizontal*/}
       <AppBar
         position="fixed"
-        sx={{ width: `calc(100% - ${'110'}px)`, ml: `${'110'}px` ,background: '#FFFFFF', boxShadow: 'none'}}
+        sx={{ width: `calc(100% - ${'85'}px)`, ml: `${'110'}px` ,background: '#FFFFFF', boxShadow: 'none'}}
       >
         <Toolbar>
         <Link href="/dashboard" >
@@ -129,13 +129,13 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
       </Drawer>
       <Box
         component="main"
-        sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
+        sx={{bgcolor: 'background.default'}}
       >
         <Toolbar />
         <img id='topo' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
         { /* ÍNDICE */ }
           <>
-            <Card style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E'}}>
+            <Card style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
               <CardContent >
                 <Typography className='indice'>
                   ÍNDICE    
