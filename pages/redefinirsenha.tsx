@@ -26,8 +26,8 @@ function Redefinir(){
         <div>
             <ST/>
             <Grid container style={{ minHeight: '100vh'}}>
-            <Grid item xs={12} sm={6} style={{   display: 'flex', flexDirection: 'row', flexWrap: 'wrap', }}>
-                <img src="../imgs/bd-broe.jpg" style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
+            <Grid item  sm={6}  style={{   display: 'flex', flexDirection: 'row', flexWrap: 'wrap', }}>
+                <img src="../imgs/bd-broe.jpg" className='inv' style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
             <Grid item xs={12} sm={6} style={{ alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
             
@@ -45,7 +45,7 @@ function Redefinir(){
            
             <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email"
             value={email} helperText={message} onChange={handleOnChange}/>
-                <div style={{height:40}} />
+                <div className='h' />
                     <Button variant="contained" className='Button'>Enviar código</Button>
                 </div>
                 </Grid>
