@@ -17,8 +17,59 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Link from '@mui/material/Link';
 import ST from './styles';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import Container from '@mui/material/Container';
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Fade from '@mui/material/Fade';
+
+interface Props {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window?: () => Window;
+  children: React.ReactElement;
+}
+
+function ScrollTop(props: Props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const anchor = (
+      (event.target as HTMLDivElement).ownerDocument || document
+    ).querySelector('#topo');
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        block: 'center',
+      });
+    }
+  };
+
+  return (
+    <Fade in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Fade>
+  );
+}
 
  function guiaResinas() {
+
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -57,6 +108,7 @@ const gray = {
   padding: "1rem",
   borderRadius: "0.5rem"
 };
+
 const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','KERR','KULZER','SDI','SHOFU','SMARTDENT','TOKUYAMA','ULTRADENT','VOCO'];
   return (
     <>
@@ -162,10 +214,11 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
           </>
         { /* UP BUTTON */ }
           <>
-            <a href='#topo'>
-              <ArrowUpwardIcon style={{color:'white', backgroundColor:'#382B57', borderRadius:'3.125rem', 
-              bottom: '0', marginBottom: '3rem', right:'2rem' ,position:'fixed', float:'right'}} />
-            </a>
+          <ScrollTop>
+        <Fab size="small" aria-label="scroll back to top" style={{ color: '#FFFFFF', backgroundColor: '#382B57' }}>
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
           </>
 
         { /* CONTEUDO */ }
@@ -986,7 +1039,6 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
               </>
           </Grid>
           </>
-        
 
       </Box>
     </Box>
