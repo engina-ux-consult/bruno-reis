@@ -15,6 +15,10 @@ function ST(){
       display: none;
     }
 
+    .dashboard{
+      background: linear-gradient(90deg, #382B57 0%, #3D237C 100%);
+    }
+
     html, body {
       height: 100%;
     }
@@ -27,7 +31,6 @@ function ST(){
     }
   }
  
-//Desktop
 
   .h{
     height: 2.5rem;
@@ -41,7 +44,9 @@ function ST(){
     justify-content: center;
     
   }
-
+  .dashboard{
+    background: linear-gradient(90deg, #382B57 0%, #3D237C 100%);
+  }
   .bg{
     width: 100%;
     height: 100vh; 
