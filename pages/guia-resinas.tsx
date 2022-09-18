@@ -115,70 +115,73 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
     <ST/>
           <Box sx={{ display: 'flex'}} >
       <CssBaseline />
-      {/*Toolbar Horizontal*/}
-      <AppBar
-        position="fixed"
-        sx={{ width: `calc(100% - ${'85'}px)`, ml: `${'110'}px` ,background: '#FFFFFF', boxShadow: 'none'}}
-      >
-        <Toolbar>
-        <Link href="/dashboard" >
-            <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
-        </Link>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' }}
+      <div className='inv'>
+        {/*Toolbar Horizontal*/}
+          <AppBar
+            position="fixed"
+            sx={{ width: `calc(100% - ${'85'}px)`, ml: `${'110'}px` ,background: '#FFFFFF', boxShadow: 'none'}}
           >
-            Guia completo de resinas compostas [Conteúdo exclusivo]
-          </Typography>
-          <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <Toolbar>
+            <Link href="/dashboard" >
+                <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
+            </Link>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' }}
+              >
+                Guia completo de resinas compostas [Conteúdo exclusivo]
+              </Typography>
+              <Box sx={{ flexGrow: 1 }} />
+              <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                <IconButton
+                  size="large"
+                  aria-label="show more"
+                  aria-controls={mobileMenuId}
+                  aria-haspopup="true"
+                  onClick={handleMobileMenuOpen}
+                  color="inherit"
+                >
+                  <MoreIcon />
+                </IconButton>
+              </Box>
+            </Toolbar>
+          </AppBar>
+        {/*Toolbar Vertical*/}
+          <Drawer
+            sx={{
+              width: '5.5rem',
+              flexShrink: 0,
+              '& .MuiDrawer-paper': {
+                width: '5.5rem',
+                boxSizing: 'border-box',
+                background: '#382B57',
+                alignItems: 'center'
+              },
+            }}
+            variant="permanent"
+            anchor="left"
+          >
+            <img src="../imgs/Vector.svg" style={{ width: '40px', height: '64px', marginBottom:'40px', marginTop:'16px'}}/>
             <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
+                  size="small"
+                  aria-label="show more"
+                  aria-controls={mobileMenuId}
+                  aria-haspopup="true"
+                  onClick={handleMobileMenuOpen}
+                  color="inherit"
+                >
             </IconButton>
-          </Box>
-        </Toolbar>
-      </AppBar>
-      {/*Toolbar Vertical*/}
-      <Drawer
-        sx={{
-          width: '5.5rem',
-          flexShrink: 0,
-          '& .MuiDrawer-paper': {
-            width: '5.5rem',
-            boxSizing: 'border-box',
-            background: '#382B57',
-            alignItems: 'center'
-          },
-        }}
-        variant="permanent"
-        anchor="left"
-      >
-        <img src="../imgs/Vector.svg" style={{ width: '40px', height: '64px', marginBottom:'40px', marginTop:'16px'}}/>
-        <IconButton
-              size="small"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-        </IconButton>
-        <Link href="/dashboard" >
-          <Button style={{ color: "#FFFFFF"}} startIcon={<Home />}/>
-        </Link> 
-        <Link href="/" >
-          <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginBottom: '3rem'}} startIcon={<Output />}/>
-        </Link>  
-      </Drawer>
+            <Link href="/dashboard" >
+              <Button style={{ color: "#FFFFFF"}} startIcon={<Home />}/>
+            </Link> 
+            <Link href="/" >
+              <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginBottom: '3rem'}} startIcon={<Output />}/>
+            </Link>  
+          </Drawer>
+      </div>
+      
       <Box
         component="main"
         sx={{bgcolor: 'background.default'}}
@@ -187,7 +190,7 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
         <img id='topo' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
         { /* ÍNDICE */ }
           <>
-            <Card style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
+            <Card className='inv' style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
               <CardContent >
                 <Typography className='indice'>
                   ÍNDICE    
