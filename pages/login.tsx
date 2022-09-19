@@ -81,7 +81,7 @@ const [values, setValues] = React.useState<State>({
             <Grid item xs={12} sm={6} style={{ alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
 
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
-                <Grid container justify="center" style={{ justifyContent: 'center'}}>
+                <Grid container style={{ justifyContent: 'center'}}>
                                 <img src="../imgs/logo-brandd.svg" width={200} alt="logo" />
                 </Grid>
                     
@@ -90,7 +90,7 @@ const [values, setValues] = React.useState<State>({
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
-                    value={email} error={message} helperText={message} onChange={handleOnChange} />
+                    value={email} helperText={message} onChange={handleOnChange} />
                     <div className='h' />
                     <div>               
       <div>

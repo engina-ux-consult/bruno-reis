@@ -20,56 +20,15 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Link from 'next/link';
 import ST from './styles';
-import Lottie from "react-lottie";
 import * as location from "../assets/splash.json";
-
-const defaultOptions1 = {
-  loop: true,
-  autoplay: true,
-  animationData: location.default,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
 
  function Dashboard() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
-
-
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = 'primary-search-account-menu';
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-
-  const [data, setData] = React.useState([]);
-  const [loading, setloading] = React.useState(undefined);
-  const [completed, setcompleted] = React.useState(undefined);
-
-  React.useEffect(() => {
-    setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/posts")
-        .then((response) => response.json())
-        .then((json) => {
-          console.log(json);
-          setData(json);
-          setloading(true);
-        });
-    }, 2000);
-  }, []);
   return (
     <>
-    {!loading ? (
-            <Lottie options={defaultOptions1} style={{width: '10rem',height: '10rem',marginTop:'20%'}} />
-      ) : (
+  
           <div>
             <ST/>
             <Head>
@@ -135,9 +94,9 @@ const defaultOptions1 = {
                 <IconButton
                   size="large"
                   aria-label="show more"
-                  aria-controls={mobileMenuId}
+
                   aria-haspopup="true"
-                  onClick={handleMobileMenuOpen}
+
                   color="inherit"
                 >
                   <MoreIcon />
@@ -164,9 +123,9 @@ const defaultOptions1 = {
             <IconButton
                   size="small"
                   aria-label="show more"
-                  aria-controls={mobileMenuId}
+
                   aria-haspopup="true"
-                  onClick={handleMobileMenuOpen}
+
                   color="inherit"
                 >
             </IconButton>
@@ -229,7 +188,7 @@ const defaultOptions1 = {
       </Box>
     </Box>
           </div>
-    )}
+
     </>
   );
 }

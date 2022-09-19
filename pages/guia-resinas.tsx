@@ -23,19 +23,6 @@ import Container from '@mui/material/Container';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fade from '@mui/material/Fade';
-import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle';
-import Lottie from "react-lottie";
-import * as location from "../assets/splash.json";
-
-const defaultOptions1 = {
-  loop: true,
-  autoplay: true,
-  animationData: location.default,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
-};
 
 interface Props {
   /**
@@ -83,45 +70,12 @@ function ScrollTop(props: Props) {
 }
 
  function guiaResinas() {
-
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
-    React.useState<null | HTMLElement>(null);
-
-
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = 'primary-search-account-menu';
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
   
 // onCopy
 const copyHandler = (event: React.ClipboardEvent<HTMLInputElement>) => {
   event.preventDefault();
   return false;
 };
-
-const [data, setData] = React.useState([]);
-const [loading, setloading] = React.useState(undefined);
-const [completed, setcompleted] = React.useState(undefined);
-
-React.useEffect(() => {
-  setTimeout(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json);
-        setData(json);
-        setloading(true);
-      });
-  }, 2000);
-}, []);
 
 {/*CSS*/}
 const purple = {
@@ -140,9 +94,6 @@ const gray = {
 const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','KERR','KULZER','SDI','SHOFU','SMARTDENT','TOKUYAMA','ULTRADENT','VOCO'];
   return (
     <>
-    {!loading ? (
-      <Lottie options={defaultOptions1} style={{width: '10rem',height: '10rem',marginTop:'20%'}} />
-) : (
     <div>
       <ST/>
       <Head>
@@ -173,9 +124,9 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
                 <IconButton
                   size="large"
                   aria-label="show more"
-                  aria-controls={mobileMenuId}
+
                   aria-haspopup="true"
-                  onClick={handleMobileMenuOpen}
+
                   color="inherit"
                 >
                   <MoreIcon />
@@ -202,9 +153,9 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
             <IconButton
                   size="small"
                   aria-label="show more"
-                  aria-controls={mobileMenuId}
+    
                   aria-haspopup="true"
-                  onClick={handleMobileMenuOpen}
+
                   color="inherit"
                 >
             </IconButton>
@@ -1082,7 +1033,7 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
     </Box>
     </div>
     
-    )}
+
     </>
   );
 }

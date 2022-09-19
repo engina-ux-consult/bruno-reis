@@ -94,11 +94,11 @@ function IndexPage() {
                 <img src="../imgs/bd-broe.jpg" className='inv' style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />
             </Grid>
 
-            <Grid container item xs={12} sm={6}  alignItems="center" direction="column" justify="space-between" style={{ justifyContent: 'center', padding: 16,}}>
+            <Grid container item xs={12} sm={6}   style={{ justifyContent: 'center', padding: 16,alignItems:"center", flexDirection:"column",}}>
 
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
 
-                <Grid container justify="center" style={{ justifyContent: 'center'}}>
+                <Grid container  style={{ justifyContent: 'center'}}>
                                 <img src="../imgs/logo-brandd.svg" width={200} alt="logo" />
                         </Grid>
                     
@@ -109,7 +109,7 @@ function IndexPage() {
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
                     <div className='h' />
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
-                    onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} error={message} helperText={message}/>
+                    onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} helperText={message}/>
                     <div className='h' />
                     <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
