@@ -89,6 +89,10 @@ a:active{
   float: left;
 }
 
+img{
+  pointer-events: none;
+}
+
 .subT{
   font-weight: 400;
   font-size: 24px;
