@@ -13,6 +13,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Axios from 'axios';
 import ST from './styles';
+import {Helmet} from "react-helmet";
 
 interface State {
     amount: string;
@@ -85,9 +86,7 @@ function IndexPage() {
       <div>
         <ST/>
             <Head>
-            <title>Iknow - Crie sua conta</title>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <link rel="shortcut icon" href="/favicon.ico" />
+            <title>Iknow - Crie sua conta</title>  
             </Head>
 
         <Grid container style={{ minHeight: '100vh'}}>
