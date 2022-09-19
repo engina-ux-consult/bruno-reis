@@ -22,6 +22,8 @@ import Container from '@mui/material/Container';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fade from '@mui/material/Fade';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
 
 interface Props {
   /**
@@ -88,6 +90,11 @@ function ScrollTop(props: Props) {
   const mobileMenuId = 'primary-search-account-menu-mobile';
   
   const  [loading, setLoading] = React.useState(false);
+// onCopy
+const copyHandler = (event: React.ClipboardEvent<HTMLInputElement>) => {
+  event.preventDefault();
+  return false;
+};
 
   React.useEffect(() => {
     setLoading(true);
@@ -113,7 +120,7 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
   return (
     <>
     <ST/>
-          <Box sx={{ display: 'flex'}} >
+          <Box onCopy={copyHandler} sx={{ display: 'flex'}} >
       <CssBaseline />
       <div className='inv'>
         {/*Toolbar Horizontal*/}
@@ -228,7 +235,7 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
           <>
             <Grid style={{width: '44.25rem', gap: '2rem', marginLeft: 'auto', marginRight: 'auto',color: "#535353",fontFamily: "Open Sans"}}>
             { /* Introdução */ }
-              <>
+              <> 
                 <h1>Guia completo de resinas compostas</h1>
                 <p style={gray}>Este conteúdo foi desenvolvido para auxiliar cirurgiões-dentistas no momento de escolha de uma resina composta. Para que funcione como um guia, iremos relembrar a seguir, alguns conceitos importantes (composição, cores e opacidades) das resinas compostas:</p>
                 <h2>Entendendo a composição</h2>
