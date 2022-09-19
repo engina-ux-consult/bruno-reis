@@ -24,6 +24,17 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fade from '@mui/material/Fade';
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
+import Lottie from "react-lottie";
+import * as location from "../assets/splash.json";
+
+const defaultOptions1 = {
+  loop: true,
+  autoplay: true,
+  animationData: location.default,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 interface Props {
   /**
@@ -89,19 +100,28 @@ function ScrollTop(props: Props) {
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   
-  const  [loading, setLoading] = React.useState(false);
 // onCopy
 const copyHandler = (event: React.ClipboardEvent<HTMLInputElement>) => {
   event.preventDefault();
   return false;
 };
 
-  React.useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
+const [data, setData] = React.useState([]);
+const [loading, setloading] = React.useState(undefined);
+const [completed, setcompleted] = React.useState(undefined);
+
+React.useEffect(() => {
+  setTimeout(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json);
+        setData(json);
+        setloading(true);
+      });
+  }, 2000);
+}, []);
+
 {/*CSS*/}
 const purple = {
   color: "white",
@@ -119,7 +139,11 @@ const gray = {
 const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','KERR','KULZER','SDI','SHOFU','SMARTDENT','TOKUYAMA','ULTRADENT','VOCO'];
   return (
     <>
-    <ST/>
+    {!loading ? (
+      <Lottie options={defaultOptions1} style={{width: '10rem',height: '10rem',marginTop:'20%'}} />
+) : (
+    <div>
+      <ST/>
           <Box onCopy={copyHandler} sx={{ display: 'flex'}} >
       <CssBaseline />
       <div className='inv'>
@@ -1052,6 +1076,9 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
 
       </Box>
     </Box>
+    </div>
+    
+    )}
     </>
   );
 }

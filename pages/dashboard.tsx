@@ -19,6 +19,18 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Link from 'next/link';
 import ST from './styles';
+import Lottie from "react-lottie";
+import * as location from "../assets/splash.json";
+
+const defaultOptions1 = {
+  loop: true,
+  autoplay: true,
+  animationData: location.default,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
  function Dashboard() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
@@ -36,18 +48,27 @@ import ST from './styles';
   const menuId = 'primary-search-account-menu';
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
-  
-  const  [loading, setLoading] = React.useState(false);
+
+  const [data, setData] = React.useState([]);
+  const [loading, setloading] = React.useState(undefined);
+  const [completed, setcompleted] = React.useState(undefined);
 
   React.useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
-      setLoading(false);
+      fetch("https://jsonplaceholder.typicode.com/posts")
+        .then((response) => response.json())
+        .then((json) => {
+          console.log(json);
+          setData(json);
+          setloading(true);
+        });
     }, 2000);
   }, []);
-
   return (
     <>
+    {!loading ? (
+            <Lottie options={defaultOptions1} style={{width: '10rem',height: '10rem',marginTop:'20%'}} />
+      ) : (
           <div>
             <ST/>
             <Box sx={{ display: 'flex'}} >
@@ -204,6 +225,7 @@ import ST from './styles';
       </Box>
     </Box>
           </div>
+    )}
     </>
   );
 }
