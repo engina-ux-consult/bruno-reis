@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Head from 'next/head';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -71,6 +72,9 @@ const defaultOptions1 = {
       ) : (
           <div>
             <ST/>
+            <Head>
+              <title>Iknow - Dashboard</title>  
+            </Head>
             <Box sx={{ display: 'flex'}} >
       <CssBaseline />
       <div className='inv'>

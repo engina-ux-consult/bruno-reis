@@ -6,11 +6,14 @@ import React, {useState} from "react";
 import FormLabel from '@mui/material/FormLabel';
 import {ArrowBack} from '@mui/icons-material';
 import ST from './styles';
-
+import Head from 'next/head';
 function Redefinirsenhasecondstep(){
     return(
         <div>   
             <ST/>
+            <Head>
+              <title>Iknow - Redefinir Senha</title>  
+            </Head>
             <Grid container style={{ minHeight: '100vh'}}>
             <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
                 <img src="../imgs/bd-broe.jpg" className='inv' style={{ width: '100%', height: '100vh', objectFit: 'cover'}} alt="brand" />

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -13,7 +13,6 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Axios from 'axios';
 import ST from './styles';
-import {Helmet} from "react-helmet";
 
 interface State {
     amount: string;
