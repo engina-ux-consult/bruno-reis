@@ -1,4 +1,5 @@
 {/* IMPORT */}
+import Head from 'next/head';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -144,6 +145,9 @@ const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','
 ) : (
     <div>
       <ST/>
+      <Head>
+          <title>Iknow - Conteúdo</title>  
+      </Head>
           <Box onCopy={copyHandler} sx={{ display: 'flex'}} >
       <CssBaseline />
       <div className='inv'>

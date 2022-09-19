@@ -10,7 +10,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import FormLabel from '@mui/material/FormLabel';
+import Head from 'next/head';
 import ST from './styles';
 
 interface State {
@@ -69,7 +69,9 @@ const [values, setValues] = React.useState<State>({
 
       <div>
             <ST/>
-
+            <Head>
+              <title>Iknow - Login</title>  
+            </Head>
         <Grid container style={{ minHeight: '100vh'}}>
             
             <Grid item xs={12} sm={6} style={{ position: 'relative', alignItems: 'center', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center',}}>
