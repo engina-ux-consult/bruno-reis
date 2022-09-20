@@ -135,15 +135,11 @@ function IndexPage() {
         </FormControl>   
         <p style={{color:'#535353'}}>Ao menos 8 caracteres</p>
                 </div>
-            </form>
-                        <div className='h' />      
+            </form>      
                         <Link underline="none" href='/dashboard' style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                           <Button variant="contained" type="submit" 
                               className='Button'>Criar conta</Button>
                         </Link>          
-                            
-                            <div className='h' />
-                            
                               <p style={{textAlign:'center'}}>Já possui uma conta?<Link className='Link' underline="none" style={{color: '#382B57'}} href="/login" >Acesse aqui</Link> </p>
                          
                         </div>
