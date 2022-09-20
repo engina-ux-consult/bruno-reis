@@ -160,7 +160,7 @@ import * as location from "../assets/splash.json";
         <Typography variant='subtitle1' style={{fontWeight: '600', fontSize: '24px'}} marginTop={'32px'} marginBottom={'32px'}>
           Conteúdos
         </Typography>
-        <Card sx={{ maxWidth: 397 }}>
+        <Card sx={{ maxWidth: 397, boxShadow: 'none'}}>
       <CardMedia
         component="img"
         alt="Guia Resinas"
