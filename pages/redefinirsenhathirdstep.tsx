@@ -67,7 +67,7 @@ function Redefinirsenhathirdstep(){
             <p className='subT'>Crie uma senha nova.</p>
             <p className='text'>Crie uma senha nova com pelo menos 8 caracteres.</p>
             <div className='h' />
-            <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3}}} variant="outlined">
+            <FormControl sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3}}} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-passwor">Nova senha</InputLabel>
           <OutlinedInput
             id="senha"
@@ -90,7 +90,7 @@ function Redefinirsenhathirdstep(){
           />
         </FormControl>   
             <div className='h' />
-            <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3}}} variant="outlined">
+            <FormControl sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3}}} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Repetir senha</InputLabel>
           <OutlinedInput
             id="repetirsenha"

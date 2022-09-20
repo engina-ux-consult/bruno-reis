@@ -111,7 +111,7 @@ function IndexPage() {
                     <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} helperText={message}/>
                     <div className='h' />
-                    <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
+                    <FormControl sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
