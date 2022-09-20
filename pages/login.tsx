@@ -94,7 +94,7 @@ const [values, setValues] = React.useState<State>({
                     <div className='h' />
                     <div>               
       <div>
-        <FormControl sx={{ m: 0, width: '45ch',['& fieldset']:{borderRadius:3} }} variant="outlined">
+        <FormControl sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
