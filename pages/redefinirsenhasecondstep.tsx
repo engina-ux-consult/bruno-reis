@@ -35,7 +35,9 @@ function Redefinirsenhasecondstep(){
                        <Button style={{color: '#382B57', textTransform: 'none', fontWeight: 'bold'}}>Reenviar código</Button> 
                     </FormLabel> 
                     <div className='h' />
+                    <Link underline="none" href='/redefinirsenhathirdstep' style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                         <Button variant="contained" className='Button'>Continuar</Button>
+                    </Link>
                     <p className='text' style={{textAlign:'center'}}>Se não encontrar o e-mail na sua caixa de entrada, verifique a pasta de spam.</p>
                  </div>
             </Grid>

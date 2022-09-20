@@ -112,7 +112,9 @@ function Redefinirsenhathirdstep(){
           />
         </FormControl>   
             <div className='h' />
-                <Button variant="contained" className='Button'>Atualizar senha</Button>
+            <Link underline="none" href='/login' style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
+              <Button variant="contained" className='Button'>Atualizar senha</Button>
+            </Link>
         </div>
             </Grid>
         </div>

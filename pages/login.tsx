@@ -126,8 +126,11 @@ const [values, setValues] = React.useState<State>({
                     </p>
                     
                     <div className='h' />
-                        <Button variant="contained" type="submit"
+                    <Link underline="none" href='/dashboard' style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
+                      <Button variant="contained" type="submit"
                         className='Button'>Entrar</Button>
+                    </Link>
+                        
                           <div className='h' />
 
                                                         
