@@ -15,6 +15,10 @@ function ST(){
       display: none;
     }
 
+    .mob{
+      display: inline !important;
+    }
+
     .dashboard{
       background: linear-gradient(90deg, #382B57 0%, #3D237C 100%);
     }
@@ -35,7 +39,9 @@ function ST(){
   .h{
     height: 2.5rem;
   }
-
+  .mob{
+    display: none;
+  }
   .col{
     align-items: center;
     display: flex;
