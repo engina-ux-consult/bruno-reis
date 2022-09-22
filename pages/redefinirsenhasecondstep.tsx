@@ -30,7 +30,7 @@ function Redefinirsenhasecondstep(){
                     <p className='subT'>Enviamos o código para seu e-mail</p>
                     <p className='text'>Insira o código de verificação de 6 dígitos enviando para *****@gmail.com. <Link className='Link' href="/redefinirsenha"underline='none' >Alterar</Link></p>
                     <div className='h' />
-                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="codigo" label="Código" variant="outlined" name="codigo"/>
+                    <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="text" id="codigo" label="Código" variant="outlined" name="codigo"/>
                     <FormLabel>
                        <Button style={{color: '#382B57', textTransform: 'none', fontWeight: 'bold'}}>Reenviar código</Button> 
                     </FormLabel> 

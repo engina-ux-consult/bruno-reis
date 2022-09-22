@@ -89,12 +89,12 @@ const [values, setValues] = React.useState<State>({
                     <form>
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
-                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
+                    <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     value={email} helperText={message} onChange={handleOnChange} />
                     <div className='h' />
                     <div>               
       <div>
-        <FormControl sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
+        <FormControl required sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
@@ -119,17 +119,16 @@ const [values, setValues] = React.useState<State>({
       </div>
       </div>   
                 </div>
-                    </form>
+                    
                     
                     <p>
                       Esqueceu a senha?<Link className='Link' href="/redefinirsenha" underline="none"> Acesse aqui</Link>
                     </p>
                     
                     <div className='h' />
-                    <Link underline="none" href='/dashboard' style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
-                      <Button variant="contained" type="submit"
+                      <Button fullWidth variant="contained" type="submit"
                         className='Button'>Entrar</Button>
-                    </Link>
+                    </form>
                         
                           <div className='h' />
 

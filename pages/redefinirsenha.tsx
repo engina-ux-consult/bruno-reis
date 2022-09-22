@@ -46,14 +46,14 @@ function Redefinir(){
                 </Grid>   
                 <p className='subT'>Esqueceu a senha?</p>
             <p className='text'>Digite seu e-mail cadastrado para enviarmos um código de alteração de senha.</p>
-           
-            <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email"
+           <form>
+            <TextField fullWidth required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email"
             value={email} helperText={message} onChange={handleOnChange}/>
                 <div className='h' />
                 <Link underline="none" href='/redefinirsenhasecondstep' style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     <Button variant="contained" className='Button'>Enviar código</Button>
                 </Link>
-                    
+                </form>    
                 </div>
                 </Grid>
             </Grid>
