@@ -21,14 +21,11 @@ interface State {
     weightRange: string;
     showPassword: boolean;
   }
-
-
   
 function IndexPage() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-  
 
     const insertUser = () => {
       console.log(name);
@@ -106,12 +103,12 @@ function IndexPage() {
                         <form>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
-                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
+                    <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
                     <div className='h' />
-                    <TextField sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
+                    <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} helperText={message}/>
                     <div className='h' />
-                    <FormControl sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
+                    <FormControl required sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
@@ -135,11 +132,10 @@ function IndexPage() {
         </FormControl>   
         <p style={{color:'#535353'}}>Ao menos 8 caracteres</p>
                 </div>
-            </form>      
-                        <Link underline="none" href='/dashboard' style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
-                          <Button variant="contained" type="submit" 
-                              className='Button'>Criar conta</Button>
-                        </Link>          
+                  
+                          <Button fullWidth variant="contained" type="submit" 
+                              className='Button' onClick={insertUser}>Criar conta</Button>
+              </form>
                               <p style={{textAlign:'center'}}>Já possui uma conta?<Link className='Link' underline="none" style={{color: '#382B57'}} href="/login" >Acesse aqui</Link> </p>
                          
                         </div>
