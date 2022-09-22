@@ -72,7 +72,7 @@ function ScrollTop(props: Props) {
   );
 }
 
-const drawerWidth = 240;
+
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -86,12 +86,10 @@ const AppBar = styled(MuiAppBar, {
     duration: theme.transitions.duration.leavingScreen,
   }),
   ...(open && {
-    width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    marginRight: drawerWidth,
   }),
 }));
 
@@ -231,11 +229,7 @@ return (
         </AppBar>
         <Drawer
           sx={{
-            width: drawerWidth,
             flexShrink: 0,
-            '& .MuiDrawer-paper': {
-              width: drawerWidth,
-            },
           }}
           variant="persistent"
           anchor="right"
