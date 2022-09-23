@@ -211,7 +211,7 @@ return (
           </Drawer>
       </div>
       <div className='mob'>
-        <AppBar position="fixed" open={open} style={{background: '#382B57'}}>
+        <AppBar position="fixed" open={open} style={{background: '#382B57', height: '4.5rem'}}>
           <Toolbar>
             <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
              <img src="../imgs/Vector.svg" style={{ width: '40px', height: '64px'}}/>
@@ -227,6 +227,18 @@ return (
             </IconButton>
           </Toolbar>
         </AppBar>
+        <AppBar position="fixed" style={{ background: '#FFFFFF', color: '#000000', marginTop: '4.5rem' }}>
+        <Toolbar variant="dense">
+        <Link href="/dashboard" >
+                <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
+            </Link>
+              <Typography
+                style={{ color: '#000000' }}
+              >
+                Guia completo de resinas compostas [Conteúdo exclusivo]
+              </Typography>
+        </Toolbar>
+      </AppBar>
         <Drawer
           sx={{
             flexShrink: 0,
@@ -265,7 +277,8 @@ return (
         sx={{bgcolor: 'background.default'}}
       >
         <Toolbar />
-        <img id='topo' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
+        <img id='topo' className='inv' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
+        <img id='topo' className='mob' src="../imgs/guia-resinas/bgmob.jpg"  alt="brand" /> 
         { /* ÍNDICE */ }
           <>
             <Card className='inv' style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
@@ -304,7 +317,7 @@ return (
 
         { /* CONTEUDO */ }
           <>
-            <Grid style={{width: '44.25rem', gap: '2rem', marginLeft: 'auto', marginRight: 'auto',color: "#535353",fontFamily: "Open Sans"}}>
+            <Grid className='content' style={{width: '44.25rem', gap: '2rem', marginLeft: 'auto', marginRight: 'auto',color: "#535353",fontFamily: "Open Sans"}}>
             { /* Introdução */ }
               <> 
                 <h1>Guia completo de resinas compostas</h1>

@@ -7,6 +7,10 @@ function ST(){
       border-radius: 0.25rem;
     }
     
+    .content{
+      padding: 1rem;
+    }
+
     .h{
       height: 1.5rem;
     }
@@ -59,9 +63,13 @@ function ST(){
     object-fit: cover;
     display: flex;
   }
-
+@font-face {
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans');
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+} 
   * {
-      font-family: 'Open Sans';
+      font-family: 'Open Sans', sans-serif;
   }
   .Link{
      color: #382B57;
