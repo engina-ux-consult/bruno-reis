@@ -1,6 +1,7 @@
 {/* IMPORT */}
 import Head from 'next/head';
-import * as React from 'react';
+import React, {useState} from "react";
+import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -78,29 +79,9 @@ interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
 }
 
-const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== 'open',
-})<AppBarProps>(({ theme, open }) => ({
-  transition: theme.transitions.create(['margin', 'width'], {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  ...(open && {
-    transition: theme.transitions.create(['margin', 'width'], {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  }),
-}));
 
-const DrawerHeader = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
-  ...theme.mixins.toolbar,
-  justifyContent: 'flex-start',
-}));
+
+
  function guiaResinas() {
   
 // onCopy
@@ -124,16 +105,6 @@ const gray = {
 };
 
 const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','KERR','KULZER','SDI','SHOFU','SMARTDENT','TOKUYAMA','ULTRADENT','VOCO'];
-const theme = useTheme();
-    const [open, setOpen] = React.useState(false);
-  
-    const handleDrawerOpen = () => {
-      setOpen(true);
-    };
-  
-    const handleDrawerClose = () => {
-      setOpen(false);
-    };  
 
 return (
     <>
@@ -210,68 +181,7 @@ return (
             </Link>  
           </Drawer>
       </div>
-      <div className='mob'>
-        <AppBar position="fixed" open={open} style={{background: '#382B57', height: '4.5rem'}}>
-          <Toolbar>
-            <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
-             <img src="../imgs/Vector.svg" style={{ width: '40px', height: '64px'}}/>
-            </Typography>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="end"
-              onClick={handleDrawerOpen}
-              sx={{ ...(open && { display: 'none' }) }}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Toolbar>
-        </AppBar>
-        <AppBar position="fixed" style={{ background: '#FFFFFF', color: '#000000', marginTop: '4.5rem' }}>
-        <Toolbar variant="dense">
-        <Link href="/dashboard" >
-                <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
-            </Link>
-              <Typography
-                style={{ color: '#000000' }}
-              >
-                Guia completo de resinas compostas [Conteúdo exclusivo]
-              </Typography>
-        </Toolbar>
-      </AppBar>
-        <Drawer
-          sx={{
-            flexShrink: 0,
-          }}
-          variant="persistent"
-          anchor="right"
-          open={open}
-        >
-          <DrawerHeader>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-            </IconButton>
-          </DrawerHeader>
-          <Divider />
-     
-          <IconButton
-                  size="small"
-                  aria-label="show more"
-
-                  aria-haspopup="true"
-
-                  color="inherit"
-                >
-            </IconButton>
-            <Link href="/dashboard" >
-              <Button style={{ color: "#382B57", width:'100%'}} startIcon={<Home />}/>
-            </Link> 
-            <Link href="/" >
-              <Button style={{ color: "#382B57", position: 'absolute', bottom: '0', marginBottom: '3rem', width:'100%'}} startIcon={<Output />}/>
-            </Link>
-          
-        </Drawer>
-      </div>
+      
       <Box
         component="main"
         sx={{bgcolor: 'background.default'}}
