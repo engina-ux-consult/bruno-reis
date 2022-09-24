@@ -19,6 +19,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Link from 'next/link';
 import ST from './styles';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import * as location from "../assets/splash.json";
 import { styled, useTheme } from '@mui/material/styles';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
@@ -226,19 +228,23 @@ const DrawerHeader = styled('div')(({ theme }) => ({
         <Drawer
           sx={{
             flexShrink: 0,
+            width: '16.125rem',
+            '& .MuiDrawer-paper': {
+              width: '16.125rem',
+              padding: '1rem',
+            },
           }}
           variant="persistent"
           anchor="right"
           open={open}
         >
-          <DrawerHeader>
-            <IconButton onClick={handleDrawerClose}>
-              {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+          <DrawerHeader style={{}}>
+            <IconButton onClick={handleDrawerClose} style={{color:'#382B57'}}>
+              {theme.direction === 'rtl' ? <CloseOutlinedIcon /> : <CloseOutlinedIcon />}
             </IconButton>
           </DrawerHeader>
-          <Divider />
-     
-          <IconButton
+          
+            <IconButton
                   size="small"
                   aria-label="show more"
 
@@ -247,13 +253,16 @@ const DrawerHeader = styled('div')(({ theme }) => ({
                   color="inherit"
                 >
             </IconButton>
-            <Link href="/dashboard" passHref>
-              <Button style={{ color: "#382B57"}} startIcon={<Home />}/>
-            </Link> 
-            <Link href="/" passHref>
-              <Button style={{ color: "#382B57", position: 'absolute', bottom: '0', marginBottom: '3rem', width:'100%'}} startIcon={<Output />}/>
-            </Link>
-          
+            <List style={{flexDirection: 'column', alignItems: 'center'}}>
+              <Link href="/dashboard" passHref>
+                <Button  style={{ color: "#382B57",textTransform: 'none'}} startIcon={<HomeOutlinedIcon />}> Dashboard</Button>
+              </Link>  
+            </List>
+            <List style={{flexDirection: 'column', alignItems: 'center'}}>
+              <Link href="/" passHref>
+                <Button style={{ color: "#382B57",textTransform: 'none'}} startIcon={<Output />}> Sair</Button>
+              </Link>      
+            </List>
         </Drawer>
       </div>
       <Box
