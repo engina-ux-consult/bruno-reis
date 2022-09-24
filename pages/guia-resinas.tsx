@@ -187,8 +187,7 @@ return (
         sx={{bgcolor: 'background.default'}}
       >
         <Toolbar />
-        <img id='topo' className='inv' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
-        <img id='topo' className='mob' src="../imgs/guia-resinas/bgmob.jpg"  alt="brand" /> 
+        <img id='topo' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
         { /* ÍNDICE */ }
           <>
             <Card className='inv' style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
