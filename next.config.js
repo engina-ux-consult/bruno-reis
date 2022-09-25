@@ -1,7 +1,9 @@
 const express = require('express');
 const mysql   = require('mysql');
 const cors = require('cors');
+const bcrypt = require("bcrypt");
 const app = express();
+const saltRounds = 10;
 
 app.use(cors());
 app.use(express.json());
@@ -20,22 +22,63 @@ db.connect(function(err) {
   } else{console.log("Database Connected")}
 });
 
-app.post("/create", (req,res) => {
+
+
+app.post("/create", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
 
-  db.query("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)",
-  [name,email,password], 
-  (err, result) => {
-    if(err){
+  db.query("SELECT * FROM usuarios WHERE email = ?", [email], (err, result) => {
+    if (err) {
       console.log(err);
+    }
+    if (result.length == 0) {
+      bcrypt.hash(password, saltRounds, (err, hash) => {
+        db.query(
+          "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)",
+          [name,email,password], 
+          (error, response) => {
+            if (err) {
+              console.log(err);
+            }
+
+            console.log({ msg: "Usuário cadastrado com sucesso" });
+          }
+        );
+      });
     } else {
-      res.send("Usuario cadastrado com sucesso!");
+      console.log({ msg: "Email já cadastrado" });
     }
   });
 });
 
+
+
+app.post("/login", (req, res) => {
+  const email = req.body.email;
+  const password = req.body.password;
+
+  db.query("SELECT * FROM usuarios WHERE email = ?", [email], (err, result) => {
+    if (err) {
+      console.log(err);
+    }
+    if (result.length > 0) {
+      bcrypt.compare(password, result[0].senha, (error, response) => {
+        if (error) {
+          console.log(error);
+        }
+        if (password === result[0].senha) {
+          console.log({ msg: "Usuário logado" });
+        } else {
+          console.log({ msg: "Senha Incorreta" });
+        }
+      });
+    } else {
+      console.log({ msg: "Usuário não registrado!" });
+    }
+  });
+});
 app.listen(3001, () => {
   console.log("Running in port 3001");
 });
