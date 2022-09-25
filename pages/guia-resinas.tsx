@@ -12,6 +12,7 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import { ArrowForward, Home, Instagram, LinkedIn, Output, YouTube, ArrowBack, Bolt, } from '@mui/icons-material';
 import MonetizationOnOutlinedIcon from '@mui/icons-material/MonetizationOnOutlined';
 import { Button, Icon } from '@mui/material';
+import Chip from '@mui/material/Chip';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -94,9 +95,10 @@ const copyHandler = (event: React.ClipboardEvent<HTMLInputElement>) => {
 const purple = {
   color: "white",
   backgroundColor: "#382B57",
-  padding: "1rem",
+  padding: "1.5rem",
   borderRadius: "0.5rem",
   marginBottom: '4rem'
+
 };
 const gray = {
   backgroundColor: "#F1F1F1",
@@ -306,8 +308,10 @@ return (
                 <h2>Aplicação clínica das opacidades:</h2>
                 <img src="../imgs/guia-resinas/aplicli.jpg"  style={{width: "100%"}} alt="brand" />
                 <p style={purple}>
+                <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
+                  <p style={{marginLeft: '1rem'}}>
                   Tubete com 4g: R$50,00<br/>
-                  Preço por grama: R$12,50
+                  Preço por grama: R$12,50</p>
                 </p>
               </>
             { /* Z2503M */ }
@@ -334,8 +338,8 @@ return (
                 <h2>Aplicação clínica das opacidades:</h2>
                 <img src="../imgs/guia-resinas/250apli.jpg"  style={{width: "100%"}} alt="brand" />
                 <p style={purple}>
-                  <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
-                  Tubete com 4g: R$105,00 <br/>
+                <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
+                  <br/>Tubete com 4g: R$105,00 <br/>
                   Preço por grama: R$27,00
                 </p>
               </>
@@ -357,7 +361,7 @@ return (
                 <h2>Aplicação clínica das opacidades:</h2>
                 <img src="../imgs/guia-resinas/350apli.jpg"  style={{width: "100%"}} alt="brand" />
                 <p style={purple}>
-                  <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                   Tubete com 4g: R$250,00 <br/>
                   Preço por grama: R$63,00
                 </p>
@@ -383,7 +387,7 @@ return (
                   <h2>Aplicação clínica das opacidades:</h2>
                   <img src="../imgs/guia-resinas/filtekapli.jpg"  style={{width: "100%"}} alt="brand" />
                   <p style={purple}>
-                    <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                  <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                     Tubete com 4g: R$260,00 <br/>
                     Preço por grama: R$65,00
                   </p>
@@ -410,7 +414,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/epicapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$43,00 <br/>
                       Preço por grama: R$10,77
                     </p>
@@ -436,7 +440,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/neoapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 3g: R$ 173,90 <br/>
                       Preço por grama: R$ 57,96
                     </p>
@@ -459,7 +463,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/opallisapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$72,32 <br/>
                       Preço por grama: R$18,08
                     </p>
@@ -482,7 +486,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/vittraapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$126,66 <br/>
                       Preço por grama: R$31,66                   
                     </p>
@@ -507,7 +511,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/essentiaapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 2g: R$430 <br/>
                       Preço por grama: R$215
                     </p>
@@ -528,7 +532,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/miceriumapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$492 <br/>
                       Preço por grama: R$123
                     </p>
@@ -557,7 +561,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/empressapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 3g: R$328,90 <br/>
                       Preço por grama: R$109,63
                     </p>
@@ -581,7 +585,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/tetricapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$136 <br/>
                       Preço por grama: R$39,14      
                     </p>
@@ -606,7 +610,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/harmonizeapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$247,00 <br/>
                       Preço por grama: R$82,30
                     </p>
@@ -632,7 +636,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/herccapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$57,90 <br/>
                       Preço por grama: R$11,58
                     </p>
@@ -653,7 +657,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/hercpapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$115,90 <br/>
                       Preço por grama: R$28,97
                     </p>
@@ -678,7 +682,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/pointapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$48,23 <br/>
                       Preço por grama: R$12,08
                     </p>
@@ -701,7 +705,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/charismacapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$62,90 <br/>
                       Preço por grama: R$15,72
                     </p>
@@ -722,7 +726,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/charismadapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$149,90 <br/>
                       Preço por grama: R$37,47
                     </p>
@@ -753,7 +757,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/auraapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$134,40 <br/>
                       Preço por grama: R$33,60
                     </p>
@@ -781,7 +785,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/beautifillapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$243 <br/>
                       Preço por grama: R$54
                     </p>
@@ -816,7 +820,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/atosapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$82,00 <br/>
                       Preço por grama: R$20,50
                     </p>
@@ -843,7 +847,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/esteliteapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$ 536,33 <br/>
                       Preço por grama: R$134,08
                     </p>
@@ -868,7 +872,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/palfiqueapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$302,21 <br/>
                       Preço por grama: 79,52
                     </p>
@@ -893,7 +897,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/omnichromaapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$295,00 <br/>
                       Preço por grama: 73,75
                     </p>
@@ -918,7 +922,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/formaapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$111,06 <br/>
                       Preço por grama: R$27,76
                     </p>
@@ -939,7 +943,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/vitalescenceapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 2,5g: R$236 <br/>
                       Preço por grama: R$94,40
                     </p>
@@ -969,7 +973,7 @@ return (
                     <h2>Aplicação clínica das opacidades:</h2>
                     <img src="../imgs/guia-resinas/amarisapli.jpg"  style={{width: "100%"}} alt="brand" />
                     <p style={purple}>
-                      <h3><MonetizationOnOutlinedIcon/>Preço médio atual:</h3>
+                    <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
                       Tubete com 4g: R$265,68 <br/>
                       Preço por grama: R$66,42
                     </p>
