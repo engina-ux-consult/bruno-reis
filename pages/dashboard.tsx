@@ -278,8 +278,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
             <p>
               Aqui você encontra os melhores conteúdos e conhecimentos do mundo da odontologia.
             </p>  
-            <Button style={{color: '#382B57', backgroundColor: '#FFFFFF', borderRadius: '0.25rem', textTransform: 'none'}}
-             variant="contained" className='Button' endIcon={<ArrowDownwardIcon />}>Conteúdos</Button>
             </Grid>
               <img className='inv' src="../imgs/logo-trans.png"  style={{float: "right" ,width: "319px",height: "288px",left: "969px",top: "96px", margin: '6px 120px'}} alt="brand" /> 
         </Grid>
@@ -296,7 +294,9 @@ const DrawerHeader = styled('div')(({ theme }) => ({
       />
       <CardContent>
       <Typography variant="body2" color="text.secondary">
-        Conteúdo exclusivo <BoltIcon style={{color:'#382B57'}}/>
+      <Button disabled style={{color: '#A09E9E', backgroundColor: '#FFFFFF', textTransform: 'none', marginLeft:'-1rem'}}
+        variant="contained" endIcon={<BoltIcon style={{color:'#382B57'}} />}>Conteúdo exclusivo
+      </Button>
       </Typography>
         <Typography gutterBottom variant="h5" component="div">
           Guia completo de resinas compostas
