@@ -12,6 +12,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Head from 'next/head';
 import ST from './styles';
+import Axios from 'axios';
 
 interface State {
     amount: string;
@@ -25,6 +26,18 @@ function IndexPage() {
 
 const [page, setPage] = useState(0);
 const [step, setStep] = useState(0);
+const [email, setEmail] = useState("");
+const [message, setMessage] = useState("");
+const [password, setPassword] = useState("");
+
+const insertUser = () => {
+  Axios.post("http://localhost:3001/login", {
+    email: email, 
+    password: password,
+  }).then(() => {
+  console.log("Sucesso!");
+  });
+};
 
 const [values, setValues] = React.useState<State>({
     amount: '',
@@ -50,8 +63,7 @@ const [values, setValues] = React.useState<State>({
     event.preventDefault();
   };
 
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+ 
 
   const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
 
@@ -90,17 +102,17 @@ const [values, setValues] = React.useState<State>({
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
-                    value={email} helperText={message} onChange={handleOnChange} />
+                    value={email} helperText={message} onChange={(event) =>{setEmail(event.target.value);}} />
                     <div className='h' />
                     <div>               
       <div>
-        <FormControl required sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
+      <FormControl required sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"
             type={values.showPassword ? 'text' : 'password'}
-            value={values.password}
-            onChange={handleChange('password')}
+            value={password}
+            onChange={(event) =>{setPassword(event.target.value);}}
             endAdornment={
               <InputAdornment position="end">
                 <IconButton
@@ -113,9 +125,9 @@ const [values, setValues] = React.useState<State>({
                 </IconButton>
               </InputAdornment>
             }
-            label="Password"
+            label="Senha"
           />
-        </FormControl>
+        </FormControl>   
       </div>
       </div>   
                 </div>
