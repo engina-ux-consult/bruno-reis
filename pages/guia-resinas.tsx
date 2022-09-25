@@ -1,6 +1,6 @@
 {/* IMPORT */}
 import Head from 'next/head';
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -28,6 +28,17 @@ import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import Lottie from 'react-lottie';
+import * as location from "../assets/splash.json";
+
+const defaultOptions1 = {
+  loop: true,
+  autoplay: true,
+  animationData: location,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 interface Props {
   /**
@@ -83,13 +94,29 @@ interface AppBarProps extends MuiAppBarProps {
 
 
 
- function guiaResinas() {
+ function GuiaResinas() {
   
 // onCopy
 const copyHandler = (event: React.ClipboardEvent<HTMLInputElement>) => {
   event.preventDefault();
   return false;
 };
+
+const [data, setData] = useState([]);
+const [loading, setloading] = useState(false);
+const [completed, setcompleted] = useState(undefined);
+
+useEffect(() => {
+  setTimeout(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json);
+        setData(json);
+        setloading(true);
+      });
+  }, 2000);
+}, []);
 
 {/*CSS*/}
 const purple = {
@@ -109,7 +136,10 @@ const gray = {
 const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','KERR','KULZER','SDI','SHOFU','SMARTDENT','TOKUYAMA','ULTRADENT','VOCO'];
 
 return (
-    <>
+  <>
+  {!loading ? (
+    <Lottie options={defaultOptions1} style={{width: '10rem',height: '10rem',marginTop:'20%'}} />
+) : (
     <div>
       <ST/>
       <Head>
@@ -1052,7 +1082,8 @@ return (
     </div>
     
 
+    )}
     </>
   );
 }
-export default guiaResinas
+export default GuiaResinas

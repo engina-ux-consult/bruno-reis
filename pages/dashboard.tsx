@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState, useEffect} from "react";
 import Head from 'next/head';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -21,20 +21,22 @@ import Link from 'next/link';
 import ST from './styles';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import * as location from "../assets/splash.json";
 import { styled, useTheme } from '@mui/material/styles';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import Lottie from 'react-lottie';
+import * as location from "../assets/splash.json";
+
+const defaultOptions1 = {
+  loop: true,
+  autoplay: true,
+  animationData: location,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
   open?: boolean;
@@ -96,8 +98,27 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     const handleDrawerClose = () => {
       setOpen(false);
     };
+    const [data, setData] = useState([]);
+const [loading, setloading] = useState(false);
+const [completed, setcompleted] = useState(undefined);
+
+useEffect(() => {
+  setTimeout(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json);
+        setData(json);
+        setloading(true);
+      });
+  }, 2000);
+}, []);
+
   return (
     <>
+  {!loading ? (
+    <Lottie options={defaultOptions1} style={{width: '10rem',height: '10rem',marginTop:'20%'}} />
+) : (
   
           <div>
             <ST/>
@@ -315,7 +336,8 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     </Box>
           </div>
 
-    </>
+)}
+</>
   );
 }
 export default Dashboard
