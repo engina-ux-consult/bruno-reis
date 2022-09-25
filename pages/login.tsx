@@ -30,12 +30,12 @@ const [email, setEmail] = useState("");
 const [message, setMessage] = useState("");
 const [password, setPassword] = useState("");
 
-const insertUser = () => {
+const handleLogin = () => {
   Axios.post("http://localhost:3001/login", {
     email: email, 
     password: password,
-  }).then(() => {
-  console.log("Sucesso!");
+  }).then((response) => {
+  console.log(response.data.msg);
   });
 };
 
@@ -138,7 +138,8 @@ const [values, setValues] = React.useState<State>({
                     </p>
                     
                     <div className='h' />
-                      <Button fullWidth variant="contained" type="submit"
+                      <Button fullWidth variant="contained" 
+                      onClick={handleLogin}
                         className='Button'>Entrar</Button>
                     </form>
                         
