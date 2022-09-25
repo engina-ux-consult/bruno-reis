@@ -2,6 +2,7 @@ const express = require('express');
 const mysql   = require('mysql');
 const cors = require('cors');
 const bcrypt = require("bcrypt");
+const jwt = require('jsonwebtoken');
 const app = express();
 const saltRounds = 10;
 
@@ -70,6 +71,10 @@ app.post("/login", (req, res) => {
         }
         if (password === result[0].senha) {
           console.log({ msg: "Usuário logado" });
+          const id = result[0].id;
+          const token = jwt.sign({id}, "jwtSecret", { expiresIn: 60});
+          console.log({ auth: true, token});
+          return res.json({ auth: true, token});
         } else {
           console.log({ msg: "Senha Incorreta" });
         }
