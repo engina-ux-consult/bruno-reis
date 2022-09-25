@@ -179,7 +179,7 @@ return (
               <Button style={{ color: "#FFFFFF"}} startIcon={<Home />}/>
             </Link> 
             <Link href="/" >
-              <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginBottom: '3rem'}} startIcon={<Output />}/>
+              <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginLeft: '-1.5rem' , marginBottom: '3rem'}} startIcon={<Output />}/>
             </Link>  
           </Drawer>
       </div>
