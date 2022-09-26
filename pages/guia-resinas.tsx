@@ -205,6 +205,7 @@ return (
       </Head>
           <Box onCopy={copyHandler} sx={{ display: 'flex'}} >
       <CssBaseline />
+
       <div className='inv'>
         {/*Toolbar Horizontal*/}
           <AppBar
@@ -271,6 +272,7 @@ return (
             </Link>  
           </Drawer>
       </div>
+
       <div className='mob'>
         <AppBar position="fixed" open={open} style={{background: '#382B57'}}>
           <Toolbar>
@@ -291,7 +293,6 @@ return (
         <Drawer
           sx={{
             flexShrink: 0,
-            width: '16.125rem',
             '& .MuiDrawer-paper': {
               width: '16.125rem',
               padding: '1rem',
@@ -337,8 +338,7 @@ return (
               <Typography
                 variant="h6"
                 noWrap
-                component="div"
-                style={{marginLeft: 'auto', marginRight: 'auto'}}
+                component="div"  
               >
                 Guia completo de resinas compostas [Conteúdo exclusivo]
               </Typography>
@@ -346,15 +346,12 @@ return (
             </Toolbar>
           </AppBar>
       </div>
-      <Box
-        component="main"
-        sx={{bgcolor: 'background.default'}}
-      >
+
+      <Box component="main" sx={{bgcolor: 'background.default'}}>
         <Toolbar />
         <img id='topo' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
         { /* ÍNDICE */ }
           <>
-          <div className='inv'>
             <Card className='inv' style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
               <CardContent >
                 <Typography className='indice'>
@@ -379,7 +376,6 @@ return (
                 </Typography>
               </CardContent>
             </Card>
-          </div>
           </>
         { /* UP BUTTON */ }
           <>
@@ -392,7 +388,7 @@ return (
 
         { /* CONTEUDO */ }
           <>
-            <Grid className='content' style={{width: '44.25rem', gap: '2rem', marginLeft: 'auto', marginRight: 'auto',color: "#535353",fontFamily: "Open Sans"}}>
+            <Grid id='pl' className='content' style={{ maxWidth: '1088px',gap: '2rem', marginLeft: 'auto', marginRight: 'auto',color: "#535353",fontFamily: "Open Sans, sans-serif"}}>
             { /* Introdução */ }
               <> 
                 <h1>Guia completo de resinas compostas</h1>
