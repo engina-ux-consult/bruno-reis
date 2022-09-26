@@ -319,12 +319,12 @@ return (
             </IconButton>
             <List style={{flexDirection: 'column', alignItems: 'center'}}>
               <Link underline="none" href="/dashboard" >
-                <Button  style={{ color: "#382B57",textTransform: 'none'}} startIcon={<HomeOutlinedIcon />}> Dashboard</Button>
+                <Button  style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<HomeOutlinedIcon />}> Dashboard</Button>
               </Link>  
             </List>
             <List style={{flexDirection: 'column', alignItems: 'center'}}>
               <Link underline="none" href="/" >
-                <Button style={{ color: "#382B57",textTransform: 'none'}} startIcon={<Output />}> Sair</Button>
+                <Button style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<Output />}> Sair</Button>
               </Link>      
             </List>
         </Drawer>
@@ -339,6 +339,7 @@ return (
                 variant="h6"
                 noWrap
                 component="div"  
+                style={{fontFamily: 'Open Sans, sans-serif'}}
               >
                 Guia completo de resinas compostas [Conteúdo exclusivo]
               </Typography>
@@ -354,7 +355,7 @@ return (
           <>
             <Card className='inv' style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
               <CardContent >
-                <Typography className='indice'>
+                <Typography className='indice' style = {{fontFamily: 'Open Sans, sans-serif'}}>
                   ÍNDICE    
                   <ol>
                     <a href='#3M'><li>3M</li></a>
