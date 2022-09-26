@@ -42,87 +42,91 @@ function ST(){
       
     }
   }
- 
-
-  .h{
-    height: 2.5rem;
-  }
-  .mob{
-    display: none;
-  }
-  .col{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    
-  }
-  .dashboard{
-    background: linear-gradient(90deg, #382B57 0%, #3D237C 100%);
-  }
-  .bg{
-    width: 100%;
-    height: 100vh; 
-    object-fit: cover;
-    display: flex;
-  }
-@font-face {
-    src: url('https://fonts.googleapis.com/css?family=Open+Sans');
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-} 
-  * {
+  @media only screen and (min-width: 601px){
+    #pl{
+      padding-left: 17.063rem;
+      padding-right: 1rem;
+    }
+    .h{
+      height: 2.5rem;
+    }
+    .mob{
+      display: none;
+    }
+    .col{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: center;
+      
+    }
+    .dashboard{
+      background: linear-gradient(90deg, #382B57 0%, #3D237C 100%);
+    }
+    .bg{
+      width: 100%;
+      height: 100vh; 
+      object-fit: cover;
+      display: flex;
+    }
+  @font-face {
+      src: url('https://fonts.googleapis.com/css?family=Open+Sans');
       font-family: 'Open Sans', sans-serif;
-  }
-  .Link{
-     color: #382B57;
-     font-weight: bold;
-  }
-  .Link:visited {
+      font-weight: normal;
+  } 
+    * {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .Link{
       color: #382B57;
+      font-weight: bold;
+    }
+    .Link:visited {
+        color: #382B57;
+    }
+    .Button {
+        color: #FFFFFF;
+        background-color: #382B57;
+        border-radius: 0.25rem;
+        text-transform: none;
+    }
+    .Button:hover{
+        background-color: #584389;
   }
-  .Button {
-      color: #FFFFFF;
-      background-color: #382B57;
-      border-radius: 0.25rem;
-      text-transform: none;
+  .Button:focus{
+        background-color: #7C65B3;
   }
-  .Button:hover{
-      background-color: #584389;
-}
-.Button:focus{
-      background-color: #7C65B3;
-}
 
-a{
-  color: #A09E9E;
-  text-decoration:none;
-}
-a:active{
-  color: #382B57;
-}
+  a{
+    color: #A09E9E;
+    text-decoration:none;
+  }
+  a:active{
+    color: #382B57;
+  }
 
-.indice{
-  float: left;
-}
+  .indice{
+    float: left;
+  }
 
-img{
-  pointer-events: none;
-}
+  img{
+    pointer-events: none;
+  }
 
-.subT{
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-}
+  .subT{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+  }
 
-.text{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #535353;
+  .text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535353;
+  }
 }
         `;
         return(
