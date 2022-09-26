@@ -100,7 +100,7 @@ function IndexPage() {
                         </Grid>
                     
                         <div style={{height:'7.625rem'}} />
-                        <form>
+                        <form action='/dashboard' onSubmit={insertUser} method='POST'>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <TextField required sx={{['& fieldset']:{borderRadius:3}, fontFamily: 'Open Sans, sans-serif'}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
@@ -134,7 +134,7 @@ function IndexPage() {
                 </div>
                   
                           <Button fullWidth variant="contained" type="submit" 
-                              className='Button' onClick={insertUser}>Criar conta</Button>
+                              className='Button'>Criar conta</Button>
               </form>
                               <p style={{textAlign:'center'}}>Já possui uma conta?<Link className='Link' underline="none" style={{color: '#382B57'}} href="/login" >Acesse aqui</Link> </p>
                          
