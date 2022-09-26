@@ -98,7 +98,7 @@ const [values, setValues] = React.useState<State>({
                 </Grid>
                     
                         <div style={{height:'7.625rem'}} />
-                    <form>
+                    <form action='/dashboard' onSubmit={handleLogin} method='POST'>
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
@@ -139,7 +139,7 @@ const [values, setValues] = React.useState<State>({
                     
                     <div className='h' />
                       <Button fullWidth variant="contained" 
-                      onClick={handleLogin}
+                      type='submit'
                         className='Button'>Entrar</Button>
                     </form>
                         
