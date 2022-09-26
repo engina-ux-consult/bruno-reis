@@ -24,10 +24,11 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fade from '@mui/material/Fade';
 import { styled, useTheme } from '@mui/material/styles';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Lottie from 'react-lottie';
 import * as location from "../assets/splash.json";
 
@@ -101,7 +102,18 @@ const copyHandler = (event: React.ClipboardEvent<HTMLInputElement>) => {
   event.preventDefault();
   return false;
 };
-
+const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
+    React.useState<null | HTMLElement>(null);
+    const theme = useTheme();
+    const [open, setOpen] = React.useState(false);
+  
+    const handleDrawerOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleDrawerClose = () => {
+      setOpen(false);
+    };
 const [data, setData] = useState([]);
 const [loading, setloading] = useState(false);
 const [completed, setcompleted] = useState(undefined);
@@ -134,6 +146,52 @@ const gray = {
 };
 
 const indice = ['3M','BIODINÂMICA','DENTSPLY','FGM','GC','ORALTECH','IVOCLAR','KERR','KULZER','SDI','SHOFU','SMARTDENT','TOKUYAMA','ULTRADENT','VOCO'];
+
+const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
+  open?: boolean;
+}>(({ theme, open }) => ({
+  flexGrow: 1,
+  padding: theme.spacing(3),
+  transition: theme.transitions.create('margin', {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen,
+  }),
+  ...(open && {
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+    marginRight: 0,
+  }),
+}));
+
+interface AppBarProps extends MuiAppBarProps {
+  open?: boolean;
+}
+
+const AppBar = styled(MuiAppBar, {
+  shouldForwardProp: (prop) => prop !== 'open',
+})<AppBarProps>(({ theme, open }) => ({
+  transition: theme.transitions.create(['margin', 'width'], {
+    easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen,
+  }),
+  ...(open && {
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  }),
+}));
+
+const DrawerHeader = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  padding: theme.spacing(0, 1),
+  // necessary for content to be below app bar
+  ...theme.mixins.toolbar,
+  justifyContent: 'flex-start',
+}));
 
 return (
   <>
@@ -213,7 +271,81 @@ return (
             </Link>  
           </Drawer>
       </div>
-      
+      <div className='mob'>
+        <AppBar position="fixed" open={open} style={{background: '#382B57'}}>
+          <Toolbar>
+            <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
+             <img src="../imgs/Vector.svg" style={{ width: '40px', height: '64px'}}/>
+            </Typography>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="end"
+              onClick={handleDrawerOpen}
+              sx={{ ...(open && { display: 'none' }) }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          sx={{
+            flexShrink: 0,
+            width: '16.125rem',
+            '& .MuiDrawer-paper': {
+              width: '16.125rem',
+              padding: '1rem',
+            },
+          }}
+          variant="persistent"
+          anchor="right"
+          open={open}
+        >
+          <DrawerHeader style={{}}>
+            <IconButton onClick={handleDrawerClose} style={{color:'#382B57'}}>
+              {theme.direction === 'rtl' ? <CloseOutlinedIcon /> : <CloseOutlinedIcon />}
+            </IconButton>
+          </DrawerHeader>
+          
+            <IconButton
+                  size="small"
+                  aria-label="show more"
+
+                  aria-haspopup="true"
+
+                  color="inherit"
+                >
+            </IconButton>
+            <List style={{flexDirection: 'column', alignItems: 'center'}}>
+              <Link underline="none" href="/dashboard" >
+                <Button  style={{ color: "#382B57",textTransform: 'none'}} startIcon={<HomeOutlinedIcon />}> Dashboard</Button>
+              </Link>  
+            </List>
+            <List style={{flexDirection: 'column', alignItems: 'center'}}>
+              <Link underline="none" href="/" >
+                <Button style={{ color: "#382B57",textTransform: 'none'}} startIcon={<Output />}> Sair</Button>
+              </Link>      
+            </List>
+        </Drawer>
+        <AppBar
+            sx={{background: '#FFFFFF', boxShadow: 'none', color: '#000000', marginTop:'64px'}}
+          >
+            <Toolbar>
+            <Link href="/dashboard" >
+                <Button style={{ color: "#000000", float: "left"}} startIcon={<ArrowBack />}/>
+            </Link>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                style={{marginLeft: 'auto', marginRight: 'auto'}}
+              >
+                Guia completo de resinas compostas [Conteúdo exclusivo]
+              </Typography>
+              <Box sx={{ flexGrow: 1 }} />
+            </Toolbar>
+          </AppBar>
+      </div>
       <Box
         component="main"
         sx={{bgcolor: 'background.default'}}
@@ -222,6 +354,7 @@ return (
         <img id='topo' src="../imgs/guia-resinas/bgresina.jpg"  style={{width: "100%"}} alt="brand" /> 
         { /* ÍNDICE */ }
           <>
+          <div className='inv'>
             <Card className='inv' style={{float:'left', borderRadius:'0.5rem', gap:'1rem', padding:'1rem', top: '6rem',position: 'sticky', width: '14.063rem', color: '#A09E9E', marginLeft:'2rem'}}>
               <CardContent >
                 <Typography className='indice'>
@@ -246,6 +379,7 @@ return (
                 </Typography>
               </CardContent>
             </Card>
+          </div>
           </>
         { /* UP BUTTON */ }
           <>
