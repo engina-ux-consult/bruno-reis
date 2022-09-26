@@ -220,7 +220,7 @@ return (
                 variant="h6"
                 noWrap
                 component="div"
-                sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' }}
+                sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000', fontFamily: 'Open Sans, sans-serif' }}
               >
                 Guia completo de resinas compostas [Conteúdo exclusivo]
               </Typography>
@@ -329,7 +329,7 @@ return (
             </List>
         </Drawer>
         <AppBar
-            sx={{background: '#FFFFFF', boxShadow: 'none', color: '#000000', marginTop:'64px'}}
+            sx={{background: '#FFFFFF', boxShadow: 'none', color: '#000000', marginTop:'70px'}}
           >
             <Toolbar>
             <Link href="/dashboard" >
@@ -469,10 +469,9 @@ return (
                 <h2>Aplicação clínica das opacidades:</h2>
                 <img src="../imgs/guia-resinas/aplicli.jpg"  style={{width: "100%"}} alt="brand" />
                 <p style={purple}>
-                <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
-                  <p style={{marginLeft: '1rem'}}>
-                  Tubete com 4g: R$50,00<br/>
-                  Preço por grama: R$12,50</p>
+                  <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
+                  Tubete com 4g: R$50,00 <br/>
+                  Preço por grama: R$12,50
                 </p>
               </>
             { /* Z2503M */ }
@@ -499,8 +498,8 @@ return (
                 <h2>Aplicação clínica das opacidades:</h2>
                 <img src="../imgs/guia-resinas/250apli.jpg"  style={{width: "100%"}} alt="brand" />
                 <p style={purple}>
-                <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
-                  <br/>Tubete com 4g: R$105,00 <br/>
+                  <Chip style={{ color: "#FFFFFF", background: '#382B57',marginLeft: '-1rem'}} icon={<MonetizationOnOutlinedIcon style={{ color: "#FFFFFF"}} />} label={<h3>Preço médio atual:</h3>} /><br/>
+                  Tubete com 4g: R$105,00 <br/>
                   Preço por grama: R$27,00
                 </p>
               </>
