@@ -30,6 +30,7 @@ function ST(){
 
     .dashboard{
       background: linear-gradient(90deg, #382B57 0%, #3D237C 100%);
+      margin-top: 3rem;
     }
 
     html, body {

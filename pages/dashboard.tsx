@@ -138,7 +138,7 @@ useEffect(() => {
                 variant="h6"
                 noWrap
                 component="div"
-                sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' }}
+                sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' , fontFamily: 'Open Sans, sans-serif'}}
               >
                 Olá, Fulano
               </Typography>
@@ -284,6 +284,21 @@ useEffect(() => {
               </Link>      
             </List>
         </Drawer>
+        <AppBar
+            sx={{background: '#FFFFFF', boxShadow: 'none', color: '#000000', marginTop:'70px'}}
+          >
+            <Toolbar>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"  
+                style={{fontFamily: 'Open Sans, sans-serif'}}
+              >
+                Olá Fulano
+              </Typography>
+              <Box sx={{ flexGrow: 1 }} />
+            </Toolbar>
+          </AppBar>
       </div>
       <Box
         component="main"
@@ -295,7 +310,7 @@ useEffect(() => {
           <Grid item xs={12} sm={6} className='dashboard' style={{borderRadius:'0.5rem', color:'white', backgroundColor: '#',width: '100%', height: '18.50rem', objectFit: 'cover'}}>
             <Grid style={{position: "absolute",margin: '56px 32px', maxWidth: '31.25rem'}}>
               <Typography  style={{fontFamily: 'Open Sans, sans-serif', fontWeight: 300, fontSize: '28px', lineHeight: '40px'}}>
-              Plataforma de conteúdos exclusivos Bruno Reis
+              Plataforma de conteúdos exclusivos <b>Bruno Reis</b>
               </Typography> 
               <p style = {{fontFamily: 'Open Sans, sans-serif', fontSize: '18px', lineHeight: '24px',}}>
                 Aqui você encontra os melhores conteúdos e conhecimentos do mundo da odontologia.
