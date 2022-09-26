@@ -103,12 +103,12 @@ function IndexPage() {
                         <form>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
-                    <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
+                    <TextField required sx={{['& fieldset']:{borderRadius:3}, fontFamily: 'Open Sans, sans-serif'}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
                     <div className='h' />
-                    <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
+                    <TextField required sx={{['& fieldset']:{borderRadius:3}, fontFamily: 'Open Sans, sans-serif'}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
                     onChange={(event) =>{setEmail(event.target.value);}} value={email || ''} helperText={message}/>
                     <div className='h' />
-                    <FormControl required sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3} }} variant="outlined">
+                    <FormControl required sx={{ m: 0, width: '100%',['& fieldset']:{borderRadius:3}, fontFamily: 'Open Sans, sans-serif' }} variant="outlined">
           <InputLabel htmlFor="outlined-adornment-password">Senha</InputLabel>
           <OutlinedInput
             id="outlined-adornment-password"

@@ -275,12 +275,12 @@ useEffect(() => {
             </IconButton>
             <List style={{flexDirection: 'column', alignItems: 'center'}}>
               <Link href="/dashboard" passHref>
-                <Button  style={{ color: "#382B57",textTransform: 'none'}} startIcon={<HomeOutlinedIcon />}> Dashboard</Button>
+                <Button  style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<HomeOutlinedIcon />}> Dashboard</Button>
               </Link>  
             </List>
             <List style={{flexDirection: 'column', alignItems: 'center'}}>
               <Link href="/" passHref>
-                <Button style={{ color: "#382B57",textTransform: 'none'}} startIcon={<Output />}> Sair</Button>
+                <Button style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<Output />}> Sair</Button>
               </Link>      
             </List>
         </Drawer>
@@ -305,7 +305,7 @@ useEffect(() => {
           </Grid>
         </>
         
-        <Typography variant='subtitle1' style={{fontWeight: '600', fontSize: '24px'}} marginTop={'32px'} marginBottom={'32px'}>
+        <Typography variant='subtitle1' style={{fontFamily: 'Open Sans, sans-serif', fontWeight: '600', fontSize: '24px'}} marginTop={'32px'} marginBottom={'32px'}>
           Conteúdos
         </Typography>
         <Card sx={{ maxWidth: 397, boxShadow: 'none'}}>
@@ -319,19 +319,19 @@ useEffect(() => {
       <CardContent>
       <Typography variant="body2" color="text.secondary">
       <Button disabled style={{color: '#A09E9E', backgroundColor: '#FFFFFF', textTransform: 'none', marginLeft:'-1rem'}}
-        variant="contained" endIcon={<BoltIcon style={{color:'#382B57'}} />}>Conteúdo exclusivo
+        variant="contained" endIcon={<BoltIcon style={{color:'#382B57', fontFamily: 'Open Sans, sans-serif'}} />}>Conteúdo exclusivo
       </Button>
       </Typography>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" style = {{fontFamily: 'Open Sans, sans-serif'}}>
           Guia completo de resinas compostas
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" style = {{fontFamily: 'Open Sans, sans-serif'}}>
         Este conteúdo foi desenvolvido para auxiliar cirurgiões-dentistas no momento de escolha de uma resina composta.
         </Typography>
       </CardContent>
       <CardActions>
       <Link href="/guia-resinas" passHref>
-        <Button variant="contained" className='Button' endIcon={<ArrowForward />}>Ler conteúdo</Button>
+        <Button style = {{fontFamily: 'Open Sans, sans-serif'}} variant="contained" className='Button' endIcon={<ArrowForward />}>Ler conteúdo</Button>
       </Link>
       </CardActions>
     </Card>
