@@ -249,7 +249,6 @@ useEffect(() => {
         <Drawer
           sx={{
             flexShrink: 0,
-            width: '16.125rem',
             '& .MuiDrawer-paper': {
               width: '16.125rem',
               padding: '1rem',
@@ -291,17 +290,21 @@ useEffect(() => {
         sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3 }}
       >
         <Toolbar />
-        <Grid item xs={12} sm={6} className='dashboard' style={{borderRadius:'0.5rem', color:'white', backgroundColor: '#',width: '100%', height: '18.50rem', objectFit: 'cover'}}>
-          <Grid style={{position: "absolute",margin: '56px 32px'}}>
-            <Typography  style={{width: '365px',height: '120px',fontStyle: 'normal',fontWeight: '600',fontSize: '32px',lineHeight: '40px'}}>
-            Plataforma de conteúdos exclusivos Bruno Reis
-            </Typography> 
-            <p>
-              Aqui você encontra os melhores conteúdos e conhecimentos do mundo da odontologia.
-            </p>  
-            </Grid>
-              <img className='inv' src="../imgs/logo-trans.png"  style={{float: "right" ,width: "319px",height: "288px",left: "969px",top: "96px", margin: '6px 120px'}} alt="brand" /> 
-        </Grid>
+        {/* DASHBOARD */}
+        <>
+          <Grid item xs={12} sm={6} className='dashboard' style={{borderRadius:'0.5rem', color:'white', backgroundColor: '#',width: '100%', height: '18.50rem', objectFit: 'cover'}}>
+            <Grid style={{position: "absolute",margin: '56px 32px', maxWidth: '31.25rem'}}>
+              <Typography  style={{fontFamily: 'Open Sans, sans-serif', fontWeight: 300, fontSize: '28px', lineHeight: '40px'}}>
+              Plataforma de conteúdos exclusivos Bruno Reis
+              </Typography> 
+              <p style = {{fontFamily: 'Open Sans, sans-serif', fontSize: '18px', lineHeight: '24px',}}>
+                Aqui você encontra os melhores conteúdos e conhecimentos do mundo da odontologia.
+              </p>  
+              </Grid>
+                <img className='inv' src="../imgs/logo-trans.png"  style={{float: "right" ,width: "319px",height: "288px",left: "969px",top: "96px", margin: '6px 120px'}} alt="brand" /> 
+          </Grid>
+        </>
+        
         <Typography variant='subtitle1' style={{fontWeight: '600', fontSize: '24px'}} marginTop={'32px'} marginBottom={'32px'}>
           Conteúdos
         </Typography>
