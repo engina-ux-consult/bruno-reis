@@ -18,9 +18,9 @@ const db = mysql.createConnection({
 
 db.connect(function(err) {
   if (err) {
-    console.error('error connecting: ' + err.stack);
+    console.error({ msg: 'error connecting: ' + err.stack});
     return;
-  } else{console.log("Database Connected")}
+  } else{console.log({ msg: "Database Connected"})}
 });
 
 
@@ -65,12 +65,15 @@ function verifyJWT(req, res, next){
   const token = req.headers['x-access-token'];
   if (!token) {
     res.send("Yo, we need a token, please give it to us next time!");
+    console.log({ msg: "Yo, we need a token, please give it to us next time!" });
   } else {
     jwt.verify(token, "jwtSecret", (err, decoded) => {
     if (err) {
       res.json({auth: false, message: "U failed to auth"});
+      console.log({ msg: "U failed to auth" });
     } else {
       req.id = decoded.id;
+      console.log({ msg: "reqid:" + req.id });
       next();
     }
   })
@@ -79,6 +82,7 @@ function verifyJWT(req, res, next){
 
 app.get('/userAuth', verifyJWT , (req, res) => {
   res.send("Yo, u are auth!");
+  console.log({ msg: "Yo, u are auth!" });
 });
 
 
