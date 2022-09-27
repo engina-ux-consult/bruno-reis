@@ -31,6 +31,8 @@ import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
 import Lottie from 'react-lottie';
 import * as location from "../assets/splash.json";
+import Axios from 'axios';
+import { useRouter } from 'next/router';
 
 const defaultOptions1 = {
   loop: true,
@@ -96,7 +98,9 @@ interface AppBarProps extends MuiAppBarProps {
 
 
  function GuiaResinas() {
-  
+
+const router = useRouter()
+
 // onCopy
 const copyHandler = (event: React.ClipboardEvent<HTMLInputElement>) => {
   event.preventDefault();
@@ -128,6 +132,21 @@ useEffect(() => {
         setloading(true);
       });
   }, 2000);
+}, []);
+
+useEffect(() => {
+  Axios.get("http://localhost:3001/userAuth", {
+    headers: {
+      "x-access-token": localStorage.getItem("token") as string,
+    }
+  }).then((response) => {
+    if(!localStorage.getItem("token")){
+      console.log({msg: "Erro de Auth"});
+      router.push('/');
+    } else{
+        console.log({msg: response});
+    }
+  })
 }, []);
 
 {/*CSS*/}

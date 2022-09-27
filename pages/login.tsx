@@ -13,6 +13,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Head from 'next/head';
 import ST from './styles';
 import Axios from 'axios';
+import { useRouter } from 'next/router';
 
 interface State {
     amount: string;
@@ -23,6 +24,8 @@ interface State {
   }
 
 function IndexPage() {    
+
+const router = useRouter()
 
 const [loginStatus, setLoginStatus] = useState(false);
 const [email, setEmail] = useState("");
@@ -51,6 +54,7 @@ const userAuth = () => {
       "x-access-token": localStorage.getItem("token") as string,
     }
   }).then((response) => {
+    router.push('/dashboard');
     console.log({msg: response});
   })
 }

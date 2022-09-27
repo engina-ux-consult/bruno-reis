@@ -29,7 +29,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Lottie from 'react-lottie';
 import * as location from "../assets/splash.json";
 import Axios from 'axios';
-
+import { useRouter } from 'next/router';
 
 const defaultOptions1 = {
   loop: true,
@@ -87,6 +87,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
  function Dashboard() {
+  const router = useRouter()
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -126,6 +127,7 @@ useEffect(() => {
   }).then((response) => {
     if(!localStorage.getItem("token")){
       console.log({msg: "Erro de Auth"});
+      router.push('/');
       setAuth("Eroo");
     } else{
         console.log({msg: response});
