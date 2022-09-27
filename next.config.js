@@ -54,6 +54,26 @@ app.post("/create", (req, res) => {
   });
 });
 
+function verifyJWT(req, res, next){
+  const token = req.headers['x-access-token'];
+  if (!token) {
+    res.send("Yo, we need a token, please give it to us next time!");
+  } else {
+    jwt.verify(token, "jwtSecret", (err, decoded) => {
+    if (err) {
+      res.json({auth: false, message: "U failed to auth"});
+    } else {
+      req.id = decoded.id;
+      next();
+    }
+  })
+  }
+}
+
+app.get('/userAuth', verifyJWT , (req, res) => {
+  res.send("Yo, u are auth!");
+});
+
 
 
 app.post("/login", (req, res) => {
@@ -74,13 +94,15 @@ app.post("/login", (req, res) => {
           const id = result[0].id;
           const token = jwt.sign({id}, "jwtSecret", { expiresIn: 60});
           console.log({ auth: true, token});
-          return res.json({ auth: true, token});
+          res.json({ auth: true, token, result: result});
         } else {
+          res.json({auth: false, message: "Wrong Password"});
           console.log({ msg: "Senha Incorreta" });
         }
       });
     } else {
       console.log({ msg: "Usuário não registrado!" });
+      res.json({auth: false, message: "No User Exists"});
     }
   });
 });

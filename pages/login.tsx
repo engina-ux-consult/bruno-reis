@@ -24,8 +24,7 @@ interface State {
 
 function IndexPage() {    
 
-const [page, setPage] = useState(0);
-const [step, setStep] = useState(0);
+const [loginStatus, setLoginStatus] = useState(false);
 const [email, setEmail] = useState("");
 const [message, setMessage] = useState("");
 const [password, setPassword] = useState("");
@@ -35,9 +34,26 @@ const handleLogin = () => {
     email: email, 
     password: password,
   }).then((response) => {
-  console.log(response.data.msg);
+    if (!response.data.auth) {
+      setLoginStatus(false);
+    } else {
+      console.log({msg: response.data});
+      localStorage.setItem("token", response.data.token);
+      setLoginStatus(true);
+    }
+  
   });
 };
+
+const userAuth = () => {
+  Axios.get("http://localhost:3001/userAuth", {
+    headers: {
+      "x-access-token": localStorage.getItem("token") as string,
+    }
+  }).then((response) => {
+    console.log({msg: response});
+  })
+}
 
 const [values, setValues] = React.useState<State>({
     amount: '',
@@ -98,7 +114,7 @@ const [values, setValues] = React.useState<State>({
                 </Grid>
                     
                         <div style={{height:'7.625rem'}} />
-                    <form action='/dashboard' onSubmit={handleLogin} method='POST'>
+                    <form>
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
@@ -139,13 +155,15 @@ const [values, setValues] = React.useState<State>({
                     
                     <div className='h' />
                       <Button fullWidth variant="contained" 
-                      type='submit'
+                      onClick={handleLogin}
                         className='Button'>Entrar</Button>
                     </form>
                         
                           <div className='h' />
 
-                                                        
+                          {loginStatus && (
+                            <Button onClick={userAuth}>TEST</Button>
+                          )}                      
                           <p style={{textAlign:'center'}}>Não possui uma conta? <Link className='Link' underline="none" style={{color: '#382B57'}} href="/" >Acesse aqui</Link> </p>
 
                     </div>
