@@ -13,6 +13,7 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Axios from 'axios';
 import ST from './styles';
+import { useRouter } from 'next/router';
 
 interface State {
     amount: string;
@@ -23,6 +24,7 @@ interface State {
   }
   
 function IndexPage() {
+    const router = useRouter()
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -33,11 +35,25 @@ function IndexPage() {
         name: name,
         email: email, 
         password: password,
-      }).then(() => {
-      console.log("Sucesso!");
+      }).then((response) => {
+        if (!response.data.auth) {
+
+        } else {
+          userAuth();
+          localStorage.setItem("token", response.data.token);
+        }
       });
     };
-
+    function userAuth  () {
+      Axios.get("http://localhost:3001/userAuth", {
+        headers: {
+          "x-access-token": localStorage.getItem("token") as string,
+        }
+      }).then((response) => {
+        router.push('/dashboard');
+        console.log({msg: response});
+      })
+    }
     const [values, setValues] = React.useState<State>({
         amount: '',
         password: '',
@@ -100,7 +116,7 @@ function IndexPage() {
                         </Grid>
                     
                         <div style={{height:'7.625rem'}} />
-                        <form action='/dashboard' onSubmit={insertUser} method='POST'>
+                        <form method='POST'>
                 <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <TextField required sx={{['& fieldset']:{borderRadius:3}, fontFamily: 'Open Sans, sans-serif'}} type="text" id="name" label="Nome completo" name="name" variant="outlined" onChange={(event) =>{setName(event.target.value);}} value={name || ''} />
@@ -133,7 +149,7 @@ function IndexPage() {
         <p style={{color:'#535353'}}>Ao menos 8 caracteres</p>
                 </div>
                   
-                          <Button fullWidth variant="contained" type="submit" 
+                          <Button fullWidth variant="contained" onClick={insertUser} 
                               className='Button'>Criar conta</Button>
               </form>
                               <p style={{textAlign:'center'}}>Já possui uma conta?<Link className='Link' underline="none" style={{color: '#382B57'}} href="/login" >Acesse aqui</Link> </p>
