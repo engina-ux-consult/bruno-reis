@@ -42,13 +42,20 @@ app.post("/create", (req, res) => {
           (error, response) => {
             if (err) {
               console.log(err);
+            }else{
+              db.query("SELECT id FROM usuarios WHERE email = ?",[email],(erro, re) => {
+                const id = 0;
+                const token = jwt.sign({id}, "jwtSecret", { expiresIn: 60});
+                console.log({ auth: true, token});
+                res.json({ auth: true, token, result: result});
+                console.log({ msg: "Usuário cadastrado com sucesso" });
+              });
             }
-
-            console.log({ msg: "Usuário cadastrado com sucesso" });
           }
         );
       });
     } else {
+      res.json({auth: false, message: "No User Exists"});
       console.log({ msg: "Email já cadastrado" });
     }
   });
