@@ -127,14 +127,23 @@ useEffect(() => {
   }).then((response) => {
     if(!localStorage.getItem("token")){
       console.log({msg: "Erro de Auth"});
-      router.push('/');
-      setAuth("Eroo");
+      router.push('/login');
     } else{
         console.log({msg: response});
-        setAuth("Token: "+ localStorage.getItem("token"));
     }
   })
 }, []);
+
+const logOut = () => {
+  Axios.get("http://localhost:3001/userAuth", {
+    headers: {
+      "x-access-token": localStorage.getItem("token") as string,
+    }
+  }).then((response) => {
+    localStorage.removeItem("token");
+    localStorage.clear();
+  })
+}
 
   return (
     <>
@@ -163,7 +172,6 @@ useEffect(() => {
                 sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' , fontFamily: 'Open Sans, sans-serif'}}
               >
                 Olá, Fulano
-                {auth}
               </Typography>
               <Box sx={{ flexGrow: 1 }} />
               {/*
@@ -247,7 +255,7 @@ useEffect(() => {
               <Button style={{ color: "#FFFFFF"}} startIcon={<Home />}/>
             </Link> 
             <Link href="/" passHref>
-              <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginBottom: '3rem'}} startIcon={<Output />}/>
+              <Button onClick={logOut} style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginBottom: '3rem'}} startIcon={<Output />}/>
             </Link>
           
           </Drawer>
@@ -303,7 +311,7 @@ useEffect(() => {
             </List>
             <List style={{flexDirection: 'column', alignItems: 'center'}}>
               <Link href="/" passHref>
-                <Button style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<Output />}> Sair</Button>
+                <Button onClick={logOut} style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<Output />}> Sair</Button>
               </Link>      
             </List>
         </Drawer>

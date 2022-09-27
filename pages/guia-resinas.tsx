@@ -142,12 +142,23 @@ useEffect(() => {
   }).then((response) => {
     if(!localStorage.getItem("token")){
       console.log({msg: "Erro de Auth"});
-      router.push('/');
+      router.push('/login');
     } else{
         console.log({msg: response});
     }
   })
 }, []);
+
+const logOut = () => {
+  Axios.get("http://localhost:3001/userAuth", {
+    headers: {
+      "x-access-token": localStorage.getItem("token") as string,
+    }
+  }).then((response) => {
+    localStorage.removeItem("token");
+    localStorage.clear();
+  })
+}
 
 {/*CSS*/}
 const purple = {
@@ -287,7 +298,7 @@ return (
               <Button style={{ color: "#FFFFFF"}} startIcon={<Home />}/>
             </Link> 
             <Link href="/" >
-              <Button style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginLeft: '-1.5rem' , marginBottom: '3rem'}} startIcon={<Output />}/>
+              <Button onClick={logOut} style={{ color: "#FFFFFF", position: 'absolute', bottom: '0', marginLeft: '-1.5rem' , marginBottom: '3rem'}} startIcon={<Output />}/>
             </Link>  
           </Drawer>
       </div>
@@ -343,7 +354,7 @@ return (
             </List>
             <List style={{flexDirection: 'column', alignItems: 'center'}}>
               <Link underline="none" href="/" >
-                <Button style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<Output />}> Sair</Button>
+                <Button onClick={logOut} style={{ color: "#382B57",textTransform: 'none', fontFamily: 'Open Sans, sans-serif'}} startIcon={<Output />}> Sair</Button>
               </Link>      
             </List>
         </Drawer>
