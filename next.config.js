@@ -10,9 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'rey',
-  password : 'Senh@Mestr3',
+  host     : 'bruno-reis-system.cy1n36zfyybi.us-east-1.rds.amazonaws.com',
+  user     : 'admin',
+  password : 'f_nRZ*4H#5qeLiY',
   database : 'iknow_system'
 });
 
