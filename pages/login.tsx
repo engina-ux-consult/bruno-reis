@@ -40,7 +40,7 @@ const handleLogin = () => {
     if (!response.data.auth) {
       setLoginStatus(false);
     } else {
-      console.log({msg: response.data});
+      userAuth();
       localStorage.setItem("token", response.data.token);
       setLoginStatus(true);
     }
@@ -48,7 +48,7 @@ const handleLogin = () => {
   });
 };
 
-const userAuth = () => {
+function userAuth  () {
   Axios.get("http://localhost:3001/userAuth", {
     headers: {
       "x-access-token": localStorage.getItem("token") as string,
@@ -118,7 +118,7 @@ const [values, setValues] = React.useState<State>({
                 </Grid>
                     
                         <div style={{height:'7.625rem'}} />
-                    <form>
+                    <form method='POST'>
                     <div style={{ display: 'flex', flexDirection: 'column', maxWidth: 400, minWidth: 400, }}>
                     
                     <TextField required sx={{['& fieldset']:{borderRadius:3}}} type="email" id="email" label="E-mail" variant="outlined" name="email" 
@@ -158,16 +158,13 @@ const [values, setValues] = React.useState<State>({
                     </p>
                     
                     <div className='h' />
-                      <Button fullWidth variant="contained" 
+                      <Button fullWidth variant="contained"
                       onClick={handleLogin}
-                        className='Button'>Entrar</Button>
+                       className='Button'>Entrar</Button>
                     </form>
                         
                           <div className='h' />
-
-                          {loginStatus && (
-                            <Button onClick={userAuth}>TEST</Button>
-                          )}                      
+             
                           <p style={{textAlign:'center'}}>Não possui uma conta? <Link className='Link' underline="none" style={{color: '#382B57'}} href="/" >Acesse aqui</Link> </p>
 
                     </div>
