@@ -13,7 +13,7 @@ const db = mysql.createConnection({
   host     : 'bruno-reis-system.cy1n36zfyybi.us-east-1.rds.amazonaws.com',
   user     : 'admin',
   password : 'f_nRZ*4H#5qeLiY',
-  database : 'iknow_system'
+  database : 'bruno_reis'
 });
 
 db.connect(function(err) {
