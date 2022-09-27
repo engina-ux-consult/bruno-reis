@@ -28,6 +28,8 @@ import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
 import Lottie from 'react-lottie';
 import * as location from "../assets/splash.json";
+import Axios from 'axios';
+
 
 const defaultOptions1 = {
   loop: true,
@@ -114,6 +116,24 @@ useEffect(() => {
   }, 2000);
 }, []);
 
+const [auth, setAuth] = useState("");
+
+useEffect(() => {
+  Axios.get("http://localhost:3001/userAuth", {
+    headers: {
+      "x-access-token": localStorage.getItem("token") as string,
+    }
+  }).then((response) => {
+    if(!localStorage.getItem("token")){
+      console.log({msg: "Erro de Auth"});
+      setAuth("Eroo");
+    } else{
+        console.log({msg: response});
+        setAuth("Token: "+ localStorage.getItem("token"));
+    }
+  })
+}, []);
+
   return (
     <>
   {!loading ? (
@@ -141,6 +161,7 @@ useEffect(() => {
                 sx={{ display: { xs: 'none', sm: 'block' }, color: '#000000' , fontFamily: 'Open Sans, sans-serif'}}
               >
                 Olá, Fulano
+                {auth}
               </Typography>
               <Box sx={{ flexGrow: 1 }} />
               {/*
