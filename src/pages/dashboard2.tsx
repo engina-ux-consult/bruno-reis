@@ -161,7 +161,7 @@ function Dashboard() {
         />
       ) : (
         <div>
-          {/* <ST /> */}
+          <ST />
           <Head>
             <title>Iknow - Dashboard</title>
           </Head>

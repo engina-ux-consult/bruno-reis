@@ -114,7 +114,7 @@ function IndexPage() {
 
   return (
     <div>
-      {/* <ST /> */}
+      <ST />
       <Head>
         <title>Iknow - Crie sua conta</title>
       </Head>

@@ -30,6 +30,7 @@ import React, { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import * as location from "../../../assets/splash.json";
 import { useAuth } from "../../hooks/use-auth";
+import ST from "../styles";
 
 const defaultOptions1 = {
   loop: true,
@@ -156,7 +157,7 @@ function Dashboard() {
         />
       ) : (
         <div>
-          {/* <ST /> */}
+          <ST />
           <Head>
             <title>Iknow - Dashboard</title>
           </Head>
