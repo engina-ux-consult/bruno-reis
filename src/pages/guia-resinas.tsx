@@ -30,7 +30,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
 import Lottie from 'react-lottie';
-import * as location from "../assets/splash.json";
+import * as location from "../../assets/splash.json";
 import Axios from 'axios';
 import { useRouter } from 'next/router';
 
