@@ -17,7 +17,6 @@ import { useRouter } from "next/router";
 import { useAuth } from "../hooks/use-auth";
 import { AuthError } from "firebase/auth";
 import { messageErrorAuth } from "../utils/valid";
-import LoadingButton from "@mui/lab/LoadingButton/LoadingButton";
 
 interface State {
   amount: string;
@@ -257,16 +256,15 @@ function IndexPage() {
                 <p style={{ color: "#535353" }}>Ao menos 8 caracteres</p>
               </div>
 
-              <LoadingButton
+              <Button
                 fullWidth
                 variant="contained"
                 onClick={handleSubmit}
                 className="Button"
-                loading={isLoading}
                 type="submit"
               >
                 Criar conta
-              </LoadingButton>
+              </Button>
             </form>
             <p style={{ textAlign: "center" }}>
               Já possui uma conta?

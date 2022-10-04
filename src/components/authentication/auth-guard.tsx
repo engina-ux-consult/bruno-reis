@@ -14,9 +14,6 @@ export const AuthGuard: FC<AuthGuardProps> = (props) => {
   const router = useRouter();
   const [checked, setChecked] = useState(false);
 
-  console.log(auth.isAuthenticated);
-  
-
   useEffect(() => {
     if (!router.isReady) {
       return;

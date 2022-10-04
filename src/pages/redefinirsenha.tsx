@@ -1,16 +1,14 @@
-import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
-import React, { useState } from "react";
-import FormLabel from "@mui/material/FormLabel";
 import { ArrowBack } from "@mui/icons-material";
-import ST from "./styles";
-import Head from "next/head";
-import { useAuth } from "../hooks/use-auth";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import TextField from "@mui/material/TextField";
 import { AuthError } from "firebase/auth";
+import Head from "next/head";
+import { useState } from "react";
+import { useAuth } from "../hooks/use-auth";
 import { messageErrorAuth } from "../utils/valid";
-import LoadingButton from "@mui/lab/LoadingButton/LoadingButton";
+import ST from "./styles";
 
 function Redefinir() {
   const [email, setEmail] = useState("");
@@ -47,7 +45,7 @@ function Redefinir() {
 
   return (
     <div>
-      {/* <ST/> */}
+      <ST />
       <Head>
         <title>Iknow - Redefinir Senha</title>
       </Head>
@@ -119,16 +117,15 @@ function Redefinir() {
                 onChange={handleOnChange}
               />
               <div className="h" />
-              <LoadingButton
+              <Button
                 fullWidth
                 variant="contained"
                 onClick={handleSubmit}
                 className="Button"
-                loading={isLoading}
                 type="submit"
               >
                 Enviar código
-              </LoadingButton>
+              </Button>
             </form>
           </div>
         </Grid>
