@@ -1,10 +1,12 @@
 import {
+  AuthError,
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut,
+  UserCredential,
 } from "firebase/auth";
 import {
   doc,
@@ -37,7 +39,10 @@ export interface AuthContextValue {
   user: User;
   db: Firestore;
   setUser: (value: User) => void;
-  signInEmail: (email: string, password: string) => Promise<any>;
+  signInEmail: (
+    email: string,
+    password: string
+  ) => Promise<UserCredential | AuthError>;
   createUserEmail: ({ email, name, password }: CreateUserProps) => Promise<any>;
   logout: () => Promise<any>;
   getUser: () => void;
@@ -59,7 +64,10 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
 
   const db = getFirestore(firebaseApp);
 
-  const signInEmail = async (email: string, password: string): Promise<any> => {
+  const signInEmail = async (
+    email: string,
+    password: string
+  ): Promise<UserCredential | AuthError> => {
     return await signInWithEmailAndPassword(auth, email, password);
   };
 

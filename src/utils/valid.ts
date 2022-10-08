@@ -10,6 +10,8 @@ export const messageErrorAuth = (code: string) => {
       return "Dados invalidos";
     case "auth/email-already-in-use":
       return "Email já cadastrado, faça login";
+    case "auth/too-many-requests":
+      return "O acesso a esta conta foi temporariamente desativado devido a muitas tentativas de login com falha. Você pode restaurá-lo imediatamente redefinindo sua senha ou pode tentar novamente mais tarde";
     default:
       return "Ocorreu um erro, tente novamente";
   }

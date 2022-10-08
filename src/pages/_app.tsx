@@ -1,14 +1,14 @@
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
-import type { FC } from "react";
 import Head from "next/head";
+import type { FC } from "react";
 
-import createEmotionCache from "../utils/createEmotionCache";
-import { SplashScreen } from "../components/splash-screen";
 import { AuthProvider } from "../contexts/firebase-auth-context";
+import theme from "../theme";
+import createEmotionCache from "../utils/createEmotionCache";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -27,8 +27,6 @@ const App: FC<EnhancedAppProps> = (props) => {
 
   const getLayout = Component.getLayout ?? ((page) => page);
 
-  const theme = createTheme({});
-
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -36,7 +34,6 @@ const App: FC<EnhancedAppProps> = (props) => {
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
       <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <AuthProvider>{getLayout(<Component {...pageProps} />)}</AuthProvider>
       </ThemeProvider>
