@@ -26,6 +26,7 @@ export const FormLogin: FC = (props) => {
   const [showPassword, setShowPassword] = useState<Boolean>(false);
 
   const formik = useFormik({
+    enableReinitialize: true,
     initialValues: {
       email: "",
       password: "",
@@ -55,7 +56,12 @@ export const FormLogin: FC = (props) => {
   };
 
   return (
-    <form noValidate onSubmit={formik.handleSubmit} {...props}>
+    <form
+      noValidate
+      onSubmit={formik.handleSubmit}
+      autoComplete="off"
+      {...props}
+    >
       <TextField
         autoFocus
         required
@@ -108,7 +114,7 @@ export const FormLogin: FC = (props) => {
       <Typography sx={{ mt: "16px" }}>
         Esqueceu a senha?{" "}
         <Link
-          href="/redefinirsenha"
+          href="/recovery-password"
           underline="none"
           fontWeight="bold"
           color="#382B57"

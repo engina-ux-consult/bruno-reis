@@ -67,7 +67,7 @@ const Login: NextPage = () => {
                   fontWeight="bold"
                 >
                   Acesse aqui
-                </Link>{" "}
+                </Link>
               </Typography>
             </Box>
           </Grid>
