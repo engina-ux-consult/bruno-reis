@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { NextPage } from "next/types";
 import { FormRecoveryPassword } from "../components/authentication/form-recovery-password";
@@ -47,12 +48,20 @@ const Login: NextPage = () => {
       >
         <Grid container style={{ minHeight: "100vh" }}>
           <Grid item xs={12} md={6} sx={styleImage}>
-            <img
-              src="../imgs/bd-broe.jpg"
-              className="inv"
-              style={{ width: "100%", height: "100vh", objectFit: "cover" }}
-              alt="brand"
-            />
+            <Box
+              sx={{
+                width: "100%",
+                height: "100vh",
+              }}
+            >
+              <Image
+                src="/imgs/bd-broe.jpg"
+                alt="brand"
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+            </Box>
           </Grid>
 
           <Grid

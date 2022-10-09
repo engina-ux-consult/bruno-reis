@@ -2,7 +2,7 @@ import { Box, Grid, Link, SxProps, Typography } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
 import { NextPage } from "next/types";
-import { FormLogin } from "../components/authentication/form-login";
+import { FormCreateAccount } from "../components/authentication/form-create-account";
 
 const styleImage: SxProps = {
   position: "relative",
@@ -16,11 +16,11 @@ const styleImage: SxProps = {
   },
 };
 
-const Login: NextPage = () => {
+const CreateAccount: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Iknow - Login</title>
+        <title>Iknow - Crie sua conta</title>
       </Head>
       <Box
         component="main"
@@ -61,18 +61,26 @@ const Login: NextPage = () => {
               justifyContent: "center",
             }}
           >
-            <Box maxWidth="90%">
+            <Box maxWidth="460px">
               <Box textAlign="center" mb="72px">
-                <Image src="/imgs/logo-brandd.svg" width={170} height={100} />
+                <Image
+                  src="/imgs/logo-brandd.svg"
+                  width={170}
+                  height={100}
+                  alt="logo"
+                  priority
+                />
               </Box>
-              <FormLogin />
+
+              <FormCreateAccount />
+
               <Typography sx={{ mt: "40px" }} textAlign="center">
-                Não possui uma conta?{" "}
+                Já possui uma conta?{" "}
                 <Link
                   className="Link"
                   underline="none"
                   style={{ color: "#382B57" }}
-                  href="/create-account"
+                  href="/login"
                   fontWeight="bold"
                 >
                   Acesse aqui
@@ -86,4 +94,4 @@ const Login: NextPage = () => {
   );
 };
 
-export default Login;
+export default CreateAccount;

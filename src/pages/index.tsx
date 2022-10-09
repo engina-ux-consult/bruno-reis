@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push("/criarconta");
+    router.push("/create-account");
   }, []);
 
   return (
