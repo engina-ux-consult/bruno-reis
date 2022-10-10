@@ -72,7 +72,6 @@ export const FormCreateAccount: FC = (props) => {
       {...props}
     >
       <TextField
-        autoFocus
         required
         fullWidth
         label="Nome completo"
@@ -87,7 +86,6 @@ export const FormCreateAccount: FC = (props) => {
         helperText={formik.touched.name && formik.errors.name}
       />
       <TextField
-        autoFocus
         required
         fullWidth
         label="E-mail"
