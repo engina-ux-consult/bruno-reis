@@ -1,31 +1,41 @@
-import { useState } from "react";
-import type { FC, ReactNode } from "react";
+import { Box, styled, Theme, useMediaQuery } from "@mui/material";
 import PropTypes from "prop-types";
-import { styled } from "@mui/material/styles";
-
-import { Box } from "@mui/material";
+import type { FC, ReactNode } from "react";
+import { useAuth } from "../../hooks/use-auth";
+import { DashboardNavbar } from "./dashboard-navbar";
+import { DashboardSidebar } from "./dashboard-sidebar";
 
 interface DashboardLayoutProps {
   children?: ReactNode;
 }
 
-const DashboardLayoutRoot = styled("div")(({ theme }) => ({
-  display: "flex",
-  flex: "1 1 auto",
-  maxWidth: "100%",
-  paddingTop: 64,
-  [theme.breakpoints.up("lg")]: {
-    paddingLeft: 280,
-  },
-}));
+const DashboardLayoutRoot = styled("div")(({ theme }) => ({}));
 
 export const DashboardLayout: FC<DashboardLayoutProps> = (props) => {
   const { children } = props;
-  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
+
+  const { logout } = useAuth();
+
+  const lgUp = useMediaQuery((theme: Theme) => theme.breakpoints.up("lg"), {
+    noSsr: true,
+  });
 
   return (
     <>
-      <DashboardLayoutRoot>
+      <Box
+        sx={{
+          display: "flex",
+          flex: "1 1 auto",
+          maxWidth: "100%",
+          ...(!lgUp
+            ? {
+                paddingTop: "73px",
+              }
+            : {
+                paddingLeft: "95px",
+              }),
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -36,7 +46,12 @@ export const DashboardLayout: FC<DashboardLayoutProps> = (props) => {
         >
           {children}
         </Box>
-      </DashboardLayoutRoot>
+      </Box>
+      {lgUp ? (
+        <DashboardNavbar logout={logout} />
+      ) : (
+        <DashboardSidebar logout={logout} />
+      )}
     </>
   );
 };
