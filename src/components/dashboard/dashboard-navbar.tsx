@@ -1,6 +1,7 @@
 import { Home, Output } from "@mui/icons-material";
 import { Box, Button, Drawer } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import type { FC } from "react";
 
 interface DashboardNavbarProps {
@@ -8,6 +9,7 @@ interface DashboardNavbarProps {
 }
 
 export const DashboardNavbar: FC<DashboardNavbarProps> = ({ logout }) => {
+  const router = useRouter();
   return (
     <Drawer
       sx={{
@@ -42,6 +44,7 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = ({ logout }) => {
         >
           <Image src="/imgs/Vector.svg" width="40px" height="64px" />
           <Button
+            onClick={() => router.push("/dashboard")}
             variant="contained"
             startIcon={<Home />}
             sx={{

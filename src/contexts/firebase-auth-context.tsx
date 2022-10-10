@@ -47,6 +47,8 @@ export interface AuthContextValue {
   logout: () => Promise<any>;
   getUser: () => void;
   resetPassword: (email: string) => Promise<any>;
+  handleLoadingPage: (action: boolean) => void;
+  isLoadingPage: boolean;
 }
 
 interface AuthProviderProps {
@@ -61,6 +63,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
   const { children } = props;
   const [user, setUser] = useState<User>({} as User);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [isLoadingPage, setIsLoadingPage] = useState<boolean>(false);
 
   const db = getFirestore(firebaseApp);
 
@@ -127,6 +130,10 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
     return sendPasswordResetEmail(auth, email);
   };
 
+  const handleLoadingPage = (action: boolean) => {
+    setIsLoadingPage(action);
+  };
+
   useEffect(() => {
     const clearAuth = onAuth();
     return () => clearAuth;
@@ -144,6 +151,8 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
         createUserEmail,
         getUser,
         resetPassword,
+        handleLoadingPage,
+        isLoadingPage,
       }}
     >
       {children}
