@@ -6,13 +6,10 @@ import {
   Card,
   CardContent,
   Chip,
-  styled,
-  SwipeableDrawer,
   Typography,
 } from "@mui/material";
 import theme from "../../theme";
 
-import { grey } from "@mui/material/colors";
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -103,39 +100,11 @@ const gray = {
   borderRadius: "0.5rem",
 };
 
-const drawerBleeding = 56;
-
-interface Props {
-  window?: () => Window;
-}
-
-const StyledBox = styled(Box)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "light" ? "#fff" : grey[800],
-}));
-
-const Puller = styled(Box)(({ theme }) => ({
-  width: 30,
-  height: 6,
-  backgroundColor: theme.palette.mode === "light" ? grey[300] : grey[900],
-  borderRadius: 3,
-  position: "absolute",
-  top: 8,
-  left: "calc(50% - 15px)",
-}));
-
-const GuiaResinas: NextPage<Props> = (props) => {
+const GuiaResinas: NextPage = () => {
   const router = useRouter();
   const [indice, setIndice] = useState<IndiceProps[]>(indices);
 
-  const { window } = props;
   const [open, setOpen] = useState(false);
-
-  const toggleDrawer = (newOpen: boolean) => () => {
-    setOpen(newOpen);
-  };
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <>
@@ -196,8 +165,8 @@ const GuiaResinas: NextPage<Props> = (props) => {
               color: "#A09E9E",
               marginLeft: "12px",
               display: "none",
-              [theme.breakpoints.up("md")]: {
-                display: "none",
+              [theme.breakpoints.up("lg")]: {
+                display: "block",
               },
             }}
           >
@@ -205,6 +174,7 @@ const GuiaResinas: NextPage<Props> = (props) => {
               <Typography sx={{ marginBottom: "16px" }}>ÍNDICE</Typography>
               {indice.map((item, index) => (
                 <Typography
+                  key={item.name}
                   component="a"
                   href={"#" + item.name}
                   sx={{
@@ -243,7 +213,7 @@ const GuiaResinas: NextPage<Props> = (props) => {
               color: "#535353",
               padding: "0 12px",
               [theme.breakpoints.up("md")]: {
-                width: "calc(100% - 500px)",
+                width: "200px",
                 padding: "0",
               },
             }}
@@ -2101,71 +2071,6 @@ const GuiaResinas: NextPage<Props> = (props) => {
           </Box>
         </Box>
       </Box>
-
-      <SwipeableDrawer
-        container={container}
-        anchor="bottom"
-        open={open}
-        onClose={toggleDrawer(false)}
-        onOpen={toggleDrawer(true)}
-        swipeAreaWidth={drawerBleeding}
-        disableSwipeToOpen={false}
-        ModalProps={{
-          keepMounted: true,
-        }}
-      >
-        <StyledBox
-          sx={{
-            position: "absolute",
-            top: -drawerBleeding,
-            borderTopLeftRadius: 8,
-            borderTopRightRadius: 8,
-            visibility: "visible",
-            right: 0,
-            left: 0,
-          }}
-        >
-          <Puller />
-          <Typography sx={{ p: 2, color: "text.secondary" }}>Índice</Typography>
-        </StyledBox>
-        <StyledBox
-          sx={{
-            px: 2,
-            pb: 2,
-            height: "100%",
-            overflow: "auto",
-          }}
-        >
-          <Typography sx={{ marginY: "16px" }}>ÍNDICE</Typography>
-          {indice.map((item, index) => (
-            <Typography
-              component="a"
-              href={"#" + item.name}
-              sx={{
-                marginY: "4px",
-                display: "block",
-                textDecoration: "none",
-                ":hover": {
-                  color: "#382B57",
-                  fontWeight: 700,
-                },
-                ...(item.active
-                  ? {
-                      color: "#382B57",
-                      fontWeight: 700,
-                    }
-                  : {
-                      color: "#A09E9E",
-                    }),
-              }}
-            >
-              {(index + 1).toString().padStart(2, "0")}
-              {" - "}
-              {item.name}
-            </Typography>
-          ))}
-        </StyledBox>
-      </SwipeableDrawer>
     </>
   );
 };
