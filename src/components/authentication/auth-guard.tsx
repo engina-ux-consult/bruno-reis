@@ -29,7 +29,7 @@ export const AuthGuard: FC<AuthGuardProps> = (props) => {
     } else {
       setChecked(true);
     }
-  }, [router.isReady]);
+  }, [router.isReady, auth]);
 
   if (!checked) {
     return null;

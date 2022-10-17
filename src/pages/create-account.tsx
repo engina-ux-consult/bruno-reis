@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { NextPage } from "next/types";
 import { FormCreateAccount } from "../components/authentication/form-create-account";
+import theme from "../theme";
 
 const styleImage: SxProps = {
   position: "relative",
@@ -11,7 +12,7 @@ const styleImage: SxProps = {
   flexDirection: "row",
   flexWrap: "wrap",
   justifyContent: "center",
-  "@media only screen and (max-width: 900px)": {
+  [theme.breakpoints.up('lg')]: {
     display: "none",
   },
 };
@@ -61,7 +62,7 @@ const CreateAccount: NextPage = () => {
               justifyContent: "center",
             }}
           >
-            <Box maxWidth="460px">
+            <Box maxWidth="90%">
               <Box textAlign="center" mb="72px">
                 <Image
                   src="/imgs/logo-brandd.svg"
