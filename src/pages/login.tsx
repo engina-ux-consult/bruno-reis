@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { NextPage } from "next/types";
 import { FormLogin } from "../components/authentication/form-login";
+import theme from "../theme";
 
 const styleImage: SxProps = {
   position: "relative",
@@ -11,7 +12,7 @@ const styleImage: SxProps = {
   flexDirection: "row",
   flexWrap: "wrap",
   justifyContent: "center",
-  "@media only screen and (max-width: 900px)": {
+  [theme.breakpoints.down("lg")]: {
     display: "none",
   },
 };
@@ -61,7 +62,12 @@ const Login: NextPage = () => {
               justifyContent: "center",
             }}
           >
-            <Box maxWidth="90%">
+            <Box
+              sx={{
+                maxWidth: "90%",
+                paddingY: "32px",
+              }}
+            >
               <Box textAlign="center" mb="72px">
                 <Image src="/imgs/logo-brandd.svg" width={170} height={100} />
               </Box>

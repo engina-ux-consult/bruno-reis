@@ -9,7 +9,7 @@ export const BannerHome: FC = () => {
       sx={{
         position: "relative",
         overflow: "hidden",
-        padding: "32px 36px",
+        padding: ["32px 16px", "32px 36px"],
         borderRadius: "8px",
         background: "linear-gradient(90deg, #382B57 0%, #3D237C 100%)",
       }}

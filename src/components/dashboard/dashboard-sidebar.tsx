@@ -54,7 +54,7 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = ({ logout }) => {
         >
           <Button
             onClick={() => router.push("/dashboard")}
-            style={{
+            sx={{
               color: "#382B57",
               textTransform: "none",
               fontFamily: "Open Sans, sans-serif",
@@ -69,7 +69,7 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = ({ logout }) => {
           </Button>
           <Button
             onClick={logout}
-            style={{
+            sx={{
               color: "#382B57",
               textTransform: "none",
               fontFamily: "Open Sans, sans-serif",

@@ -12,7 +12,7 @@ const styleImage: SxProps = {
   flexDirection: "row",
   flexWrap: "wrap",
   justifyContent: "center",
-  [theme.breakpoints.up('lg')]: {
+  [theme.breakpoints.down("lg")]: {
     display: "none",
   },
 };
@@ -62,7 +62,12 @@ const CreateAccount: NextPage = () => {
               justifyContent: "center",
             }}
           >
-            <Box maxWidth="90%">
+            <Box
+              sx={{
+                maxWidth: "90%",
+                paddingY: "32px",
+              }}
+            >
               <Box textAlign="center" mb="72px">
                 <Image
                   src="/imgs/logo-brandd.svg"

@@ -229,7 +229,7 @@ return (
     <Lottie options={defaultOptions1} style={{width: '10rem',height: '10rem',marginTop:'20%'}} />
 ) : (
     <div>
-      <ST/>
+      {/* <ST/> */}
       <Head>
           <title>Iknow - Conteúdo</title>  
       </Head>

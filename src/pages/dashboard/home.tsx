@@ -21,12 +21,12 @@ function Dashboard() {
       <Head>
         <title>Iknow - Dashboard</title>
       </Head>
-      <Box component="main" sx={{ padding: "32px" }}>
+      <Box component="main" sx={{ padding: ["16px", "32px"] }}>
         <Typography sx={{ fontSize: "18px" }}>
           Olá, <strong>{user?.name}</strong>
         </Typography>
 
-        <Box sx={{ margin: "60px 0 32px 0" }}>
+        <Box sx={{ margin: ["16px 0", "60px 0 32px 0"] }}>
           <BannerHome />
         </Box>
 
