@@ -49,10 +49,30 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = ({ logout }) => {
             startIcon={<Home />}
             sx={{
               mt: "40px",
+              padding: 0,
+              minWidth: 0,
+              width: "48px",
+              height: "48px",
+              "> span": {
+                margin: 0,
+              },
             }}
           />
         </Box>
-        <Button variant="contained" onClick={logout} startIcon={<Output />} />
+        <Button
+          sx={{
+            padding: 0,
+            minWidth: 0,
+            width: "48px",
+            height: "48px",
+            "> span": {
+              margin: 0,
+            },
+          }}
+          variant="contained"
+          onClick={logout}
+          startIcon={<Output />}
+        />
       </Box>
     </Drawer>
   );

@@ -3,52 +3,40 @@ import { FC, useEffect } from "react";
 import theme from "../theme";
 import { Index } from "../types";
 
+import $ from "jquery";
+
 type SidebarIndexProps = {
   indexMenu: Index[];
 };
 
 export const SidebarIndex: FC<SidebarIndexProps> = ({ indexMenu }) => {
-  const observer = new window.IntersectionObserver(
-    ([entry]) => {
-      console.log('entry', entry);
-      
-      if(entry.target.id === '3M'){
-        console.log('OK');
-        
-        window.document
-          .querySelectorAll(".scroll-actives")
-          .forEach((active) => active.classList.remove("active"));
+  const jQuerycode = () => {
+    const links = $(".scroll-actives");
+    $(window).on("scroll", () => {
+      const topScroll = $(window).scrollTop();
+      $(links).each((index) => {
+        const item = links[index];
+        const href = $(links[index]).attr("href");
 
-        window.document
-          .getElementById("scroll-" + entry.target.id)
-          ?.classList.add("active");
-      }
-
-      if (entry.isIntersecting) {
-        window.document
-          .querySelectorAll(".scroll-actives")
-          .forEach((active) => active.classList.remove("active"));
-
-        window.document
-          .getElementById("scroll-" + entry.target.id)
-          ?.classList.add("active");
-
-        console.log("enter" + entry.target.id);
-
-        return;
-      } else {
-        console.log("leave" + entry.target.id);
-      }
-    },
-    { root: null, threshold: 0.1 }
-  );
+        const el = $(href as string);
+        const posSection = (el as JQuery<HTMLElement>)?.offset()?.top;
+        const hSection = el?.height();
+        if (
+          posSection &&
+          topScroll &&
+          hSection &&
+          posSection <= topScroll &&
+          posSection + hSection > topScroll
+        ) {
+          links.removeClass("active");
+          $(item)?.addClass("active");
+        }
+      });
+    });
+  };
 
   useEffect(() => {
-    window.document.querySelectorAll(".index_selection").forEach((element) => {
-      console.log(element);
-
-      observer.observe(element);
-    });
+    jQuerycode();
   }, []);
 
   return (
