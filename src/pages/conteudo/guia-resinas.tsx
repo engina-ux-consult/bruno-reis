@@ -127,13 +127,23 @@ const GuiaResinas: NextPage = () => {
         {/* BANNER */}
         <Box
           sx={{
+            maxWidth:'1800px',
             width: "100%",
             height: { xs: "150px", md: "300px" },
             overflow: "hidden",
             position: "relative",
           }}
         >
-          <Image src="/imgs/guia-resinas/bgresina.jpg" layout="fill" />
+          <Image
+            alt="banner"
+            src="/imgs/guia-resinas/bgresina.jpg"
+            layout="fill"
+            sizes="100vw"
+            quality={100}
+            style={{
+              objectFit: "cover",
+            }}
+          />
         </Box>
 
         {/* CONTENT PAGE */}
@@ -142,17 +152,15 @@ const GuiaResinas: NextPage = () => {
           <SidebarIndex indexMenu={indexesMenu} />
 
           <Box
-            style={{
+            sx={{
               width: "100%",
               maxWidth: "1088px",
               gap: "2rem",
-              marginLeft: "auto",
-              marginRight: "auto",
+              margin:"0 auto",
               color: "#535353",
               padding: "0 12px",
-              [theme.breakpoints.up("md")]: {
-                width: "200px",
-                padding: "0",
+              [theme.breakpoints.up("lg")]: {
+                margin: "0 0 0 255px",
               },
             }}
           >
