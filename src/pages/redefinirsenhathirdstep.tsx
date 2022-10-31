@@ -47,7 +47,7 @@ function Redefinirsenhathirdstep(){
       };
     return(
         <div>    
-          <ST/>
+          {/* <ST/> */}
           <Head>
             <title>Iknow - Redefinir Senha</title>  
           </Head>

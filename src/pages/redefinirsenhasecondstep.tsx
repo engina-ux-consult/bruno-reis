@@ -10,7 +10,7 @@ import Head from 'next/head';
 function Redefinirsenhasecondstep(){
     return(
         <div>   
-            <ST/>
+            {/* <ST/> */}
             <Head>
               <title>Iknow - Redefinir Senha</title>  
             </Head>
