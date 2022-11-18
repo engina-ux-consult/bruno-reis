@@ -1,10 +1,12 @@
-import { PermIdentity, TimerSharp, ArrowBackSharp } from "@mui/icons-material";
-import { Box, Grid, IconButton, Typography } from "@mui/material";
+import { PermIdentity, TimerSharp } from "@mui/icons-material";
+import { Box, Grid, Typography } from "@mui/material";
 import type { NextPage } from "next";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { AuthGuard } from "../../../components/authentication/auth-guard";
 import { DashboardLayout } from "../../../components/dashboard/dashboard-layout";
+import { HeaderPage } from "../../../components/dashboard/header-page";
 import { TagNew } from "../../../components/dashboard/tag-new";
 import { CardVideo } from "../../../components/dashboard/video/card-video";
 import { DataVideo } from "../../../data/data-video-resinas-compostas";
@@ -31,31 +33,13 @@ const ResinasCompostas: NextPage = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          height: "96px",
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "#F6F5FA",
-          padding: ["24px 26px", "40px 28px"],
-        }}
-      >
-        <IconButton onClick={() => router.push("/dashboard")}>
-          <ArrowBackSharp sx={{ fontSize: "32px" }} />
-        </IconButton>
-
-        <Typography
-          sx={{
-            color: "#222222",
-            fontSize: "18px",
-            fontWeight: 700,
-            width: "100%",
-            textAlign: "center",
-          }}
-        >
-          Vídeos exclusivos sobre resinas compostas
-        </Typography>
-      </Box>
+      <Head>
+        <title>Iknow - Vídeos exclusivos sobre resinas compostas</title>
+      </Head>
+      <HeaderPage
+        title="Vídeos exclusivos sobre resinas compostas"
+        onClick={() => router.push("/dashboard")}
+      />
       <Box
         sx={{
           padding: ["24px", "40px"],
@@ -163,7 +147,7 @@ const ResinasCompostas: NextPage = () => {
         </Typography>
         <Grid container spacing={[3, 5]}>
           {dataVideos.map((item, index) => (
-            <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
               <CardVideo
                 video={item}
                 onSelect={() => handleSelectVideo(item.id)}

@@ -58,8 +58,17 @@ export const SidebarIndex: FC<SidebarIndexProps> = ({ indexMenu }) => {
       }}
     >
       <CardContent>
-        <Typography sx={{ marginBottom: "16px" }}>ÍNDICE</Typography>
-        {indexMenu.map((item, index) => (
+        <Typography
+          sx={{
+            marginBottom: "16px",
+            color: "#535353",
+            fontSize: "12px",
+            fontWeight: 700,
+          }}
+        >
+          SUMÁRIO
+        </Typography>
+        {indexMenu.map((item) => (
           <Typography
             id={"scroll-" + item.name}
             className={`scroll-actives${item.active ? " active" : ""}`}
@@ -81,8 +90,6 @@ export const SidebarIndex: FC<SidebarIndexProps> = ({ indexMenu }) => {
               },
             }}
           >
-            {(index + 1).toString().padStart(2, "0")}
-            {" - "}
             {item.name}
           </Typography>
         ))}

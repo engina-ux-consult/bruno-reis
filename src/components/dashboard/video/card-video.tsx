@@ -15,7 +15,7 @@ export const CardVideo: FC<CardVideoProps> = ({ video, onSelect }) => {
     <Box onClick={onSelect} sx={{ cursor: "pointer" }}>
       <Box
         sx={{
-          width: ["312px","397px"],
+          width: '100%',
           height: ["207px", "264px"],
           borderRadius: "16px",
           overflow: "hidden",

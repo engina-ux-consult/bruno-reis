@@ -1,21 +1,24 @@
-import { ArrowBack } from "@mui/icons-material";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
-import { Box, Button, Chip, Typography } from "@mui/material";
-import theme from "../../theme";
-
+import { Box, Chip } from "@mui/material";
+import theme from "../../../theme";
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { AuthGuard } from "../../components/authentication/auth-guard";
-import { DashboardLayout } from "../../components/dashboard/dashboard-layout";
-import { SidebarIndex } from "../../components/sidebar-index";
-import { Index } from "../../types";
+import { AuthGuard } from "../../../components/authentication/auth-guard";
+import { DashboardLayout } from "../../../components/dashboard/dashboard-layout";
+import { HeaderPage } from "../../../components/dashboard/header-page";
+import { SidebarIndex } from "../../../components/sidebar-index";
+import { Index } from "../../../types";
 
 const indexesMenu: Index[] = [
   {
-    name: "3M",
+    name: "Início",
     active: true,
+  },
+  {
+    name: "3M",
+    active: false,
   },
   {
     name: "BIODINAMICA",
@@ -95,39 +98,18 @@ const GuiaResinas: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Iknow - Conteúdo</title>
+        <title>Iknow - Guia completo de resinas composta</title>
       </Head>
-      <Box component="main">
-        {/* TITLE AND GO BACK */}
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            paddingY: "30px",
-          }}
-        >
-          <Button
-            onClick={() => router.push("/dashboard")}
-            style={{ color: "#000000" }}
-            startIcon={<ArrowBack />}
-          />
-          <Typography
-            variant="h6"
-            sx={{
-              textAlign: { xs: "center", md: "left" },
-              fontWeight: 600,
-              color: "#000000",
-              fontFamily: "Open Sans, sans-serif",
-            }}
-          >
-            Guia completo de resinas compostas [Conteúdo exclusivo]
-          </Typography>
-        </Box>
+      <HeaderPage
+        title="Guia completo de resinas compostas [Conteúdo exclusivo]"
+        onClick={() => router.push("/dashboard")}
+      />
 
+      <Box component="main" id="Início" className="index_selection">
         {/* BANNER */}
         <Box
           sx={{
-            maxWidth:'1800px',
+            maxWidth: "1800px",
             width: "100%",
             height: { xs: "150px", md: "300px" },
             overflow: "hidden",
@@ -153,10 +135,10 @@ const GuiaResinas: NextPage = () => {
 
           <Box
             sx={{
-              width: "100%",
+              width: "calc(100% - 255px)",
               maxWidth: "1088px",
               gap: "2rem",
-              margin:"0 auto",
+              margin: "0 auto",
               color: "#535353",
               padding: "0 12px",
               [theme.breakpoints.up("lg")]: {

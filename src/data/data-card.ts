@@ -4,7 +4,7 @@ export const dataCard: TCardHome[] = [
   {
     isNew: true,
     type: "BLOG",
-    url: "/conteudo/guia-resinas",
+    url: "/dashboard/conteudo/guia-resinas",
     thumbnail: "/imgs/guia-resinas.jpg",
     title: "Guia completo de resinas compostas",
     description:

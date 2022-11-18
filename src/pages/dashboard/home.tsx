@@ -2,11 +2,9 @@ import { Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Head from "next/head";
-import { BannerHome } from "../../components/dashboard/banner-home";
 import { CardHome } from "../../components/dashboard/home/card-home";
-import { useAuth } from "../../hooks/use-auth";
-
 import { dataCard } from "../../data/data-card";
+import { useAuth } from "../../hooks/use-auth";
 
 function Dashboard() {
   const { user } = useAuth();
@@ -16,19 +14,34 @@ function Dashboard() {
       <Head>
         <title>Iknow - Dashboard</title>
       </Head>
-      <Box component="main" sx={{ padding: ["16px", "32px"] }}>
-        <Typography sx={{ fontSize: "18px" }}>
-          Olá, <strong>{user?.name}</strong>
-        </Typography>
 
-        <Box sx={{ margin: ["16px 0", "60px 0 32px 0"] }}>
-          <BannerHome />
-        </Box>
-
+      <Box
+        sx={{
+          height: "96px",
+          display: "flex",
+          alignItems: "center",
+          backgroundColor: "#F6F5FA",
+          padding: ["24px 26px", "40px 28px"],
+        }}
+      >
         <Typography
           sx={{
+            color: "#222222",
             fontSize: "24px",
-            fontWeight: "bold",
+            width: "100%",
+            textAlign: "left",
+          }}
+        >
+          Olá, <strong>{user?.name}</strong>
+        </Typography>
+      </Box>
+
+      <Box component="main" sx={{ padding: ["0 16px", "0 40px"] }}>
+        <Typography
+          sx={{
+            fontSize: "18px",
+            fontWeight: 400,
+            margin: ["16px 0", "40px 0"],
           }}
         >
           Conteúdos
@@ -36,7 +49,7 @@ function Dashboard() {
 
         <Grid container spacing={5}>
           {dataCard.map((item, index) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
               <CardHome dataCard={item} />
             </Grid>
           ))}
@@ -44,5 +57,5 @@ function Dashboard() {
       </Box>
     </>
   );
-}
+} 
 export default Dashboard;
