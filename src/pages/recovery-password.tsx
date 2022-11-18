@@ -80,7 +80,7 @@ const Login: NextPage = () => {
               <IconButton aria-label="Back" onClick={handleClickNagivate}>
                 <ArrowBackIcon />
               </IconButton>
-              <Typography>
+              <Typography sx={{ fontSize: "18px" }}>
                 Não possui uma conta?{" "}
                 <Link
                   className="Link"
