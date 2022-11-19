@@ -78,7 +78,7 @@ export const FormCreateAccount: FC = (props) => {
         margin="none"
         name="name"
         type="text"
-        sx={{ mt: "52px" }}
+        sx={{ mt: "40px" }}
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
         value={formik.values.name}
@@ -92,7 +92,7 @@ export const FormCreateAccount: FC = (props) => {
         margin="none"
         name="email"
         type="email"
-        sx={{ mt: "52px" }}
+        sx={{ mt: "40px" }}
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
         value={formik.values.email}
@@ -100,7 +100,7 @@ export const FormCreateAccount: FC = (props) => {
         helperText={formik.touched.email && formik.errors.email}
       />
       <FormControl
-        sx={{ mt: "52px" }}
+        sx={{ mt: "40px" }}
         variant="outlined"
         required
         fullWidth

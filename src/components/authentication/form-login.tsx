@@ -70,7 +70,7 @@ export const FormLogin: FC = (props) => {
         margin="normal"
         name="email"
         type="email"
-        sx={{ backgroundColor: "#fff" }}
+        sx={{ backgroundColor: "#fff", mt: "40px" }}
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
         value={formik.values.email}
@@ -78,7 +78,7 @@ export const FormLogin: FC = (props) => {
         helperText={formik.touched.email && formik.errors.email}
       />
       <FormControl
-        sx={{ mt: "52px" }}
+        sx={{ mt: "40px" }}
         variant="outlined"
         required
         fullWidth

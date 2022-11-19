@@ -12,7 +12,7 @@ const styleImage: SxProps = {
   flexDirection: "row",
   flexWrap: "wrap",
   justifyContent: "center",
-  [theme.breakpoints.down("lg")]: {
+  [theme.breakpoints.down("md")]: {
     display: "none",
   },
 };
@@ -38,10 +38,57 @@ const Login: NextPage = () => {
               sx={{
                 width: "100%",
                 height: "100vh",
+                backgroundColor: "#382B57",
               }}
             >
               <Image
-                src="/imgs/bd-broe.jpg"
+                src="/imgs/logo-transparente.png"
+                alt="brand"
+                layout="fill"
+                objectFit="cover"
+                priority
+              />
+            </Box>
+            <Box
+              sx={{
+                position: "absolute",
+                top: "50%",
+                maxWidth: "464px",
+                marginTop: "-100px",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "#ffffff",
+                  fontWeight: 600,
+                  fontSize: "40px",
+                }}
+              >
+                Os melhores conteúdos sobre odontologia em um só lugar
+              </Typography>
+              <Typography
+                sx={{
+                  color: "#ffffff",
+                  fontWeight: 400,
+                  fontSize: "24px",
+                  marginTop: "24px",
+                }}
+              >
+                Bruno Reis compartilha dicas, materiais e conteúdos sobre
+                odontologia e estética.
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                position: "absolute",
+                top: "60px",
+                left: "60px",
+                width: "170px",
+                height: "100px",
+              }}
+            >
+              <Image
+                src="/imgs/brand-white.png"
                 alt="brand"
                 layout="fill"
                 objectFit="cover"
@@ -68,11 +115,34 @@ const Login: NextPage = () => {
                 paddingY: "32px",
               }}
             >
-              <Box textAlign="center" mb="72px">
-                <Image src="/imgs/logo-brandd.svg" width={170} height={100} />
+              <Box textAlign="center">
+                <Box
+                  sx={{
+                    marginBottom: "40px",
+                    display: "block",
+                    [theme.breakpoints.up("md")]: {
+                      display: "none",
+                    },
+                  }}
+                >
+                  <Image src="/imgs/logo-brandd.svg" width={170} height={100} />
+                </Box>
+
+                <Typography
+                  sx={{
+                    fontSize: "32px",
+                    fontWeight: 600,
+                    color: "#222222",
+                  }}
+                >
+                  Entrar
+                </Typography>
               </Box>
               <FormLogin />
-              <Typography sx={{ mt: "40px" }} textAlign="center">
+              <Typography
+                sx={{ mt: "40px", fontSize: "18px" }}
+                textAlign="center"
+              >
                 Não possui uma conta?{" "}
                 <Link
                   className="Link"

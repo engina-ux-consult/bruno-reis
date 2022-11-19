@@ -1,5 +1,11 @@
 import { createTheme } from "@mui/material";
 
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    action: true;
+  }
+}
+
 const theme = createTheme({
   components: {
     MuiButton: {
@@ -30,6 +36,23 @@ const theme = createTheme({
           },
         },
       },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Open Sans, sans-serif",
+          fontStyle: "normal",
+        },
+      },
+      variants: [
+        {
+          props: { variant: "action" },
+          style: {
+            fontFamily: "Inter",
+            fontStyle: "normal",
+          },
+        },
+      ],
     },
   },
 });
