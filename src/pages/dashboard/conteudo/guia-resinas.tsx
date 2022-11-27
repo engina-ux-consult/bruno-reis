@@ -13,7 +13,7 @@ import { Index } from "../../../types";
 
 const indexesMenu: Index[] = [
   {
-    name: "Início",
+    name: "INÍCIO",
     active: true,
   },
   {
@@ -168,10 +168,14 @@ const GuiaResinas: NextPage = () => {
                   um agente silânico de união.Os esquemas a seguir, resumem a
                   função de cada componente principal:
                 </p>
-                <img
-                  src="../imgs/guia-resinas/legenda.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/legenda.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={295}
                 />
                 <h2>Matriz orgânica:</h2>
                 <p>
@@ -181,19 +185,27 @@ const GuiaResinas: NextPage = () => {
                   Os principais monômeros utilizados nas resinas compostas e
                   suas respectivas características:
                 </p>
-                <img
-                  src="../imgs/guia-resinas/udma.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/udma.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={730}
                 />
                 <p>
                   Monômeros que são adicionados para melhorar a manipulação e
                   suas respesctivas características:
                 </p>
-                <img
-                  src="../imgs/guia-resinas/tegdma.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/tegdma.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={734}
                 />
                 <h2>Carga inorgânica:</h2>
                 <p>
@@ -225,20 +237,28 @@ const GuiaResinas: NextPage = () => {
                   uma maior resistência.
                 </p>
                 <h2>Ou seja:</h2>
-                <img
-                  src="../imgs/guia-resinas/ouseja.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/ouseja.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={984}
                 />
                 <p>
                   A carga é a principal responsável por diversas características
                   principais das resinas. Por isso, as resinas são classificadas
                   de acordo com o tamanho das suas partículas:
                 </p>
-                <img
-                  src="../imgs/guia-resinas/resinasparticulas.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/resinasparticulas.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={834}
                 />
                 <h2>Agente de união:</h2>
                 <p>
@@ -272,10 +292,14 @@ const GuiaResinas: NextPage = () => {
                   ativadas. Outros componentes podem ser incluídos para melhorar
                   o desempenho, a aparência e a durabilidade.
                 </p>
-                <img
-                  src="../imgs/guia-resinas/agenteuniao.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/agenteuniao.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={761}
                 />
                 <h2>Indicações das resinas:</h2>
                 <p>
@@ -312,31 +336,51 @@ const GuiaResinas: NextPage = () => {
                   <br />
                   REFERÊNCIA: Wobido AR, periódico científico Iknow Journal.
                 </p>
-                <img
-                  src="../imgs/guia-resinas/indicacoesresinas.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/indicacoesresinas.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={683}
                 />
                 <h2>Entendendo as cores:</h2>
-                <img
-                  src="../imgs/guia-resinas/matriz.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/matriz.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={590}
                 />
-                <img
-                  src="../imgs/guia-resinas/croma.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/croma.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={320}
                 />
-                <img
-                  src="../imgs/guia-resinas/valor.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/valor.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={818}
                 />
-                <img
-                  src="../imgs/guia-resinas/a2d.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/a2d.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={610}
                 />
                 <p style={gray}>
                   Observação: Há variações na nomenclatura. Nem todos os
@@ -345,26 +389,42 @@ const GuiaResinas: NextPage = () => {
                   por exemplo).
                 </p>
                 <h2>Entendendo as opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/opacidades.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/opacidades.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={1890}
                 />
                 <h2>Substratos e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/subopatb.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/subopatb.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={934}
                 />
-                <img
-                  src="../imgs/guia-resinas/subopapass.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/subopapass.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={742}
                 />
-                <img
-                  src="../imgs/guia-resinas/subopaobs.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/subopaobs.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={856}
                 />
                 <h2>Observações:</h2>
                 <p style={gray}>
@@ -382,10 +442,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* Z1003M */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/z1003m.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/z1003m.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={681}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Microhíbrida</p>
@@ -408,16 +472,24 @@ const GuiaResinas: NextPage = () => {
                   <li>Esplintagem de dentes com mobilidade.</li>
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/apresentcores.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/apresentcores.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={720}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/aplicli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/aplicli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={361}
                 />
                 <p style={purple}>
                   <Chip
@@ -440,10 +512,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* Z2503M */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/z2503m.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/z2503m.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={681}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanohíbrida</p>
@@ -475,16 +551,24 @@ const GuiaResinas: NextPage = () => {
                   <li>Fechamento de diastemas.</li>
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/250apre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/250apre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={719}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/250apli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/250apli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={719}
                 />
                 <p style={purple}>
                   <Chip
@@ -507,10 +591,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* Z3503M */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/z3503m.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/z3503m.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={681}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanoparticulada</p>
@@ -532,16 +620,24 @@ const GuiaResinas: NextPage = () => {
                   corretamente.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/350apre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/350apre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={758}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/350apli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/350apli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={361}
                 />
                 <p style={purple}>
                   <Chip
@@ -564,10 +660,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* FILTEK UNIVERSAL 3M*/}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/filtek.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/filtek.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={681}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanoparticulada</p>
@@ -593,16 +693,24 @@ const GuiaResinas: NextPage = () => {
                   </li>
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/filtekapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/filtekapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={467}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/filtekapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/filtekapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={425}
                 />
                 <p style={purple}>
                   <Chip
@@ -627,10 +735,14 @@ const GuiaResinas: NextPage = () => {
 
             {/* EPIC BIODINÂMICA */}
             <Box id="BIODINAMICA" className="index_selection">
-              <img
-                src="../imgs/guia-resinas/epic.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/epic.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={709}
               />
               <h2>Classificação da partícula:</h2>
               <p>Nanohíbrida</p>
@@ -652,16 +764,24 @@ const GuiaResinas: NextPage = () => {
                 <li>Reparos de próteses e restaurações indiretas.</li>
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/epicapre.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/epicapre.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={1165}
               />
               <h2>Aplicação clínica das opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/epicapli.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/epicapli.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={361}
               />
               <p style={purple}>
                 <Chip
@@ -683,10 +803,14 @@ const GuiaResinas: NextPage = () => {
 
             {/* NEO SPECTRA DENTSPLY */}
             <Box id="DENTSPLY" className="index_selection">
-              <img
-                src="../imgs/guia-resinas/neo.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/neo.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={593}
               />
               <h2>Classificação da partícula:</h2>
               <p>Micro-hibrída</p>
@@ -704,16 +828,24 @@ const GuiaResinas: NextPage = () => {
                 <li>Attachments Estéticos em Ortodontia</li>
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/neoapre.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/neoapre.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={679}
               />
               <h2>Aplicação clínica das opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/neoapli.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/neoapli.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={361}
               />
               <p style={purple}>
                 <Chip
@@ -736,10 +868,14 @@ const GuiaResinas: NextPage = () => {
             {/* OPALLIS FGM */}
             <Box id="FGM" className="index_selection">
               <Box>
-                <img
-                  src="../imgs/guia-resinas/opallis.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/opallis.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={624}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanohíbrida</p>
@@ -759,16 +895,24 @@ const GuiaResinas: NextPage = () => {
                 <h2>Indicação:</h2>
                 <p>Restauração direta de dentes anteriores e posteriores.</p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/opallisapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/opallisapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={740}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/opallisapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/opallisapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={361}
                 />
                 <p style={purple}>
                   <Chip
@@ -791,10 +935,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* VITTRA FGM */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/vittra.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/vittra.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={586}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Submicrométrica ????</p>
@@ -813,16 +961,24 @@ const GuiaResinas: NextPage = () => {
                   posteriores
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/vittraapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/vittraapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={622}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/vittraapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/vittraapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={362}
                 />
                 <p style={purple}>
                   <Chip
@@ -847,10 +1003,14 @@ const GuiaResinas: NextPage = () => {
 
             {/* ESSENTIA GC */}
             <Box id="GC" className="index_selection">
-              <img
-                src="../imgs/guia-resinas/essentia.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/essentia.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={590}
               />
               <h2>Classificação da partícula:</h2>
               <p>Na</p>
@@ -868,16 +1028,24 @@ const GuiaResinas: NextPage = () => {
                 </li>
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/essentiaapre.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/essentiaapre.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={1000}
               />
               <h2>Aplicação clínica das opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/essentiaapli.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/essentiaapli.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={361}
               />
               <p style={purple}>
                 <Chip
@@ -899,10 +1067,14 @@ const GuiaResinas: NextPage = () => {
 
             {/* MICERIUM ENAMEL PLUS HRI ORALTECH*/}
             <Box id="ORALTECH" className="index_selection">
-              <img
-                src="../imgs/guia-resinas/micerium.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/micerium.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={760}
               />
               <h2>Classificação da partícula:</h2>
               <p>Nanohíbrida</p>
@@ -916,16 +1088,24 @@ const GuiaResinas: NextPage = () => {
               <h2>Indicação:</h2>
               <p>Restauração de dentes anteriores e posteriores.</p>
               <h2>Apresentação de cores e opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/miceriumapre.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/miceriumapre.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={768}
               />
               <h2>Aplicação clínica das opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/miceriumapli.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/miceriumapli.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={361}
               />
               <p style={purple}>
                 <Chip
@@ -949,10 +1129,14 @@ const GuiaResinas: NextPage = () => {
             <Box id="IVOCLAR" className="index_selection">
               {/* EMPRESS DIRECT IVOCLAR */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/empress.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/empress.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={1125}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanohíbrida</p>
@@ -978,16 +1162,24 @@ const GuiaResinas: NextPage = () => {
                   <li>Facetas diretas</li>
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/empressapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/empressapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={718}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/empressapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/empressapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={362}
                 />
                 <p style={purple}>
                   <Chip
@@ -1010,10 +1202,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* TETRIC IVOCLAR*/}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/tetric.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/tetric.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={619}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanohíbrida</p>
@@ -1030,16 +1226,24 @@ const GuiaResinas: NextPage = () => {
                 <h2>Indicação:</h2>
                 <p>Todas as classes de restaurações;</p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/tetricapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/tetricapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={587}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/tetricapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/tetricapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={362}
                 />
                 <p style={purple}>
                   <Chip
@@ -1066,10 +1270,14 @@ const GuiaResinas: NextPage = () => {
             <Box id="KERR" className="index_selection">
               {/* HARMONIZE KERR */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/harmonize.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/harmonize.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={578}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanohíbrida</p>
@@ -1089,16 +1297,24 @@ const GuiaResinas: NextPage = () => {
                 <h2>Indicação:</h2>
                 <p>Dentes anteriores e posteriores.</p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/harmonizeapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/harmonizeapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={696}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/harmonizeapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/harmonizeapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={696}
                 />
                 <p style={purple}>
                   <Chip
@@ -1121,10 +1337,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* HERCULITE CLASSIC KERR */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/hercc.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/hercc.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Microhíbrida</p>
@@ -1151,16 +1371,24 @@ const GuiaResinas: NextPage = () => {
                   indireto.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/herccapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/herccapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/herccapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/herccapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1183,10 +1411,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* HERCULITE PRÉCIS KERR */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/hercp.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/hercp.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nanohíbrida</p>
@@ -1198,16 +1430,24 @@ const GuiaResinas: NextPage = () => {
                   anteriores e posteriores.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/hercpapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/hercpapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/hercpapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/hercpapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1230,10 +1470,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* point 4 KERR */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/point.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/point.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Microhíbrida</p>
@@ -1256,16 +1500,24 @@ const GuiaResinas: NextPage = () => {
                   Restauração de dentes anteriores e de uso direto e indireto.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/pointapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/pointapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/pointapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/pointapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1292,10 +1544,14 @@ const GuiaResinas: NextPage = () => {
             <Box id="KULZER" className="index_selection">
               {/* CHARISMA CLASSIC KULZER */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/charismac.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/charismac.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Microhíbrida</p>
@@ -1312,16 +1568,24 @@ const GuiaResinas: NextPage = () => {
                 <h2>Indicação:</h2>
                 <p>Restaurações anteriores e posteriores.</p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/charismacapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/charismacapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/charismacapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/charismacapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1344,10 +1608,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* CHARISMA DIAMOND KULZER */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/charismad.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/charismad.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nano-híbrida universal</p>
@@ -1365,16 +1633,24 @@ const GuiaResinas: NextPage = () => {
                   cores que abrange todos os casos.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/charismadapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/charismadapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/charismadapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/charismadapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1399,10 +1675,14 @@ const GuiaResinas: NextPage = () => {
 
             {/* AURA SDI */}
             <Box id="SDI" className="index_selection">
-              <img
-                src="../imgs/guia-resinas/aura.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/aura.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <h2>Classificação da partícula:</h2>
               <p>Microparticulada</p>
@@ -1434,16 +1714,24 @@ const GuiaResinas: NextPage = () => {
                 Ferulização; Técnica sanduíche com ionômero de vidro;
               </p>
               <h2>Apresentação de cores e opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/auraapre.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/auraapre.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <h2>Aplicação clínica das opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/auraapli.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/auraapli.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <p style={purple}>
                 <Chip
@@ -1465,10 +1753,14 @@ const GuiaResinas: NextPage = () => {
 
             {/* BEAUTIFILL SHOFU */}
             <Box id="SHOFU" className="index_selection">
-              <img
-                src="../imgs/guia-resinas/beautifill.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/beautifill.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <h2>Classificação da partícula:</h2>
               <p>Nanohíbrida</p>
@@ -1492,16 +1784,24 @@ const GuiaResinas: NextPage = () => {
                 <li>Facetas laminadas e reconstruções de núcleos.</li>
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/beautifillapre.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/beautifillapre.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <h2>Aplicação clínica das opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/beautifillapli.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/beautifillapli.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <p style={purple}>
                 <Chip
@@ -1523,10 +1823,14 @@ const GuiaResinas: NextPage = () => {
 
             {/* ATOS SMARTDENT */}
             <Box id="SMARTDENT" className="index_selection">
-              <img
-                src="../imgs/guia-resinas/atos.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/atos.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <h2>Classificação da partícula:</h2>
               <p>Nano-híbrida</p>
@@ -1559,16 +1863,24 @@ const GuiaResinas: NextPage = () => {
                 </li>
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/atosapre.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/atosapre.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <h2>Aplicação clínica das opacidades:</h2>
-              <img
-                src="../imgs/guia-resinas/atosapli.jpg"
-                style={{ width: "100%" }}
+              <Image
+                src="/imgs/guia-resinas/atosapli.jpg"
+                style={{ width: "100%", height: "auto" }}
                 alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={475}
               />
               <p style={purple}>
                 <Chip
@@ -1592,10 +1904,14 @@ const GuiaResinas: NextPage = () => {
             <Box id="TOKUYAMA" className="index_selection">
               {/* ESTELITE OMEGA TOKUYAMA */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/estelite.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/estelite.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Supra- nanométrica</p>
@@ -1618,16 +1934,24 @@ const GuiaResinas: NextPage = () => {
                   Reparo de porcelanas/resinas.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/esteliteapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/esteliteapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/esteliteapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/esteliteapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1650,10 +1974,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* PALFIQUE LX5 TOKUYAMA */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/palfique.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/palfique.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Supra Nano-híbrida</p>
@@ -1671,16 +1999,24 @@ const GuiaResinas: NextPage = () => {
                   todas as classes.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/palfiqueapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/palfiqueapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/palfiqueapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/palfiqueapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1703,10 +2039,14 @@ const GuiaResinas: NextPage = () => {
               </Box>
               {/* OMNICHROMA TOKUYAMA */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/omnichroma.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/omnichroma.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Supra Nano-híbrida</p>
@@ -1724,16 +2064,24 @@ const GuiaResinas: NextPage = () => {
                   Reparo de porcelanas/resinas.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/omnichromaapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/omnichromaapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/omnichromaapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/omnichromaapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1760,10 +2108,14 @@ const GuiaResinas: NextPage = () => {
             <Box id="ULTRADENT" className="index_selection">
               {/* FORMA ULTRADENT */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/forma.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/forma.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nano-híbrida</p>
@@ -1786,16 +2138,24 @@ const GuiaResinas: NextPage = () => {
                   indiretas de facetas, inlays e onlays.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/formaapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/formaapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/formaapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/formaapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1819,10 +2179,14 @@ const GuiaResinas: NextPage = () => {
 
               {/* VITALESCENCE ULTRADENT */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/vitalescence.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/vitalescence.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Micro-híbrida</p>
@@ -1838,16 +2202,24 @@ const GuiaResinas: NextPage = () => {
                   permite que seja indicada para o uso em dentes posteriores.
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/vitalescenceapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/vitalescenceapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/vitalescenceapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/vitalescenceapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -1874,10 +2246,14 @@ const GuiaResinas: NextPage = () => {
             <Box id="VOCO" className="index_selection">
               {/* AMARIS VOCO */}
               <Box>
-                <img
-                  src="../imgs/guia-resinas/amaris.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/amaris.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Classificação da partícula:</h2>
                 <p>Nano-híbrida</p>
@@ -1912,16 +2288,24 @@ const GuiaResinas: NextPage = () => {
                   <li>Ferulização de dentes anteriores</li>
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/amarisapre.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/amarisapre.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
-                <img
-                  src="../imgs/guia-resinas/amarisapli.jpg"
-                  style={{ width: "100%" }}
+                <Image
+                  src="/imgs/guia-resinas/amarisapli.jpg"
+                  style={{ width: "100%", height: "auto" }}
                   alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
                 />
                 <p style={purple}>
                   <Chip
@@ -2074,5 +2458,4 @@ GuiaResinas.getLayout = (page) => (
     <DashboardLayout>{page}</DashboardLayout>
   </AuthGuard>
 );
-
 export default GuiaResinas;
