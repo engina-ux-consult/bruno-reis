@@ -90,6 +90,7 @@ export const CardHome: FC<CardHomeProps> = ({ dataCard }) => {
         >
           {type == "VIDEO" && "Assistir vídeos"}
           {type == "BLOG" && "Ler conteúdo"}
+          {type == "EBOOK" && "Ler conteúdo"}
         </Button>
       </CardActions>
     </Card>
