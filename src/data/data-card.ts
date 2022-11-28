@@ -19,4 +19,13 @@ export const dataCard: TCardHome[] = [
     description:
       "Vídeos com alta resolução com dicas para expandir seus conhecimentos sobre as resinas e como garantir ótimos resultados.",
   },
+  {
+    isNew: true,
+    type: "EBOOK",
+    url: "/dashboard/ebook/ebooks-exclusivos",
+    thumbnail: "/imgs/thumb-video-adesivos.jpg",
+    title: "E-books de conteúdos exclusivos",
+    description:
+      "Leia os melhores conteúdos sobre odontologia com e-books elaborados pelo Dr. Bruno Reis.",
+  },
 ];

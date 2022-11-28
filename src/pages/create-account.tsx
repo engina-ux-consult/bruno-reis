@@ -88,7 +88,7 @@ const CreateAccount: NextPage = () => {
               }}
             >
               <Image
-                src="/imgs/brand-white.png"
+                src="/imgs/logo-brand2.svg"
                 alt="brand"
                 layout="fill"
                 objectFit="cover"
@@ -111,7 +111,9 @@ const CreateAccount: NextPage = () => {
           >
             <Box
               sx={{
-                maxWidth: "90%",
+                textAlign: "center",
+                width: "100%",
+                maxWidth: "465px",
                 paddingY: "32px",
               }}
             >
