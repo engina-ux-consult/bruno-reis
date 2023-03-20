@@ -9,74 +9,7 @@ import { AuthGuard } from "../../../components/authentication/auth-guard";
 import { DashboardLayout } from "../../../components/dashboard/dashboard-layout";
 import { HeaderPage } from "../../../components/dashboard/header-page";
 import { SidebarIndex } from "../../../components/sidebar-index";
-import { Index } from "../../../types";
-
-const indexesMenu: Index[] = [
-  {
-    name: "INÍCIO",
-    active: true,
-  },
-  {
-    name: "3M",
-    active: false,
-  },
-  {
-    name: "BIODINAMICA",
-    active: false,
-  },
-  {
-    name: "DENTSPLY",
-    active: false,
-  },
-  {
-    name: "FGM",
-    active: false,
-  },
-  {
-    name: "GC",
-    active: false,
-  },
-  {
-    name: "ORALTECH",
-    active: false,
-  },
-  {
-    name: "IVOCLAR",
-    active: false,
-  },
-  {
-    name: "KERR",
-    active: false,
-  },
-  {
-    name: "KULZER",
-    active: false,
-  },
-  {
-    name: "SDI",
-    active: false,
-  },
-  {
-    name: "SHOFU",
-    active: false,
-  },
-  {
-    name: "SMARTDENT",
-    active: false,
-  },
-  {
-    name: "TOKUYAMA",
-    active: false,
-  },
-  {
-    name: "ULTRADENT",
-    active: false,
-  },
-  {
-    name: "VOCO",
-    active: false,
-  },
-];
+import { indexesMenu } from "./indexesMenu";
 
 const purple = {
   color: "white",
@@ -734,7 +667,7 @@ const GuiaResinas: NextPage = () => {
             </Box>
 
             {/* EPIC BIODINÂMICA */}
-            <Box id="BIODINAMICA" className="index_selection">
+            <Box id="BIODINÂMICA" className="index_selection">
               <Image
                 src="/imgs/guia-resinas/epic.jpg"
                 style={{ width: "100%", height: "auto" }}
@@ -885,6 +818,7 @@ const GuiaResinas: NextPage = () => {
                   Metacrilato), BisEMA (Bis-Fenol A di-Glicidil Metacrilato
                   etoxilado), TEGDMA (Trietileno glicol dimetacrilato), UDMA
                   (Uretano dimetacrilato), canforquinona, co-iniciador e silano.
+                  <br />
                   Matriz inorgânica: vidro de bário-alumino silicato silanizado,
                   pigmentos e sílicas. <br />
                   O conteúdo total de carga em peso é de 78,5 a 79,8% e volume
@@ -949,8 +883,9 @@ const GuiaResinas: NextPage = () => {
                 <h2>Composição:</h2>
                 <p>
                   Matriz orgânica: UDMA (Uretano Dimetacrilato) e TEGDMA
-                  (Trietileno Glicol Dimetacrilato). Matriz inorgânica: carga de
-                  zircônia, sílica. <br />
+                  (Trietileno Glicol Dimetacrilato).
+                  <br />
+                  Matriz inorgânica: carga de zircônia, sílica. <br />
                   Tamanho médio das partículas: 200nm <br />
                   Conteúdo total de carga inorgânica em peso de 72% a 82% (52% a
                   60% em volume).
@@ -1687,6 +1622,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Classificação da partícula:</h2>
               <p>Microparticulada</p>
               <h2>Composição:</h2>
+
               <p>
                 <h3>Resinas de dentina: </h3>
                 Matriz orgânica: UDMA ; BisGMA ; BisEMA.
@@ -1986,13 +1922,23 @@ const GuiaResinas: NextPage = () => {
                 <h2>Classificação da partícula:</h2>
                 <p>Supra Nano-híbrida</p>
                 <h2>Composição:</h2>
-                <p>
-                  <h3>Matriz orgânica:</h3> Bis-GMA e TEGDMA
-                  <h3>Matriz inorgânica:</h3> Silica-zirconia
-                  <h3>Tamanho médio:</h3> 0,2 micrometros.
-                  <h3>Concentração em peso:</h3> 82%.
-                  <h3>Concentração em volume:</h3> 72%.
-                </p>
+                <div>
+                  <p>
+                    <strong>Matriz orgânica:</strong> Bis-GMA e TEGDMA
+                  </p>
+                  <p>
+                    <strong>Matriz inorgânica:</strong> Silica-zirconia
+                  </p>
+                  <p>
+                    <strong>Tamanho médio:</strong> 0,2 micrometros.
+                  </p>
+                  <p>
+                    <strong>Concentração em peso:</strong> 82%.
+                  </p>
+                  <p>
+                    <strong>Concentração em volume:</strong> 72%.
+                  </p>
+                </div>
                 <h2>Indicação:</h2>
                 <p>
                   Indicado para restauração de dentes anteriores e posteriores,
@@ -2052,7 +1998,7 @@ const GuiaResinas: NextPage = () => {
                 <p>Supra Nano-híbrida</p>
                 <h2>Composição:</h2>
                 <p>
-                  <h3>Matriz inorgânica:</h3> SiO2-ZrO2 esférico 260nm
+                  <strong>Matriz inorgânica:</strong> SiO2-ZrO2 esférico 260nm
                 </p>
                 <h2>Indicação:</h2>
                 <p>
@@ -2120,16 +2066,20 @@ const GuiaResinas: NextPage = () => {
                 <h2>Classificação da partícula:</h2>
                 <p>Nano-híbrida</p>
                 <h2>Composição:</h2>
+
                 <p>
-                  <h3>Carga orgânica:</h3> bisfenol-A Diglicidil Dimetacrilato
-                  (Bis-GMA), Trietileno Glicol Dimetacrilato (TEGDMA),
-                  Bisfenol-A Diglicidil Dimetacrilato Etoxilado (Bis-EMA) e
-                  Uretano Dimetacrilato (UDMA).
-                  <br />
-                  <h3>Carga inorgânica:</h3> Sílica/zircônia e vidro de Bário.
+                  <strong>Carga orgânica:</strong> bisfenol-A Diglicidil
+                  Dimetacrilato (Bis-GMA), Trietileno Glicol Dimetacrilato
+                  (TEGDMA), Bisfenol-A Diglicidil Dimetacrilato Etoxilado
+                  (Bis-EMA) e Uretano Dimetacrilato (UDMA).
+                </p>
+                <p>
+                  <strong>Carga inorgânica:</strong> Sílica/zircônia e vidro de
+                  Bário.
                   <br />
                   67% de peso e 54% de volume
                 </p>
+
                 <h2>Indicação:</h2>
                 <p>
                   Indicada para quaisquer tipos de restaurações, sejam elas
@@ -2258,13 +2208,16 @@ const GuiaResinas: NextPage = () => {
                 <h2>Classificação da partícula:</h2>
                 <p>Nano-híbrida</p>
                 <h2>Composição:</h2>
+
                 <p>
-                  <h3>Matriz orgânica:</h3> matriz de metacrilato (Bis-GMA,
-                  UDMA, TEGDMA)
-                  <br />
-                  <h3>Matriz inorgânica:</h3> contem 80% de carga na radiopaca e
-                  64% nas cores HT e HO
+                  <strong>Matriz orgânica:</strong> matriz de metacrilato
+                  (Bis-GMA, UDMA, TEGDMA)
                 </p>
+                <p>
+                  <strong>Matriz inorgânica:</strong> contem 80% de carga na
+                  radiopaca e 64% nas cores HT e HO
+                </p>
+
                 <h2>Indicação:</h2>
                 <ul>
                   <li>
