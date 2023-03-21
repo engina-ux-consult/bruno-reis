@@ -9,7 +9,7 @@ import { AuthGuard } from "../../../components/authentication/auth-guard";
 import { DashboardLayout } from "../../../components/dashboard/dashboard-layout";
 import { HeaderPage } from "../../../components/dashboard/header-page";
 import { SidebarIndex } from "../../../components/sidebar-index";
-import { indexesMenu } from "./indexesMenu";
+import { indexesMenu } from "../../../utils/indexesMenu";
 
 const purple = {
   color: "white",

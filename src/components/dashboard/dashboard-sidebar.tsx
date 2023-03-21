@@ -27,7 +27,12 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = ({ logout }) => {
       <AppBar>
         <Toolbar sx={{ background: "#382B57", padding: "16px" }}>
           <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
-            <Image src="/imgs/Vector.svg" width="40px" height="54px" />
+            <Image
+              alt="Vector.svg"
+              src="./imgs/Vector.svg"
+              width="40px"
+              height="54px"
+            />
           </Typography>
           <IconButton
             color="inherit"
