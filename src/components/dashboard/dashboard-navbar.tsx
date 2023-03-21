@@ -42,7 +42,12 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = ({ logout }) => {
             alignItems: "center",
           }}
         >
-          <Image src="/imgs/Vector.svg" width="40px" height="64px" />
+          <Image
+            alt="Vector.svg"
+            src="/imgs/Vector.svg"
+            width="40px"
+            height="64px"
+          />
           <Button
             onClick={() => router.push("/dashboard")}
             variant="contained"

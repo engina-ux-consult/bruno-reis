@@ -127,7 +127,7 @@ const CreateAccount: NextPage = () => {
                     },
                   }}
                 >
-                  <Image src="/imgs/logo-brandd.svg" width={170} height={100} />
+                  <Image alt="logo-brandd.svg" src="/imgs/logo-brandd.svg" width={170} height={100} />
                 </Box>
 
                 <Typography

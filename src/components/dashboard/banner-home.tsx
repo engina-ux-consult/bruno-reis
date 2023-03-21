@@ -53,6 +53,7 @@ export const BannerHome: FC = () => {
         }}
       >
         <Image
+          alt="logo-trans.png"
           src="/imgs/logo-trans.png"
           layout="fill"
           objectFit="contain"
