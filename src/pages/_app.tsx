@@ -5,6 +5,7 @@ import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import type { FC } from "react";
+import { TokenAcesso } from "../components/token-acesso";
 import { AuthProvider } from "../contexts/firebase-auth-context";
 import theme from "../theme";
 import createEmotionCache from "../utils/createEmotionCache";
@@ -30,6 +31,7 @@ const App: FC<EnhancedAppProps> = (props) => {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <TokenAcesso />
         <AuthProvider>{getLayout(<Component {...pageProps} />)}</AuthProvider>
       </ThemeProvider>
     </CacheProvider>
