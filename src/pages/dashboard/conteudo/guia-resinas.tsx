@@ -38,7 +38,7 @@ const GuiaResinas: NextPage = () => {
         onClick={() => router.push("/dashboard")}
       />
 
-      <Box component="main" id="Início" className="index_selection">
+      <Box component="main" id="INÍCIO" className="index_selection">
         {/* BANNER */}
         <Box
           sx={{
@@ -50,11 +50,11 @@ const GuiaResinas: NextPage = () => {
           }}
         >
           <Image
+            quality={100}
             alt="banner"
             src="/imgs/guia-resinas/bgresina.jpg"
             layout="fill"
             sizes="100vw"
-            quality={100}
             style={{
               objectFit: "cover",
             }}
@@ -102,6 +102,7 @@ const GuiaResinas: NextPage = () => {
                   função de cada componente principal:
                 </p>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/legenda.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -119,6 +120,7 @@ const GuiaResinas: NextPage = () => {
                   suas respectivas características:
                 </p>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/udma.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -132,6 +134,7 @@ const GuiaResinas: NextPage = () => {
                   suas respesctivas características:
                 </p>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/tegdma.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -171,6 +174,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Ou seja:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/ouseja.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -185,6 +189,7 @@ const GuiaResinas: NextPage = () => {
                   de acordo com o tamanho das suas partículas:
                 </p>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/resinasparticulas.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -226,6 +231,7 @@ const GuiaResinas: NextPage = () => {
                   o desempenho, a aparência e a durabilidade.
                 </p>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/agenteuniao.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -270,6 +276,7 @@ const GuiaResinas: NextPage = () => {
                   REFERÊNCIA: Wobido AR, periódico científico Iknow Journal.
                 </p>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/indicacoesresinas.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -280,6 +287,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Entendendo as cores:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/matriz.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -289,6 +297,7 @@ const GuiaResinas: NextPage = () => {
                   height={590}
                 />
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/croma.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -298,6 +307,7 @@ const GuiaResinas: NextPage = () => {
                   height={320}
                 />
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/valor.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -307,6 +317,7 @@ const GuiaResinas: NextPage = () => {
                   height={818}
                 />
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/a2d.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -323,6 +334,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Entendendo as opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/opacidades.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -333,6 +345,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Substratos e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/subopatb.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -342,6 +355,7 @@ const GuiaResinas: NextPage = () => {
                   height={934}
                 />
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/subopapass.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -351,6 +365,7 @@ const GuiaResinas: NextPage = () => {
                   height={742}
                 />
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/subopaobs.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -376,6 +391,7 @@ const GuiaResinas: NextPage = () => {
               {/* Z1003M */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/z1003m.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -406,6 +422,7 @@ const GuiaResinas: NextPage = () => {
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/apresentcores.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -416,6 +433,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/aplicli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -446,6 +464,7 @@ const GuiaResinas: NextPage = () => {
               {/* Z2503M */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/z2503m.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -485,6 +504,7 @@ const GuiaResinas: NextPage = () => {
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/250apre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -495,6 +515,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/250apli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -525,6 +546,7 @@ const GuiaResinas: NextPage = () => {
               {/* Z3503M */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/z3503m.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -554,6 +576,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/350apre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -564,6 +587,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/350apli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -594,6 +618,7 @@ const GuiaResinas: NextPage = () => {
               {/* FILTEK UNIVERSAL 3M*/}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/filtek.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -627,6 +652,7 @@ const GuiaResinas: NextPage = () => {
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/filtekapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -637,6 +663,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/filtekapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -669,6 +696,7 @@ const GuiaResinas: NextPage = () => {
             {/* EPIC BIODINÂMICA */}
             <Box id="BIODINÂMICA" className="index_selection">
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/epic.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -698,6 +726,7 @@ const GuiaResinas: NextPage = () => {
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/epicapre.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -708,6 +737,7 @@ const GuiaResinas: NextPage = () => {
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/epicapli.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -737,6 +767,7 @@ const GuiaResinas: NextPage = () => {
             {/* NEO SPECTRA DENTSPLY */}
             <Box id="DENTSPLY" className="index_selection">
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/neo.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -762,6 +793,7 @@ const GuiaResinas: NextPage = () => {
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/neoapre.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -772,6 +804,7 @@ const GuiaResinas: NextPage = () => {
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/neoapli.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -802,6 +835,7 @@ const GuiaResinas: NextPage = () => {
             <Box id="FGM" className="index_selection">
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/opallis.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -830,6 +864,7 @@ const GuiaResinas: NextPage = () => {
                 <p>Restauração direta de dentes anteriores e posteriores.</p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/opallisapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -840,6 +875,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/opallisapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -870,6 +906,7 @@ const GuiaResinas: NextPage = () => {
               {/* VITTRA FGM */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/vittra.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -897,6 +934,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/vittraapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -907,6 +945,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/vittraapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -939,6 +978,7 @@ const GuiaResinas: NextPage = () => {
             {/* ESSENTIA GC */}
             <Box id="GC" className="index_selection">
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/essentia.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -964,6 +1004,7 @@ const GuiaResinas: NextPage = () => {
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/essentiaapre.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -974,6 +1015,7 @@ const GuiaResinas: NextPage = () => {
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/essentiaapli.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1003,6 +1045,7 @@ const GuiaResinas: NextPage = () => {
             {/* MICERIUM ENAMEL PLUS HRI ORALTECH*/}
             <Box id="ORALTECH" className="index_selection">
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/micerium.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1024,6 +1067,7 @@ const GuiaResinas: NextPage = () => {
               <p>Restauração de dentes anteriores e posteriores.</p>
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/miceriumapre.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1034,6 +1078,7 @@ const GuiaResinas: NextPage = () => {
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/miceriumapli.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1065,6 +1110,7 @@ const GuiaResinas: NextPage = () => {
               {/* EMPRESS DIRECT IVOCLAR */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/empress.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1098,6 +1144,7 @@ const GuiaResinas: NextPage = () => {
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/empressapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1108,6 +1155,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/empressapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1138,6 +1186,7 @@ const GuiaResinas: NextPage = () => {
               {/* TETRIC IVOCLAR*/}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/tetric.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1162,6 +1211,7 @@ const GuiaResinas: NextPage = () => {
                 <p>Todas as classes de restaurações;</p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/tetricapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1172,6 +1222,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/tetricapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1206,6 +1257,7 @@ const GuiaResinas: NextPage = () => {
               {/* HARMONIZE KERR */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/harmonize.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1233,6 +1285,7 @@ const GuiaResinas: NextPage = () => {
                 <p>Dentes anteriores e posteriores.</p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/harmonizeapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1243,6 +1296,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/harmonizeapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1273,6 +1327,7 @@ const GuiaResinas: NextPage = () => {
               {/* HERCULITE CLASSIC KERR */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/hercc.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1307,6 +1362,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/herccapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1317,6 +1373,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/herccapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1347,6 +1404,7 @@ const GuiaResinas: NextPage = () => {
               {/* HERCULITE PRÉCIS KERR */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/hercp.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1366,6 +1424,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/hercpapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1376,6 +1435,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/hercpapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1406,6 +1466,7 @@ const GuiaResinas: NextPage = () => {
               {/* point 4 KERR */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/point.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1436,6 +1497,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/pointapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1446,6 +1508,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/pointapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1480,6 +1543,7 @@ const GuiaResinas: NextPage = () => {
               {/* CHARISMA CLASSIC KULZER */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/charismac.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1504,6 +1568,7 @@ const GuiaResinas: NextPage = () => {
                 <p>Restaurações anteriores e posteriores.</p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/charismacapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1514,6 +1579,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/charismacapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1544,6 +1610,7 @@ const GuiaResinas: NextPage = () => {
               {/* CHARISMA DIAMOND KULZER */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/charismad.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1569,6 +1636,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/charismadapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1579,6 +1647,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/charismadapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1611,6 +1680,7 @@ const GuiaResinas: NextPage = () => {
             {/* AURA SDI */}
             <Box id="SDI" className="index_selection">
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/aura.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1651,6 +1721,7 @@ const GuiaResinas: NextPage = () => {
               </p>
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/auraapre.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1661,6 +1732,7 @@ const GuiaResinas: NextPage = () => {
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/auraapli.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1690,6 +1762,7 @@ const GuiaResinas: NextPage = () => {
             {/* BEAUTIFILL SHOFU */}
             <Box id="SHOFU" className="index_selection">
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/beautifill.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1721,6 +1794,7 @@ const GuiaResinas: NextPage = () => {
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/beautifillapre.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1731,6 +1805,7 @@ const GuiaResinas: NextPage = () => {
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/beautifillapli.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1760,6 +1835,7 @@ const GuiaResinas: NextPage = () => {
             {/* ATOS SMARTDENT */}
             <Box id="SMARTDENT" className="index_selection">
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/atos.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1800,6 +1876,7 @@ const GuiaResinas: NextPage = () => {
               </ul>
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/atosapre.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1810,6 +1887,7 @@ const GuiaResinas: NextPage = () => {
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
+                quality={100}
                 src="/imgs/guia-resinas/atosapli.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
@@ -1841,6 +1919,7 @@ const GuiaResinas: NextPage = () => {
               {/* ESTELITE OMEGA TOKUYAMA */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/estelite.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1871,6 +1950,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/esteliteapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1881,6 +1961,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/esteliteapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1911,6 +1992,7 @@ const GuiaResinas: NextPage = () => {
               {/* PALFIQUE LX5 TOKUYAMA */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/palfique.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1946,6 +2028,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/palfiqueapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1956,6 +2039,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/palfiqueapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -1986,6 +2070,7 @@ const GuiaResinas: NextPage = () => {
               {/* OMNICHROMA TOKUYAMA */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/omnichroma.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2011,6 +2096,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/omnichromaapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2021,6 +2107,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/omnichromaapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2055,6 +2142,7 @@ const GuiaResinas: NextPage = () => {
               {/* FORMA ULTRADENT */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/forma.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2089,6 +2177,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/formaapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2099,6 +2188,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/formaapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2130,6 +2220,7 @@ const GuiaResinas: NextPage = () => {
               {/* VITALESCENCE ULTRADENT */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/vitalescence.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2153,6 +2244,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/vitalescenceapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2163,6 +2255,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/vitalescenceapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2197,6 +2290,7 @@ const GuiaResinas: NextPage = () => {
               {/* AMARIS VOCO */}
               <Box>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/amaris.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2242,6 +2336,7 @@ const GuiaResinas: NextPage = () => {
                 </ul>
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/amarisapre.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
@@ -2252,6 +2347,7 @@ const GuiaResinas: NextPage = () => {
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
+                  quality={100}
                   src="/imgs/guia-resinas/amarisapli.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
