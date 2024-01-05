@@ -423,7 +423,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/apresentcores.jpg"
+                  src="/imgs/guia-resinas/3M/Z100/tabela-z100.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -434,7 +434,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/aplicli.jpg"
+                  src="/imgs/guia-resinas/3M/Z100/imagem-z100.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -505,7 +505,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/250apre.jpg"
+                  src="/imgs/guia-resinas/3M/Z250/tabela-z250.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -516,7 +516,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/250apli.jpg"
+                  src="/imgs/guia-resinas/3M/Z250/imagem-z250.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -577,7 +577,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/350apre.jpg"
+                  src="/imgs/guia-resinas/3M/Z350/tabela-z350.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -588,7 +588,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/350apli.jpg"
+                  src="/imgs/guia-resinas/3M/Z350/imagem-z350.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -653,7 +653,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/filtekapre.jpg"
+                  src="/imgs/guia-resinas/3M/FU/tabela-FU.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -664,7 +664,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/filtekapli.jpg"
+                  src="/imgs/guia-resinas/3M/FU/imagem-FU.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -727,7 +727,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/epicapre.jpg"
+                src="/imgs/guia-resinas/biodinamica/epic/tabela-epic.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -738,7 +738,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/epicapli.jpg"
+                src="/imgs/guia-resinas/biodinamica/epic/imagem-epic.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -768,7 +768,7 @@ const GuiaResinas: NextPage = () => {
             <Box id="DENTSPLY" className="index_selection">
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/neo.jpg"
+                src="/imgs/guia-resinas/dentsply/neo-spectra/cover.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -794,7 +794,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/neoapre.jpg"
+                src="/imgs/guia-resinas/dentsply/neo-spectra/tabela.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -805,7 +805,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/neoapli.jpg"
+                src="/imgs/guia-resinas/dentsply/neo-spectra/imagem.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -865,7 +865,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/opallisapre.jpg"
+                  src="/imgs/guia-resinas/fgm/opallis/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -876,7 +876,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/opallisapli.jpg"
+                  src="/imgs/guia-resinas/fgm/opallis/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -935,7 +935,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/vittraapre.jpg"
+                  src="/imgs/guia-resinas/fgm/vittra/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -946,7 +946,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/vittraapli.jpg"
+                  src="/imgs/guia-resinas/fgm/vittra/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -974,7 +974,73 @@ const GuiaResinas: NextPage = () => {
                 </p>
               </Box>
             </Box>
-
+              {/* VITTRA UNIQUE FGM */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/fgm/vittra-unique/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={586}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Nanohíbrida</p>
+                <h2>Composição:</h2>
+                <p>
+                  Matriz orgânica: UDMA e TEGDMA.<br />
+                  Parte inorgânica: Zircônia/Sílica com 82% em peso e 72% em volume<br />
+                  Tamanho médio das partículas: 200 nm <br />
+                </p>
+                <h2>Indicação:</h2>
+                <p>
+                Restaurações diretas em dentes anteriores e posteriores (classes I, II, III, IV, V e VI);<br />
+                Cavidades classes I, II, V e VI: caso haja escurecimentos, cubra a área com resinas de dentina ou opacificadores (de acordo com a escolha profissional) e proceda a restauração na técnica incremental com Vittra APS Unique. Cavidades classe III e IV (sem parede de fundo que dê suporte de cor): confeccione uma camada que servirá de fundo para a restauração e finalize o restante do volume com Vittra APS Unique de forma incremental.
+                </p>
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/fgm/vittra-unique/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={622}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/fgm/vittra-unique/imagem.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={362}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$117,60 <br />
+                  Preço por grama: R$29,40
+                </p>
+              </Box>
+            </Box>
             {/* ESSENTIA GC */}
             <Box id="GC" className="index_selection">
               <Image
@@ -1005,7 +1071,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/essentiaapre.jpg"
+                src="/imgs/guia-resinas/gc/essentia/tabela.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1016,7 +1082,17 @@ const GuiaResinas: NextPage = () => {
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/essentiaapli.jpg"
+                src="/imgs/guia-resinas/gc/essentia/imagem.jpg"
+                style={{ width: "100%", height: "auto" }}
+                alt="brand"
+                layout="responsive"
+                sizes="100vw"
+                width={1416}
+                height={361}
+              />
+              <Image
+                quality={100}
+                src="/imgs/guia-resinas/gc/essentia/anexo.png"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1042,6 +1118,139 @@ const GuiaResinas: NextPage = () => {
               </p>
             </Box>
 
+            {/* GRADIA GC */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/gc/gradia/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={586}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Microhíbrida</p>
+                <h2>Composição:</h2>
+                <p>
+                Matriz orgânica: UDMA <br />
+                Parte inorgânica: Vidro de fluor-alumino-silicato  e silica com 77% em peso <br />
+                Tamanho médio das partículas: 0,01-1,7 μm <br />
+                </p>
+                <h2>Indicação:</h2>
+                <p>
+                Indicada para restaurações diretas e indiretas em dentes anteriores e posteriores (em classes I, II, III, IV e V). <br /> 
+                </p>
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/gc/gradia/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={622}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/gc/gradia/imagem.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={362}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$118,20 <br />
+                  Preço por grama: R$29,50
+                </p>
+              </Box>
+            </Box>
+          {/* Pigmentos essentia modifier GC */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/gc/pigmentos-essentia-modifier/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={586}
+                />
+                {/* <h2>Classificação da partícula:</h2>
+                <p>Microhíbrida</p>
+                <h2>Composição:</h2>
+                <p>
+                Matriz orgânica: UDMA <br />
+                Parte inorgânica: Vidro de fluor-alumino-silicato  e silica com 77% em peso <br />
+                Tamanho médio das partículas: 0,01-1,7 μm <br />
+                </p>
+                <h2>Indicação:</h2>
+                <p>
+                Indicada para restaurações diretas e indiretas em dentes anteriores e posteriores (em classes I, II, III, IV e V). <br /> 
+                </p>*/}
+                <h2>Apresentação de cores e opacidades:</h2> 
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/gc/pigmentos-essentia-modifier/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={622}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/gc/pigmentos-essentia-modifier/imagem.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={362}
+                />
+                {/*<p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$126,66 <br />
+                  Preço por grama: R$31,66
+                </p> */}
+              </Box>
+            </Box>
             {/* MICERIUM ENAMEL PLUS HRI ORALTECH*/}
             <Box id="ORALTECH" className="index_selection">
               <Image
@@ -1068,7 +1277,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/miceriumapre.jpg"
+                src="/imgs/guia-resinas/oraltech/micerium/tabela.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1079,7 +1288,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/miceriumapli.jpg"
+                src="/imgs/guia-resinas/oraltech/micerium/imagem.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1145,7 +1354,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/empressapre.jpg"
+                  src="/imgs/guia-resinas/ivoclar/empress-direct/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1156,7 +1365,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/empressapli.jpg"
+                  src="/imgs/guia-resinas/ivoclar/empress-direct/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1212,7 +1421,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/tetricapre.jpg"
+                  src="/imgs/guia-resinas/ivoclar/tetric/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1223,7 +1432,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/tetricapli.jpg"
+                  src="/imgs/guia-resinas/ivoclar/tetric/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1251,7 +1460,73 @@ const GuiaResinas: NextPage = () => {
                 </p>
               </Box>
             </Box>
-
+            {/* Pigmentos empress direct color ivoclar  */}
+            <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/ivoclar/pigmentos-empress-direct/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={586}
+                />
+                {/* <h2>Classificação da partícula:</h2>
+                <p>Microhíbrida</p>
+                <h2>Composição:</h2>
+                <p>
+                Matriz orgânica: UDMA <br />
+                Parte inorgânica: Vidro de fluor-alumino-silicato  e silica com 77% em peso <br />
+                Tamanho médio das partículas: 0,01-1,7 μm <br />
+                </p>
+                <h2>Indicação:</h2>
+                <p>
+                Indicada para restaurações diretas e indiretas em dentes anteriores e posteriores (em classes I, II, III, IV e V). <br /> 
+                </p>*/}
+                <h2>Apresentação de cores e opacidades:</h2> 
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/ivoclar/pigmentos-empress-direct/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={622}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/ivoclar/pigmentos-empress-direct/imagem.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={362}
+                />
+                {/*<p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$126,66 <br />
+                  Preço por grama: R$31,66
+                </p> */}
+              </Box>
+            </Box>
             {/* HARMONIZE KERR */}
             <Box id="KERR" className="index_selection">
               {/* HARMONIZE KERR */}
@@ -1286,7 +1561,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/harmonizeapre.jpg"
+                  src="/imgs/guia-resinas/kerr/harmonize/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1297,7 +1572,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/harmonizeapli.jpg"
+                  src="/imgs/guia-resinas/kerr/harmonize/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1363,7 +1638,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/herccapre.jpg"
+                  src="/imgs/guia-resinas/kerr/herculite-classic/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1374,7 +1649,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/herccapli.jpg"
+                  src="/imgs/guia-resinas/kerr/herculite-classic/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1425,7 +1700,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/hercpapre.jpg"
+                  src="/imgs/guia-resinas/kerr/herculite-precis/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1436,7 +1711,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/hercpapli.jpg"
+                  src="/imgs/guia-resinas/kerr/herculite-precis/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1498,7 +1773,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/pointapre.jpg"
+                  src="/imgs/guia-resinas/kerr/point-4/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1509,7 +1784,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/pointapli.jpg"
+                  src="/imgs/guia-resinas/kerr/point-4/imagem.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1569,7 +1844,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/charismacapre.jpg"
+                  src="/imgs/guia-resinas/kulzer/charisma-classic/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1580,7 +1855,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/charismacapli.jpg"
+                  src="/imgs/guia-resinas/kulzer/charisma-classic/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1637,7 +1912,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/charismadapre.jpg"
+                  src="/imgs/guia-resinas/kulzer/charisma-diamond/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1648,7 +1923,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/charismadapli.jpg"
+                  src="/imgs/guia-resinas/kulzer/charisma-diamond/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1676,7 +1951,6 @@ const GuiaResinas: NextPage = () => {
                 </p>
               </Box>
             </Box>
-
             {/* AURA SDI */}
             <Box id="SDI" className="index_selection">
               <Image
@@ -1722,7 +1996,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/auraapre.jpg"
+                src="/imgs/guia-resinas/sdi/aura/tabela.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1733,7 +2007,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/auraapli.jpg"
+                src="/imgs/guia-resinas/sdi/aura/img.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1758,7 +2032,76 @@ const GuiaResinas: NextPage = () => {
                 Preço por grama: R$33,60
               </p>
             </Box>
-
+          {/* LUNA 2 SDI */}
+             <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/sdi/luna2/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Nanohíbrida</p>
+                <h2>Composição:</h2>
+                <p>
+                Matriz orgânica: UDMA/Bis-GMA/TEGDMA <br />
+                Parte inorgânica: Aluminosilicato de estrôncio, sílica  com 77% em peso <br />
+                Tamanho médio das partículas: 0.2–2 μm <br />
+                </p>
+                <h2>Indicação:</h2>
+                <p>
+                • Restaurações diretas anteriores/posteriores e facetas;<br />
+                • Construções de núcleos;<br />
+                • Inlays e onlays indiretos;<br />
+                • Ferulização;<br />
+                • Reparo de resinas e porcelanas;<br />
+                </p>
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/sdi/luna2/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/sdi/luna2/img.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$82,75 <br />
+                  Preço por grama: R$20,70
+                </p>
+              </Box>
+            </Box>
             {/* BEAUTIFILL SHOFU */}
             <Box id="SHOFU" className="index_selection">
               <Image
@@ -1795,7 +2138,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/beautifillapre.jpg"
+                src="/imgs/guia-resinas/shofu/beautifill/tabela.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1806,7 +2149,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/beautifillapli.jpg"
+                src="/imgs/guia-resinas/shofu/beautifill/img.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1827,8 +2170,8 @@ const GuiaResinas: NextPage = () => {
                   label={<h3>Preço médio atual:</h3>}
                 />
                 <br />
-                Tubete com 4g: R$243 <br />
-                Preço por grama: R$54
+                Tubete com 4,5g: R$281,70 <br />
+                Preço por grama: R$62,60
               </p>
             </Box>
 
@@ -1877,7 +2220,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Apresentação de cores e opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/atosapre.jpg"
+                src="/imgs/guia-resinas/smartdent/atos/tabela.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1888,7 +2231,7 @@ const GuiaResinas: NextPage = () => {
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
                 quality={100}
-                src="/imgs/guia-resinas/atosapli.jpg"
+                src="/imgs/guia-resinas/smartdent/atos/img.jpg"
                 style={{ width: "100%", height: "auto" }}
                 alt="brand"
                 layout="responsive"
@@ -1951,7 +2294,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/esteliteapre.jpg"
+                  src="/imgs/guia-resinas/tokuyama/estelite/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -1962,7 +2305,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/esteliteapli.jpg"
+                  src="/imgs/guia-resinas/tokuyama/estelite/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2029,7 +2372,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/palfiqueapre.jpg"
+                  src="/imgs/guia-resinas/tokuyama/palfique/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2040,7 +2383,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/palfiqueapli.jpg"
+                  src="/imgs/guia-resinas/tokuyama/palfique/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2071,7 +2414,7 @@ const GuiaResinas: NextPage = () => {
               <Box>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/omnichroma.jpg"
+                  src="/imgs/guia-resinas/tokuyama/omnichroma/cover.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2097,7 +2440,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/omnichromaapre.jpg"
+                  src="/imgs/guia-resinas/tokuyama/omnichroma/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2108,7 +2451,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/omnichromaapli.jpg"
+                  src="/imgs/guia-resinas/tokuyama/omnichroma/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2131,8 +2474,8 @@ const GuiaResinas: NextPage = () => {
                     label={<h3>Preço médio atual:</h3>}
                   />
                   <br />
-                  Tubete com 4g: R$295,00 <br />
-                  Preço por grama: 73,75
+                  Tubete com 4g: R$298,90 <br />
+                  Preço por grama: 74,70
                 </p>
               </Box>
             </Box>
@@ -2178,7 +2521,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/formaapre.jpg"
+                  src="/imgs/guia-resinas/ultradent/forma/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2189,7 +2532,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/formaapli.jpg"
+                  src="/imgs/guia-resinas/ultradent/forma/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2245,7 +2588,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/vitalescenceapre.jpg"
+                  src="/imgs/guia-resinas/ultradent/vitalescence/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2256,7 +2599,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/vitalescenceapli.jpg"
+                  src="/imgs/guia-resinas/ultradent/vitalescence/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2337,7 +2680,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Apresentação de cores e opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/amarisapre.jpg"
+                  src="/imgs/guia-resinas/voco/amaris/tabela.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2348,7 +2691,7 @@ const GuiaResinas: NextPage = () => {
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
                   quality={100}
-                  src="/imgs/guia-resinas/amarisapli.jpg"
+                  src="/imgs/guia-resinas/voco/amaris/img.jpg"
                   style={{ width: "100%", height: "auto" }}
                   alt="brand"
                   layout="responsive"
@@ -2373,6 +2716,476 @@ const GuiaResinas: NextPage = () => {
                   <br />
                   Tubete com 4g: R$265,68 <br />
                   Preço por grama: R$66,42
+                </p>
+              </Box>
+              {/* ADMIRA FUSION VOCO */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/admira-fusion/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Nanohíbrida</p>
+                <h2>Composição:</h2>
+
+                <p>
+                Matriz orgânica: ORMOCER <br />
+                Parte inorgânica: Nanopartículas de dióxido de silício e partículas híbridas à base de óxido de silício com 84% em peso<br />
+                Tamanho médio das partículas: 20-50 nm<br />
+                </p>
+
+                <h2>Indicação:</h2>
+                <ul>
+                  <li>
+                  Restaurações posteriores de classes I e II
+                  </li>
+                  <li>
+                  Restaurações de classe V
+                  </li>
+                  <li>Fixação e ferulização de dentes com mobilidade</li>
+                  <li>
+                  Reparação de facetas, pequenos defeitos no esmalte e materiais especiais para coroas e pontes provisórias
+                  </li>
+                  <li>Selagem de fissuras </li>
+                  <li>
+                  Reconstrução de munhões
+                  </li>
+                </ul>
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/admira-fusion/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/admira-fusion/img.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 3g: R$264,90 <br />
+                  Preço por grama: R$88,30
+                </p>
+              </Box>
+
+              {/* GRANDIOSO VOCO */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/grandioso/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Nanohíbrida</p>
+
+                <h2>Composição:</h2>
+
+                <p>
+                Matriz orgânica: Bis-GMA, BisEMA, TEGDMA <br />
+                Parte inorgânica: Partículas de vidro cerâmico (1 μm) e dióxido de silício (20–40 nm) com 89% em peso e 73% em volume
+                </p>
+
+                <h2>Indicação:</h2>
+                <ul>
+                  <li>Restaurações de classes I a V.</li>
+                  <li>Reconstrução de dentes anteriores.</li>
+                  <li>Fixação em bloco ou ferulização de dentes com mobilidade.</li>
+                  <li>Reparação de facetas.</li>
+                  <li>Restauração de dentes decíduos.</li>
+                </ul>
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/grandioso/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/grandioso/img.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$265,68 <br />
+                  Preço por grama: R$66,42
+                </p>
+              </Box>
+
+              {/* pigmentos-final-touch VOCO */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/pigmentos-final-touch/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/pigmentos-final-touch/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/voco/pigmentos-final-touch/img.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$265,68 <br />
+                  Preço por grama: R$66,42
+                </p>
+              </Box>
+
+              {/* DGM */}
+            <Box id="DGM" className="index_selection">
+              {/* ECOSITE DGM */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/dgm/ecosite/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Nanohíbrida</p>
+                <h2>Composição:</h2>
+
+                <p>
+                Matriz orgânica: EBPADMA, BIS-GMA, UDMA <br />
+                Parte inorgânica: Dióxido de silício com 65% em volume <br />
+                Tamanho médio das partículas: 0,02 – 0,7 µm <br />
+                </p>
+
+                <h2>Indicação:</h2>
+                <ul>
+                  <li>Restaurações diretas em dentes permanentes e decíduos</li>
+                  <li>Confecção de núcleo, pequenas restaurações de cavidades classes III, IV e V</li>
+                  <li>Material de base da cavidade e selamento de fissuras </li>
+                </ul>
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/dgm/ecosite/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/dgm/ecosite/img.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$249,00 <br />
+                  Preço por grama: R$62,25
+                </p>
+              </Box>
+
+            {/* KURARAY */}
+            <Box id="KURARAY" className="index_selection">
+              {/* Clearfil KURARAY */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/kuraray/clearfil/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Microhíbrida</p>
+
+                <h2>Composição:</h2>
+                <p>
+                Matriz orgânica: Bis-GMA, TEGDMA <br />
+                Parte inorgânica: vidro de bário e sílica coloidal com 86% em peso <br />
+                Tamanho médio das partículas: 3 µm <br />
+                </p>
+
+                <h2>Indicação:</h2>
+                <ul>
+                  <li>Restaurações para todas as classes de cavidades em dentes anteriores e posteriores</li>
+                  <li>Facetas diretas</li>
+                  <li>Correções de forma</li>
+                  <li>Reparos intraorais de restaurações fraturadas</li>
+                </ul>
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$299,90 <br />
+                  Preço por grama: R$74,90
+                </p>
+              </Box>
+
+              {/* COLTENE */}
+              <Box id="COLTENE" className="index_selection">
+              {/* Brilliant Everglow COLTENE */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/coltene/brilliant-everglow/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Nanohíbrida</p>
+                <h2>Composição:</h2>
+
+                <p>
+                Matriz orgânica: Bis-GMA, Bis-EMA, TEGDMA<br />
+                Parte inorgânica: Pó de vidro de bário, sílica e óxido de zinco com 56% em volume e 74% em peso <br />
+                Tamanho médio das partículas: 0,02-1,5 µm <br />
+                </p>
+
+                <h2>Indicação:</h2>
+                <ul>
+                  <li>Indicado para restaurações diretas e indiretas em dentes anteriores e posteriores, vedação e reparação de restaurações de compósitos, além de correções estéticas de formato e cor.</li>
+                </ul>
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/coltene/brilliant-everglow/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/coltene/brilliant-everglow/img.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$124,90 <br />
+                  Preço por grama: R$31,20
+                </p>
+              </Box>
+
+              {/* VIGODENT */}
+              <Box id="VIGODENT" className="index_selection">
+              {/* INNOVA VIGODENT */}
+              <Box>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/vigodent/innova/cover.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Classificação da partícula:</h2>
+                <p>Nanohíbrida</p>
+                <h2>Composição:</h2>
+
+                <p>
+                Matriz orgânica: Não disponível na literatura <br />
+                Parte inorgânica: Partículas de zircônia <br />
+                Tamanho médio das partículas: Não disponível na literatura <br />
+                </p>
+
+                <h2>Indicação:</h2>
+                <ul>
+                  <li>Restaurações diretas de resina em dentes posteriores e anteriores.</li>
+                </ul>
+
+                <h2>Apresentação de cores e opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/vigodent/innova/tabela.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <h2>Aplicação clínica das opacidades:</h2>
+                <Image
+                  quality={100}
+                  src="/imgs/guia-resinas/vigodent/innova/img.jpg"
+                  style={{ width: "100%", height: "auto" }}
+                  alt="brand"
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1416}
+                  height={475}
+                />
+                <p style={purple}>
+                  <Chip
+                    style={{
+                      color: "#FFFFFF",
+                      background: "#382B57",
+                      marginLeft: "-1rem",
+                    }}
+                    icon={
+                      <MonetizationOnOutlinedIcon
+                        style={{ color: "#FFFFFF" }}
+                      />
+                    }
+                    label={<h3>Preço médio atual:</h3>}
+                  />
+                  <br />
+                  Tubete com 4g: R$92,20 <br />
+                  Preço por grama: R$23,00
                 </p>
               </Box>
 
