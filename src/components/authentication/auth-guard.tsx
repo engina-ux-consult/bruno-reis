@@ -8,8 +8,7 @@ interface AuthGuardProps {
   children: ReactNode;
 }
 
-export const AuthGuard: FC<AuthGuardProps> = (props) => {
-  const { children } = props;
+export const AuthGuard: FC<AuthGuardProps> = ({children}: AuthGuardProps) => {
   const auth = useAuth();
   const router = useRouter();
   const [checked, setChecked] = useState(false);
@@ -29,7 +28,7 @@ export const AuthGuard: FC<AuthGuardProps> = (props) => {
     } else {
       setChecked(true);
     }
-  }, [router.isReady, auth]);
+  }, [router, auth]);
 
   if (!checked) {
     return null;
