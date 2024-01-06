@@ -65,4 +65,20 @@ export const indexesMenu: Index[] = [
     name: "VOCO",
     active: false,
   },
+  {
+    name: "DMG",
+    active: false,
+  },
+  {
+    name: "KURARAY",
+    active: false,
+  },
+  {
+    name: "COLTENE",
+    active: false,
+  },
+  {
+    name: "VIGODENT",
+    active: false,
+  },
 ];

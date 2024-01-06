@@ -113,7 +113,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
         setUser(docSnap.data() as User);
       }
     }
-  }, [user]);
+  }, [db]);
 
   const onAuth = useCallback(() => {
     onAuthStateChanged(auth, (userProfile) => {
@@ -124,7 +124,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
         setIsAuthenticated(false);
       }
     });
-  }, [auth]);
+  }, [getUser]);
 
   const resetPassword = async (email: string): Promise<any> => {
     return sendPasswordResetEmail(auth, email);

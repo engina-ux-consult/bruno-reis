@@ -2937,9 +2937,9 @@ const GuiaResinas: NextPage = () => {
                 </p>
               </Box>
 
-              {/* DGM */}
-              <Box id="DGM" className="index_selection">
-                {/* ECOSITE DGM */}
+              {/* DMG */}
+              <Box id="DMG" className="index_selection">
+                {/* ECOSITE DMG */}
                 <Box>
                   <Image
                     quality={100}
