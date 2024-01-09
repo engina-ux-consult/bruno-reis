@@ -389,7 +389,7 @@ const GuiaResinas: NextPage = () => {
                 </p>
               </Box>
               {/* Z1003M */}
-              <Box style={{ position: 'relative', display: 'block' }}>
+              <Box style={{ position: "relative", display: "block" }}>
                 <Image
                   quality={100}
                   src="/imgs/guia-resinas/z1003m.jpg"
@@ -439,7 +439,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={361}
+                  height={462}
                 />
                 <p style={purple}>
                   <Chip
@@ -521,7 +521,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={719}
+                  height={461}
                 />
                 <p style={purple}>
                   <Chip
@@ -593,7 +593,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={361}
+                  height={463}
                 />
                 <p style={purple}>
                   <Chip
@@ -669,7 +669,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={425}
+                  height={460}
                 />
                 <p style={purple}>
                   <Chip
@@ -799,7 +799,7 @@ const GuiaResinas: NextPage = () => {
                 layout="responsive"
                 sizes="100vw"
                 width={1416}
-                height={428}
+                height={433}
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
@@ -810,7 +810,7 @@ const GuiaResinas: NextPage = () => {
                 layout="responsive"
                 sizes="100vw"
                 width={1416}
-                height={463}
+                height={460}
               />
               <p style={purple}>
                 <Chip
@@ -1017,8 +1017,8 @@ const GuiaResinas: NextPage = () => {
                 alt="brand"
                 layout="responsive"
                 sizes="100vw"
-                width={1416}
-                height={234}
+                width={1199}
+                height={199}
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
@@ -2082,7 +2082,7 @@ const GuiaResinas: NextPage = () => {
                 layout="responsive"
                 sizes="100vw"
                 width={1416}
-                height={475}
+                height={382}
               />
               <h2>Aplicação clínica das opacidades:</h2>
               <Image
@@ -2311,7 +2311,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={475}
+                  height={624}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
@@ -2389,7 +2389,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={475}
+                  height={336}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
@@ -2538,7 +2538,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={475}
+                  height={553}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
@@ -2605,7 +2605,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={475}
+                  height={371}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
@@ -2697,7 +2697,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={475}
+                  height={387}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
@@ -2850,7 +2850,7 @@ const GuiaResinas: NextPage = () => {
                   layout="responsive"
                   sizes="100vw"
                   width={1416}
-                  height={475}
+                  height={290}
                 />
                 <h2>Aplicação clínica das opacidades:</h2>
                 <Image
@@ -2984,7 +2984,7 @@ const GuiaResinas: NextPage = () => {
                     layout="responsive"
                     sizes="100vw"
                     width={1416}
-                    height={475}
+                    height={408}
                   />
                   <h2>Aplicação clínica das opacidades:</h2>
                   <Image
@@ -3116,7 +3116,7 @@ const GuiaResinas: NextPage = () => {
                         layout="responsive"
                         sizes="100vw"
                         width={1416}
-                        height={475}
+                        height={287}
                       />
                       <h2>Aplicação clínica das opacidades:</h2>
                       <Image
@@ -3190,8 +3190,8 @@ const GuiaResinas: NextPage = () => {
                           alt="brand"
                           layout="responsive"
                           sizes="100vw"
-                          width={1416}
-                          height={475}
+                          width={1757}
+                          height={943}
                         />
                         <h2>Aplicação clínica das opacidades:</h2>
                         <Image
